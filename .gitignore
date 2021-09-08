@@ -1,0 +1,16 @@
+node_modules
+.DS_Store
+dist
+dist-ssr
+*.local
+
+node_modules
+.env
+
+#Hardhat files
+cache
+artifacts
+
+coverage
+.eslintcache
+.openzeppelin/*.json
