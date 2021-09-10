@@ -1,4 +1,4 @@
-# Welcome to ntf-app 👋
+# Welcome to nft-app 👋
 
 ![Version](https://img.shields.io/badge/version-0.0.1-blue.svg?cacheSeconds=2592000)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](#)
@@ -6,19 +6,13 @@
 
 > Opinionated Dapp Starter Template
 
-## 🏠 [Homepage](https://ntf-app.productsway.com)
+## 🏠 [Homepage](https://nft-app.productsway.com)
 
-## ✨ [Demo](https://ntf-app.productsway.com)
+## ✨ [Demo](https://nft-app.productsway.com)
 
 ## Screenshot
 
-### Connect to MetaMask
-
-![https://gyazo.com/1fe5ed77da50835e77e1eae5d5c4ad04.gif](https://gyazo.com/1fe5ed77da50835e77e1eae5d5c4ad04.gif)
-
-### Show balance and sign message
-
-![https://gyazo.com/ee30b9c5b33d7f13e63ea6a8b01f70b5.gif](https://gyazo.com/ee30b9c5b33d7f13e63ea6a8b01f70b5.gif)
+![https://gyazo.com/1ae68c0c7f43e212045edc377dab4da8.gif](https://gyazo.com/1ae68c0c7f43e212045edc377dab4da8.gif)
 
 ## Features
 
@@ -155,7 +149,7 @@ npx hardhat run --network localhost scripts/upgrade_box.js
 
 ## Examples
 
-- [Simple Store App](https://github.com/jellydn/ntf-app/pull/20): counter-like smart contract, read/write value and listen to event from smart contract.
+- [Simple Store App](https://github.com/jellydn/nft-app/pull/20): counter-like smart contract, read/write value and listen to event from smart contract.
 - [ICO Token App](https://github.com/jellydn/dapp-token-ico): How to create An ERC20 token and implement ICO smart contract (CrowdSale).
 
 ## Author
@@ -168,7 +162,7 @@ npx hardhat run --network localhost scripts/upgrade_box.js
 
 ## Stargazers 🌟
 
-[![Stargazers repo roster for jellydn/ntf-app](https://reporoster.com/stars/jellydn/ntf-app)](https://github.com/jellydn/ntf-app/stargazers)
+[![Stargazers repo roster for jellydn/nft-app](https://reporoster.com/stars/jellydn/nft-app)](https://github.com/jellydn/nft-app/stargazers)
 
 ## Show your support
 

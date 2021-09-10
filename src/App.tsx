@@ -69,7 +69,7 @@ function App() {
               <span className="footer-title">1-click Deployment</span>
               <a
                 className="pl-2"
-                href="https://vercel.com/new/git/external?repository-url=https://github.com/jellydn/ntf-app/"
+                href="https://vercel.com/new/git/external?repository-url=https://github.com/jellydn/nft-app/"
               >
                 <img src="https://vercel.com/button" alt="Deploy with Vercel" />
               </a>
