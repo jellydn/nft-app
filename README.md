@@ -47,6 +47,51 @@ yarn dev
 yarn test
 ```
 
+## Deploy NFT to Rinkeby
+
+This example, we will deploy to Rinkeby network. If you do not have `hardhat` [shorthand](https://hardhat.org/guides/shorthand.html), then please run
+
+```sh
+npm i -g hardhat-shorthand
+hardhat-completion install
+```
+
+```sh
+hh run scripts/deploy.ts --network rinkeby
+```
+
+Output:
+
+```sh
+Generating typings for: 0 artifacts in dir: src/types for target: ethers-v5
+Successfully generated 3 typings!
+Successfully generated 3 typings for external artifacts!
+MyAwesomeLogo deployed to: 0xa9e1FF68887Ac5f5956E7a1Ee73c92365d0Dbb90
+owner 0x096cd10D7BEF8D5923b18b18E9f79CA230ee2285
+```
+
+Verify with etherscan.io
+
+```sh
+hh verify --network rinkeby 0xa9e1FF68887Ac5f5956E7a1Ee73c92365d0Dbb90
+```
+
+Output:
+
+```sh
+Nothing to compile
+Generating typings for: 0 artifacts in dir: src/types for target: ethers-v5
+Successfully generated 3 typings!
+Successfully generated 3 typings for external artifacts!
+Compiling 1 file with 0.8.4
+Successfully submitted source code for contract
+contracts/MyAwesomeLogo.sol:MyAwesomeLogo at 0xa9e1FF68887Ac5f5956E7a1Ee73c92365d0Dbb90
+for verification on Etherscan. Waiting for verification result...
+
+Successfully verified contract MyAwesomeLogo on Etherscan.
+https://rinkeby.etherscan.io/address/0xa9e1FF68887Ac5f5956E7a1Ee73c92365d0Dbb90#code
+```
+
 ## Hardhat guideline
 
 This project demonstrates an advanced Hardhat use case, integrating other tools commonly used alongside Hardhat in the ecosystem.
