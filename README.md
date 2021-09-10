@@ -1,4 +1,4 @@
-# Welcome to dapp-starter 👋
+# Welcome to ntf-app 👋
 
 ![Version](https://img.shields.io/badge/version-0.0.1-blue.svg?cacheSeconds=2592000)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](#)
@@ -6,9 +6,9 @@
 
 > Opinionated Dapp Starter Template
 
-## 🏠 [Homepage](https://dapp-starter.productsway.com)
+## 🏠 [Homepage](https://ntf-app.productsway.com)
 
-## ✨ [Demo](https://dapp-starter.productsway.com)
+## ✨ [Demo](https://ntf-app.productsway.com)
 
 ## Screenshot
 
@@ -155,7 +155,7 @@ npx hardhat run --network localhost scripts/upgrade_box.js
 
 ## Examples
 
-- [Simple Store App](https://github.com/jellydn/dapp-starter/pull/20): counter-like smart contract, read/write value and listen to event from smart contract.
+- [Simple Store App](https://github.com/jellydn/ntf-app/pull/20): counter-like smart contract, read/write value and listen to event from smart contract.
 - [ICO Token App](https://github.com/jellydn/dapp-token-ico): How to create An ERC20 token and implement ICO smart contract (CrowdSale).
 
 ## Author
@@ -168,7 +168,7 @@ npx hardhat run --network localhost scripts/upgrade_box.js
 
 ## Stargazers 🌟
 
-[![Stargazers repo roster for jellydn/dapp-starter](https://reporoster.com/stars/jellydn/dapp-starter)](https://github.com/jellydn/dapp-starter/stargazers)
+[![Stargazers repo roster for jellydn/ntf-app](https://reporoster.com/stars/jellydn/ntf-app)](https://github.com/jellydn/ntf-app/stargazers)
 
 ## Show your support
 
