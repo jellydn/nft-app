@@ -10,6 +10,7 @@ import React from "react";
 import { injected, POLLING_INTERVAL } from "../dapp/connectors";
 import { useEagerConnect, useInactiveListener } from "../dapp/hooks";
 import logger from "../logger";
+import logo from "../metamask.png";
 import { Header } from "./Header";
 
 function getErrorMessage(error: Error) {
@@ -58,7 +59,10 @@ export default function Demo() {
   return (
     <>
       <Header />
-      <div>
+      <div className="flex flex-col max-w-xs mx-auto">
+        <figure className="container justify-center w-full px-10 pt-10 mx-auto text-white">
+          <img src={logo} alt="metamask" className="mask mask-squircle" />
+        </figure>
         <button
           className="btn btn-primary"
           disabled={disabled}
