@@ -4,7 +4,7 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](#)
 [![Twitter: jellydn](https://img.shields.io/twitter/follow/jellydn.svg?style=social)](https://twitter.com/jellydn)
 
-> Opinionated Dapp Starter Template
+> How to create your own NFT token
 
 ## 🏠 [Homepage](https://nft-app.productsway.com)
 
