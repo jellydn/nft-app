@@ -10,9 +10,13 @@
 
 ## ✨ [Demo](https://nft-app.productsway.com)
 
+![https://gyazo.com/ba0939bab7012cebee469a195d6904ec.gif](https://gyazo.com/ba0939bab7012cebee469a195d6904ec.gif)
+
 ## Screenshot
 
-![https://gyazo.com/1ae68c0c7f43e212045edc377dab4da8.gif](https://gyazo.com/1ae68c0c7f43e212045edc377dab4da8.gif)
+![screenshot1.png](./screenshot1.png)
+
+![screenshot2.png](./screenshot2.png)
 
 ## Features
 
@@ -50,6 +54,8 @@ npm i -g hardhat-shorthand
 hardhat-completion install
 ```
 
+1.Deploy MyAwesomeLogo to Rinkeby
+
 ```sh
 hh run scripts/deploy.ts --network rinkeby
 ```
@@ -60,14 +66,46 @@ Output:
 Generating typings for: 0 artifacts in dir: src/types for target: ethers-v5
 Successfully generated 3 typings!
 Successfully generated 3 typings for external artifacts!
-MyAwesomeLogo deployed to: 0xa9e1FF68887Ac5f5956E7a1Ee73c92365d0Dbb90
+MyAwesomeLogo deployed to: 0x39a5079afE9F3e3bB4db1B943e2063AC3dc87251
 owner 0x096cd10D7BEF8D5923b18b18E9f79CA230ee2285
 ```
 
-Verify with etherscan.io
+2. Mint some NFT tokens
 
 ```sh
-hh verify --network rinkeby 0xa9e1FF68887Ac5f5956E7a1Ee73c92365d0Dbb90
+hh run scripts/mint.ts --network rinkeby
+```
+
+Output:
+
+```sh
+Generating typings for: 0 artifacts in dir: src/types for target: ethers-v5
+Successfully generated 3 typings!
+Successfully generated 3 typings for external artifacts!
+MyAwesomeLogo deployed to: 0x39a5079afE9F3e3bB4db1B943e2063AC3dc87251
+Name MyAwesomeLogo
+Symbol MAL
+Uploaded file to nft storage Token {
+  ipnft: 'bafyreib22oziqft7cbakshc374mwctwiprzyj24ufpeogkjff3lroumcru',
+  url: 'ipfs://bafyreib22oziqft7cbakshc374mwctwiprzyj24ufpeogkjff3lroumcru/metadata.json'
+}
+Minted NFT 0x0aad3903cb8d11f095babdc7ba47963ad6235b0a3cd5d32ee42560798816235a
+Uploaded file to nft storage Token {
+  ipnft: 'bafyreid3gvwkltwkgvpxur3eozuh6dirfg2ohqizhn4rpn764dji272aoe',
+  url: 'ipfs://bafyreid3gvwkltwkgvpxur3eozuh6dirfg2ohqizhn4rpn764dji272aoe/metadata.json'
+}
+Minted NFT 0xe1ed7be02639310cf101b495e55d27421be018cc12cd90d1f46547c627b5132c
+Uploaded file to nft storage Token {
+  ipnft: 'bafyreieealfw66zppxhkivuti5qkmsuihjxgxgrxdfm2o5p4qna5l347bu',
+  url: 'ipfs://bafyreieealfw66zppxhkivuti5qkmsuihjxgxgrxdfm2o5p4qna5l347bu/metadata.json'
+}
+Minted NFT 0x183af6b95464305aa5f9f0ed97a5b8847bd168bbb28e3f6368d04662a44cb8fc
+```
+
+3.Verify with etherscan.io
+
+```sh
+hh verify --network rinkeby 0x39a5079afE9F3e3bB4db1B943e2063AC3dc87251
 ```
 
 Output:
@@ -79,11 +117,11 @@ Successfully generated 3 typings!
 Successfully generated 3 typings for external artifacts!
 Compiling 1 file with 0.8.4
 Successfully submitted source code for contract
-contracts/MyAwesomeLogo.sol:MyAwesomeLogo at 0xa9e1FF68887Ac5f5956E7a1Ee73c92365d0Dbb90
+contracts/MyAwesomeLogo.sol:MyAwesomeLogo at 0x39a5079afE9F3e3bB4db1B943e2063AC3dc87251
 for verification on Etherscan. Waiting for verification result...
 
 Successfully verified contract MyAwesomeLogo on Etherscan.
-https://rinkeby.etherscan.io/address/0xa9e1FF68887Ac5f5956E7a1Ee73c92365d0Dbb90#code
+https://rinkeby.etherscan.io/address/0x39a5079afE9F3e3bB4db1B943e2063AC3dc87251#code
 ```
 
 ## Hardhat guideline
