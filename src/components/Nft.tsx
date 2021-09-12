@@ -6,10 +6,8 @@ export const CONTRACT_DEPLOYED_ADDRESS = import.meta.env.VITE_NFT_DEPLOYED_ADDRE
 export function Nft({ tokenId }: { tokenId: string }) {
   const { loading, error, nft } = useNft(CONTRACT_DEPLOYED_ADDRESS, tokenId);
 
-  // nft.loading is true during load.
   if (loading) return <div className="btn btn-ghost btn-sm btn-circle loading">Loading…</div>;
 
-  // nft.error is an Error instance in case of error.
   if (error || !nft)
     return (
       <div className="alert alert-error">
@@ -19,12 +17,12 @@ export function Nft({ tokenId }: { tokenId: string }) {
       </div>
     );
 
-  // You can now display the NFT metadata.
   return (
     <div>
       <div className="text-center shadow-2xl card">
+        <h2 className="my-4 text-4xl font-bold card-title">NFT Viewer </h2>
         <figure className="px-10 pt-10">
-          <img src={nft.image} alt="" className="mask mask-squircle" />
+          <img src={nft.image} alt="" className="mask mask-sircleu" />
         </figure>
         <div className="card-body">
           <h2 className="card-title">{nft.name}</h2>

@@ -6,6 +6,9 @@
       "module": "commonjs",
       "esModuleInterop": true,
     },
+    "files": [
+      "./hardhat.config.ts"
+    ],
   },
   "compilerOptions": {
     "target": "ESNext",
@@ -30,8 +33,5 @@
   "include": [
     "./src",
     "./test"
-  ],
-  "files": [
-    "./hardhat.config.ts"
   ],
 }

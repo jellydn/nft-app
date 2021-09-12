@@ -7,6 +7,7 @@ import "./App.css";
 import Demo from "./components/Demo";
 import { getLibrary } from "./components/Demo";
 import { Nft } from "./components/Nft";
+import { Pagination } from "./components/Pagination";
 
 const ethersConfig = {
   provider: getDefaultProvider("rinkeby"),
@@ -21,13 +22,7 @@ function App() {
           <Demo />
           <header data-theme="cyberpunk" className="text-gray-500 bg-white App-header">
             <Nft tokenId={tokenId} />
-            <div className="flex justify-center w-full py-4 space-x-2">
-              {Array.from(Array(10).keys()).map((i) => (
-                <button key={i} onClick={() => setTokenId(i.toString())} className="btn btn-s btn-circle">
-                  {i + 1}
-                </button>
-              ))}
-            </div>
+            <Pagination onChange={setTokenId} />
           </header>
           <footer className="p-10 footer bg-base-200 text-base-content">
             <div>

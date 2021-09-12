@@ -37,7 +37,7 @@ export function getLibrary(provider: any): Web3Provider {
 
 export default function Demo() {
   const context = useWeb3React<Web3Provider>();
-  const { connector, library, account, activate, deactivate, active, error } = context;
+  const { connector, library, account, activate, deactivate, active, error, chainId } = context;
 
   // handle logic to recognize the connector currently being activated
   const [activatingConnector, setActivatingConnector] = React.useState<any>();
@@ -59,6 +59,30 @@ export default function Demo() {
   return (
     <>
       <Header />
+      {chainId !== 4 && (
+        <>
+          <div className="alert">
+            <div className="flex-1">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="#ff5722"
+                className="w-6 h-6 mx-2"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M18.364 18.364A9 9 0 005.636 5.636m12.728 12.728A9 9 0 015.636 5.636m12.728 12.728L5.636 5.636"
+                />
+              </svg>
+              <label>Please connect to the Rinkeby testnet for testing.</label>
+            </div>
+          </div>
+          <div className="divider"></div>
+        </>
+      )}
       <div className="flex flex-col max-w-xs mx-auto">
         <figure className="container justify-center w-full px-10 pt-10 mx-auto text-white">
           <img src={logo} alt="metamask" className="mask mask-squircle" />
