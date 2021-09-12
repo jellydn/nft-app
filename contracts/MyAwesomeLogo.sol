@@ -36,4 +36,14 @@ contract MyAwesomeLogo is ERC721, ERC721URIStorage, ERC721Burnable, Ownable {
 	{
 		return super.tokenURI(tokenId);
 	}
+
+	function currentCounter() public view returns (uint256) {
+		return _tokenIdCounter.current();
+	}
+
+	function freeMint(address to, string memory nftTokenURI) public {
+		_safeMint(to, _tokenIdCounter.current());
+		_setTokenURI(_tokenIdCounter.current(), nftTokenURI);
+		_tokenIdCounter.increment();
+	}
 }

@@ -24,6 +24,8 @@ interface MyAwesomeLogoInterface extends ethers.utils.Interface {
     "approve(address,uint256)": FunctionFragment;
     "balanceOf(address)": FunctionFragment;
     "burn(uint256)": FunctionFragment;
+    "currentCounter()": FunctionFragment;
+    "freeMint(address,string)": FunctionFragment;
     "getApproved(uint256)": FunctionFragment;
     "isApprovedForAll(address,address)": FunctionFragment;
     "name()": FunctionFragment;
@@ -46,6 +48,14 @@ interface MyAwesomeLogoInterface extends ethers.utils.Interface {
   ): string;
   encodeFunctionData(functionFragment: "balanceOf", values: [string]): string;
   encodeFunctionData(functionFragment: "burn", values: [BigNumberish]): string;
+  encodeFunctionData(
+    functionFragment: "currentCounter",
+    values?: undefined
+  ): string;
+  encodeFunctionData(
+    functionFragment: "freeMint",
+    values: [string, string]
+  ): string;
   encodeFunctionData(
     functionFragment: "getApproved",
     values: [BigNumberish]
@@ -97,6 +107,11 @@ interface MyAwesomeLogoInterface extends ethers.utils.Interface {
   decodeFunctionResult(functionFragment: "approve", data: BytesLike): Result;
   decodeFunctionResult(functionFragment: "balanceOf", data: BytesLike): Result;
   decodeFunctionResult(functionFragment: "burn", data: BytesLike): Result;
+  decodeFunctionResult(
+    functionFragment: "currentCounter",
+    data: BytesLike
+  ): Result;
+  decodeFunctionResult(functionFragment: "freeMint", data: BytesLike): Result;
   decodeFunctionResult(
     functionFragment: "getApproved",
     data: BytesLike
@@ -206,6 +221,14 @@ export class MyAwesomeLogo extends BaseContract {
       overrides?: Overrides & { from?: string | Promise<string> }
     ): Promise<ContractTransaction>;
 
+    currentCounter(overrides?: CallOverrides): Promise<[BigNumber]>;
+
+    freeMint(
+      to: string,
+      nftTokenURI: string,
+      overrides?: Overrides & { from?: string | Promise<string> }
+    ): Promise<ContractTransaction>;
+
     getApproved(
       tokenId: BigNumberish,
       overrides?: CallOverrides
@@ -295,6 +318,14 @@ export class MyAwesomeLogo extends BaseContract {
     overrides?: Overrides & { from?: string | Promise<string> }
   ): Promise<ContractTransaction>;
 
+  currentCounter(overrides?: CallOverrides): Promise<BigNumber>;
+
+  freeMint(
+    to: string,
+    nftTokenURI: string,
+    overrides?: Overrides & { from?: string | Promise<string> }
+  ): Promise<ContractTransaction>;
+
   getApproved(
     tokenId: BigNumberish,
     overrides?: CallOverrides
@@ -374,6 +405,14 @@ export class MyAwesomeLogo extends BaseContract {
     balanceOf(owner: string, overrides?: CallOverrides): Promise<BigNumber>;
 
     burn(tokenId: BigNumberish, overrides?: CallOverrides): Promise<void>;
+
+    currentCounter(overrides?: CallOverrides): Promise<BigNumber>;
+
+    freeMint(
+      to: string,
+      nftTokenURI: string,
+      overrides?: CallOverrides
+    ): Promise<void>;
 
     getApproved(
       tokenId: BigNumberish,
@@ -494,6 +533,14 @@ export class MyAwesomeLogo extends BaseContract {
       overrides?: Overrides & { from?: string | Promise<string> }
     ): Promise<BigNumber>;
 
+    currentCounter(overrides?: CallOverrides): Promise<BigNumber>;
+
+    freeMint(
+      to: string,
+      nftTokenURI: string,
+      overrides?: Overrides & { from?: string | Promise<string> }
+    ): Promise<BigNumber>;
+
     getApproved(
       tokenId: BigNumberish,
       overrides?: CallOverrides
@@ -584,6 +631,14 @@ export class MyAwesomeLogo extends BaseContract {
 
     burn(
       tokenId: BigNumberish,
+      overrides?: Overrides & { from?: string | Promise<string> }
+    ): Promise<PopulatedTransaction>;
+
+    currentCounter(overrides?: CallOverrides): Promise<PopulatedTransaction>;
+
+    freeMint(
+      to: string,
+      nftTokenURI: string,
       overrides?: Overrides & { from?: string | Promise<string> }
     ): Promise<PopulatedTransaction>;
 
