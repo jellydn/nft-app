@@ -1,29 +1,71 @@
-import { Web3ReactProvider } from "@web3-react/core";
-import { getDefaultProvider } from "ethers";
-import React, { useState } from "react";
+import { useWeb3React, Web3ReactProvider } from "@web3-react/core";
+import { BigNumber, ethers, getDefaultProvider } from "ethers";
+import React, { useEffect, useState } from "react";
 import { NftProvider } from "use-nft";
 
 import "./App.css";
+import MyAwesomeLogoArtifacts from "./artifacts/contracts/MyAwesomeLogo.sol/MyAwesomeLogo.json";
 import Demo from "./components/Demo";
 import { getLibrary } from "./components/Demo";
 import { Nft } from "./components/Nft";
 import { Pagination } from "./components/Pagination";
+import logger from "./logger";
+import { networkName, CHAIN_ID } from "./networkName";
+import { MyAwesomeLogo } from "./types/MyAwesomeLogo";
+
+export const CONTRACT_DEPLOYED_ADDRESS = import.meta.env.VITE_NFT_DEPLOYED_ADDRESS;
+
+declare global {
+  interface Window {
+    ethereum: ethers.providers.ExternalProvider;
+  }
+}
+
+function NFTApp() {
+  const [tokenId, setTokenId] = useState("0");
+  const { library } = useWeb3React();
+  const [total, setTotal] = useState(0);
+
+  useEffect(() => {
+    const fetchTotal = () => {
+      logger.warn("fetchTotal");
+      const provider = library || new ethers.providers.Web3Provider(window.ethereum);
+      const contract = new ethers.Contract(
+        CONTRACT_DEPLOYED_ADDRESS,
+        MyAwesomeLogoArtifacts.abi,
+        provider
+      ) as MyAwesomeLogo;
+      contract
+        .currentCounter()
+        .then((result) => setTotal(BigNumber.from(result).toNumber()))
+        .catch(logger.error);
+    };
+    try {
+      fetchTotal();
+    } catch (error) {
+      logger.error(error);
+    }
+  }, [library]);
+
+  return (
+    <header data-theme="cyberpunk" className="text-gray-500 bg-white App-header">
+      <Nft tokenId={tokenId} />
+      <Pagination total={total} onChange={setTokenId} />
+    </header>
+  );
+}
 
 const ethersConfig = {
-  provider: getDefaultProvider("rinkeby"),
+  provider: getDefaultProvider(networkName[Number(CHAIN_ID)] || "homestead"),
 };
 
 function App() {
-  const [tokenId, setTokenId] = useState("0");
   return (
     <Web3ReactProvider getLibrary={getLibrary}>
       <NftProvider fetcher={["ethers", ethersConfig]}>
         <div className="App">
           <Demo />
-          <header data-theme="cyberpunk" className="text-gray-500 bg-white App-header">
-            <Nft tokenId={tokenId} />
-            <Pagination onChange={setTokenId} />
-          </header>
+          <NFTApp />
           <footer className="p-10 footer bg-base-200 text-base-content">
             <div>
               <p>
