@@ -1,6 +1,8 @@
 import React from "react";
 import { useNft } from "use-nft";
 
+import Image from "./Image";
+
 export const CONTRACT_DEPLOYED_ADDRESS = import.meta.env.VITE_NFT_DEPLOYED_ADDRESS;
 
 export function Nft({ tokenId }: { tokenId: string }) {
@@ -22,7 +24,7 @@ export function Nft({ tokenId }: { tokenId: string }) {
       <div className="text-center shadow-2xl card">
         <h2 className="my-4 text-4xl font-bold card-title">NFT Viewer </h2>
         <figure className="px-10 pt-10">
-          <img src={nft.image} alt="" className="mask mask-sircleu" />
+          <Image src={nft.image} alt={nft.name} className="mask mask-sircleu" />
         </figure>
         <div className="card-body">
           <h2 className="card-title">{nft.name}</h2>

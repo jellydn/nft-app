@@ -11,6 +11,7 @@ import { injected, POLLING_INTERVAL } from "../dapp/connectors";
 import { useEagerConnect, useInactiveListener } from "../dapp/hooks";
 import logger from "../logger";
 import logo from "../metamask.png";
+import { networkName, CHAIN_ID } from "../networkName";
 import { Header } from "./Header";
 
 function getErrorMessage(error: Error) {
@@ -77,7 +78,7 @@ export default function Demo() {
                   d="M18.364 18.364A9 9 0 005.636 5.636m12.728 12.728A9 9 0 015.636 5.636m12.728 12.728L5.636 5.636"
                 />
               </svg>
-              <label>Please connect to the Rinkeby testnet for testing.</label>
+              <label>Please connect your MetaMask to the {networkName[Number(CHAIN_ID)]} network.</label>
             </div>
           </div>
           <div className="divider"></div>
