@@ -9,6 +9,7 @@ import { config } from "dotenv";
 import { readdirSync, readFileSync } from "fs";
 import hre from "hardhat";
 import { NFTStorage, File } from "nft.storage";
+import PQueue from "p-queue";
 import { join } from "path";
 
 import { MyAwesomeLogo } from "../src/types";
@@ -48,7 +49,7 @@ async function main() {
   console.log("Name", await logo.name());
   console.log("Symbol", await logo.symbol());
 
-  const promises = [];
+  const queue = new PQueue({ concurrency: 1 });
   // read all files from the assets directory and its subdirectories
   const folders = readdirSync(join(__dirname, "assets"));
   for (const folder of folders) {
@@ -58,7 +59,7 @@ async function main() {
     console.log("Files", files);
     for (const file of files) {
       const filePath = join(__dirname, "assets", folder, file);
-      promises.push(
+      await queue.add(() =>
         mintNft({
           logo,
           filePath,
@@ -68,8 +69,6 @@ async function main() {
       );
     }
   }
-
-  await Promise.allSettled(promises);
 }
 
 async function mintNft({
