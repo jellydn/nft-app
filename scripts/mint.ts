@@ -64,7 +64,7 @@ async function main() {
           logo,
           filePath,
           name: file,
-          description: file,
+          description: join(folder, file),
         })
       );
     }
