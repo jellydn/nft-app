@@ -3,7 +3,6 @@ import { BigNumber, ethers, getDefaultProvider } from "ethers";
 import React, { useEffect, useState } from "react";
 import { NftProvider } from "use-nft";
 
-import "./App.css";
 import MyAwesomeLogoArtifacts from "./artifacts/contracts/MyAwesomeLogo.sol/MyAwesomeLogo.json";
 import Demo from "./components/Demo";
 import { getLibrary } from "./components/Demo";
@@ -22,9 +21,10 @@ declare global {
 }
 
 function NFTApp() {
-  const [tokenId, setTokenId] = useState("0");
   const { library } = useWeb3React();
   const [total, setTotal] = useState(0);
+  const [page, setPage] = useState(1);
+  const limit = 12;
 
   useEffect(() => {
     const fetchTotal = () => {
@@ -48,10 +48,17 @@ function NFTApp() {
   }, [library]);
 
   return (
-    <header data-theme="cyberpunk" className="text-gray-500 bg-white App-header">
-      <Nft tokenId={tokenId} />
-      <Pagination total={total} onChange={setTokenId} />
-    </header>
+    <div>
+      <h2 className="my-4 text-4xl font-bold">NFT Items</h2>
+      <div className="container grid gap-2 xl:grid-cols-3 md:grid-cols-2 sm:grid-cols-1">
+        {Array.from(Array(limit).keys())
+          .filter((i) => i + 1 + (page - 1) * limit < total)
+          .map((i) => (
+            <Nft tokenId={String(i + 1 + (page - 1) * limit)} />
+          ))}
+      </div>
+      <Pagination currentPage={page} totalPage={Math.ceil(total / limit)} onChange={setPage} />
+    </div>
   );
 }
 
@@ -63,7 +70,7 @@ function App() {
   return (
     <Web3ReactProvider getLibrary={getLibrary}>
       <NftProvider fetcher={["ethers", ethersConfig]}>
-        <div className="App">
+        <div className="container mx-auto">
           <Demo />
           <NFTApp />
           <footer className="p-10 footer bg-base-200 text-base-content">

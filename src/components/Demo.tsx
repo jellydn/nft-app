@@ -81,7 +81,6 @@ export default function Demo() {
               <label>Please connect your MetaMask to the {networkName[Number(CHAIN_ID)]} network.</label>
             </div>
           </div>
-          <div className="divider"></div>
         </>
       )}
       <div className="flex flex-col max-w-xs mx-auto">
@@ -123,8 +122,8 @@ export default function Demo() {
       </div>
 
       <div className="divider" />
-      <div>
-        {!!(library && account) && (
+      {!!(library && account) && (
+        <div>
           <button
             className="btn btn-primary"
             onClick={() => {
@@ -141,8 +140,9 @@ export default function Demo() {
           >
             Sign Message
           </button>
-        )}
-      </div>
+          <div className="divider" />
+        </div>
+      )}
     </>
   );
 }
