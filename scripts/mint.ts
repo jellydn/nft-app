@@ -6,7 +6,7 @@
 // eslint-disable-next-line import/no-extraneous-dependencies
 import "@nomiclabs/hardhat-ethers";
 import { config } from "dotenv";
-import { readFileSync } from "fs";
+import { readdirSync, readFileSync } from "fs";
 import hre from "hardhat";
 import { NFTStorage, File } from "nft.storage";
 import { join } from "path";
@@ -20,6 +20,7 @@ const client = new NFTStorage({ token: apiKey });
 
 // upload file to nft storage
 async function uploadFile({ file, name, description }: { file: File; name: string; description: string }) {
+  console.log("Uploading file to nft storage", { file, name, description });
   const metadata = await client.store({
     name,
     description,
@@ -47,25 +48,28 @@ async function main() {
   console.log("Name", await logo.name());
   console.log("Symbol", await logo.symbol());
 
-  // read image file from disk
-  await mintNft({
-    logo,
-    filePath: "/set-1/1 Main Logo 800x600.png",
-    name: "Main Logo 1",
-    description: "This is a description",
-  });
-  await mintNft({
-    logo,
-    filePath: "/set-2/1 Main Logo 800x600.png",
-    name: "Main Logo 2",
-    description: "This is a 2nd description",
-  });
-  await mintNft({
-    logo,
-    filePath: "/set-3/1 Main Logo 800x600.png",
-    name: "Main Logo 3",
-    description: "This is a 3rd description",
-  });
+  const promises = [];
+  // read all files from the assets directory and its subdirectories
+  const folders = readdirSync(join(__dirname, "assets"));
+  for (const folder of folders) {
+    // read all files from the current folder
+    const files = readdirSync(join(__dirname, "assets", folder));
+    console.log("Folder", folder);
+    console.log("Files", files);
+    for (const file of files) {
+      const filePath = join(__dirname, "assets", folder, file);
+      promises.push(
+        mintNft({
+          logo,
+          filePath,
+          name: file,
+          description: file,
+        })
+      );
+    }
+  }
+
+  await Promise.allSettled(promises);
 }
 
 async function mintNft({
@@ -79,7 +83,8 @@ async function mintNft({
   name?: string;
   description?: string;
 }) {
-  const file = readFileSync(join(__dirname, filePath));
+  console.log("Minting NFT", { filePath, name, description });
+  const file = readFileSync(filePath);
 
   const metaData = await uploadFile({
     file: new File([file.buffer], name, {
