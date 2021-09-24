@@ -60,7 +60,7 @@ export default function Demo() {
   return (
     <>
       <Header />
-      {chainId !== 4 && (
+      {chainId !== Number(CHAIN_ID) && (
         <>
           <div className="alert">
             <div className="flex-1">
