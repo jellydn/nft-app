@@ -55,9 +55,6 @@ function AddItemModal({ isOpen, onAdd, onClose }: AddItemModalProps) {
     () => () => {
       // Make sure to revoke the data uris to avoid memory leaks
       files.forEach((file: any) => URL.revokeObjectURL(file.preview));
-      if (files.length > 0) {
-        setFiles([]);
-      }
     },
     [files]
   );
@@ -65,6 +62,7 @@ function AddItemModal({ isOpen, onAdd, onClose }: AddItemModalProps) {
   const onSubmit = handleSubmit((data) => {
     onAdd(data, files);
     reset();
+    setFiles([]);
   });
 
   return (

@@ -65,8 +65,6 @@ function NFTApp() {
     const result = await response.json();
     if (result.error) {
       toast.error(result.message);
-    } else {
-      toast.success("Uploaded!");
     }
     return result;
   };
@@ -109,6 +107,7 @@ function NFTApp() {
             .then((result) => {
               if (result.url) {
                 // TODO: mit a token
+                toast.success(`Uploaded ${result.url}`);
               }
             })
             .catch(logger.error);
