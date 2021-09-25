@@ -1,6 +1,7 @@
 import { useWeb3React, Web3ReactProvider } from "@web3-react/core";
 import { BigNumber, ethers, getDefaultProvider } from "ethers";
 import React, { useEffect, useState } from "react";
+import toast, { Toaster } from "react-hot-toast";
 import { NftProvider } from "use-nft";
 
 import MyAwesomeLogoArtifacts from "./artifacts/contracts/MyAwesomeLogo.sol/MyAwesomeLogo.json";
@@ -49,6 +50,27 @@ function NFTApp() {
     }
   }, [library]);
 
+  const onUpload = async ({ name, description, file }: { name: string; description: string; file: File }) => {
+    toast("Uploading...");
+    const formdata = new FormData();
+    formdata.append("name", name);
+    formdata.append("description", description);
+    if (file) formdata.append("file", file);
+
+    setIsOpen(false);
+    const response = await fetch("/api/nft/upload", {
+      method: "POST",
+      body: formdata,
+    });
+    const result = await response.json();
+    if (result.error) {
+      toast.error(result.message);
+    } else {
+      toast.success("Uploaded!");
+    }
+    return result;
+  };
+
   return (
     <div>
       <h2 className="my-4 text-4xl font-bold">
@@ -76,7 +98,23 @@ function NFTApp() {
         </button>
       </h2>
 
-      <AddItemModal isOpen={isOpen} onAdd={logger.warn} onClose={() => setIsOpen(false)} />
+      <AddItemModal
+        isOpen={isOpen}
+        onAdd={(formData, files) => {
+          onUpload({
+            name: formData.name,
+            description: formData.description,
+            file: files[0],
+          })
+            .then((result) => {
+              if (result.url) {
+                // TODO: mit a token
+              }
+            })
+            .catch(logger.error);
+        }}
+        onClose={() => setIsOpen(false)}
+      />
 
       <div className="container grid gap-2 xl:grid-cols-3 md:grid-cols-2 sm:grid-cols-1">
         {Array.from(Array(limit).keys())
@@ -97,6 +135,7 @@ const ethersConfig = {
 function App() {
   return (
     <Web3ReactProvider getLibrary={getLibrary}>
+      <Toaster position="top-right" />
       <NftProvider fetcher={["ethers", ethersConfig]}>
         <div className="container mx-auto">
           <Demo />

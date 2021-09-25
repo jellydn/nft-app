@@ -15,7 +15,13 @@ type AddItemModalProps = {
 };
 
 function AddItemModal({ isOpen, onAdd, onClose }: AddItemModalProps) {
-  const { register, handleSubmit, control } = useForm<FormValues>();
+  const {
+    register,
+    handleSubmit,
+    control,
+    formState: { errors },
+    reset,
+  } = useForm<FormValues>();
 
   const [files, setFiles] = useState<
     Array<
@@ -56,7 +62,10 @@ function AddItemModal({ isOpen, onAdd, onClose }: AddItemModalProps) {
     [files]
   );
 
-  const onSubmit = handleSubmit((data) => onAdd(data, files));
+  const onSubmit = handleSubmit((data) => {
+    onAdd(data, files);
+    reset();
+  });
 
   return (
     <div className={isOpen ? "modal modal-open" : "modal"}>
@@ -80,17 +89,40 @@ function AddItemModal({ isOpen, onAdd, onClose }: AddItemModalProps) {
               <label className="label">
                 <span className="label-text">Name</span>
               </label>
-              <input type="text" placeholder="name" className="input" {...register("name")} />
+              <input
+                type="text"
+                placeholder="name"
+                className={errors.name ? "input input-error" : "input"}
+                {...register("name", {
+                  required: true,
+                })}
+              />
+              {errors.name && (
+                <label className="label">
+                  <span className="label-text-alt">{errors.name.message || "Required"}</span>
+                </label>
+              )}
             </div>
             <div className="form-control">
               <label className="label">
                 <span className="label-text">Description</span>
               </label>
               <textarea
-                {...register("description")}
-                className="h-24 textarea textarea-bordered"
+                {...register("description", {
+                  required: true,
+                })}
+                className={
+                  errors.description
+                    ? "h-24 textarea textarea-bordered textarea-error"
+                    : "h-24 textarea textarea-bordered"
+                }
                 placeholder="Description"
               ></textarea>
+              {errors.description && (
+                <label className="label">
+                  <span className="label-text-alt">{errors.description.message || "Required"}</span>
+                </label>
+              )}
             </div>
           </div>
 
