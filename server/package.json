@@ -17,14 +17,18 @@
   "author": "Huynh Duc Dung",
   "license": "MIT",
   "dependencies": {
+    "@sinclair/typebox": "^0.20.5",
     "fastify": "^3.21.6",
     "fastify-autoload": "^3.9.0",
     "fastify-cli": "^2.13.0",
     "fastify-cors": "^6.0.2",
+    "fastify-multipart": "^5.0.0",
     "fastify-plugin": "^3.0.0",
-    "fastify-sensible": "^3.1.1"
+    "fastify-sensible": "^3.1.1",
+    "nft.storage": "^3.2.2"
   },
   "devDependencies": {
+    "@types/busboy": "^0.2.4",
     "@types/node": "^14.17.19",
     "@types/tap": "^15.0.5",
     "concurrently": "^6.2.1",
