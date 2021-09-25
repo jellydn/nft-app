@@ -4,6 +4,7 @@ import React, { useEffect, useState } from "react";
 import { NftProvider } from "use-nft";
 
 import MyAwesomeLogoArtifacts from "./artifacts/contracts/MyAwesomeLogo.sol/MyAwesomeLogo.json";
+import AddItemModal from "./components/AddItemModal";
 import Demo from "./components/Demo";
 import { getLibrary } from "./components/Demo";
 import { Nft } from "./components/Nft";
@@ -24,6 +25,7 @@ function NFTApp() {
   const { library } = useWeb3React();
   const [total, setTotal] = useState(0);
   const [page, setPage] = useState(1);
+  const [isOpen, setIsOpen] = useState(false);
   const limit = 12;
 
   useEffect(() => {
@@ -49,12 +51,38 @@ function NFTApp() {
 
   return (
     <div>
-      <h2 className="my-4 text-4xl font-bold">NFT Items</h2>
+      <h2 className="my-4 text-4xl font-bold">
+        NFT Items
+        <button
+          type="button"
+          onClick={() => setIsOpen(true)}
+          className="ml-2 btn btn-lg hover:btn-active hover:text-green-200"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            className="w-6 h-6"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth={2}
+              d="M12 9v3m0 0v3m0-3h3m-3 0H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z"
+            />
+          </svg>
+          Add NFT
+        </button>
+      </h2>
+
+      <AddItemModal isOpen={isOpen} onAdd={logger.warn} onClose={() => setIsOpen(false)} />
+
       <div className="container grid gap-2 xl:grid-cols-3 md:grid-cols-2 sm:grid-cols-1">
         {Array.from(Array(limit).keys())
           .filter((i) => i + 1 + (page - 1) * limit < total)
           .map((i) => (
-            <Nft tokenId={String(i + 1 + (page - 1) * limit)} />
+            <Nft key={i} tokenId={String(i + 1 + (page - 1) * limit)} />
           ))}
       </div>
       <Pagination currentPage={page} totalPage={Math.ceil(total / limit)} onChange={setPage} />
