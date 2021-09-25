@@ -34,7 +34,7 @@ const nft: FastifyPluginAsync = async (fastify, opts): Promise<void> => {
       const metadata = await client.store({
         name: name.value,
         description: description.value,
-        image: file ? new File([file], name.value, { type: file.mimetype }) : null,
+        image: file ? new File([await file.toBuffer()], name.value, { type: file.mimetype }) : null,
       });
 
       reply.send(metadata);
