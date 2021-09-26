@@ -3,8 +3,8 @@ import { NFTStorage, File } from "nft.storage";
 
 const client = new NFTStorage({ token: process.env.NFT_STORAGE_KEY || "" });
 
-const nft: FastifyPluginAsync = async (fastify, opts): Promise<void> => {
-  fastify.get("/", async function (request, reply) {
+const nft: FastifyPluginAsync = async (fastify, _opts): Promise<void> => {
+  fastify.get("/", async function (_request, reply) {
     reply.send({ hello: "world" });
   });
 
