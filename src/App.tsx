@@ -69,6 +69,7 @@ function NFTApp() {
     try {
       if (!account) {
         await requestAccount();
+        // TODO: support retry after account is selected
         return;
       }
       const transaction = await contract.freeMint(account, tokenUrl);
@@ -79,7 +80,10 @@ function NFTApp() {
       });
 
       // refetch total token after processing
-      await fetchTotal();
+      transaction
+        .wait()
+        .then(() => fetchTotal())
+        .catch(logger.error);
     } catch (error) {
       logger.error(error);
     }
