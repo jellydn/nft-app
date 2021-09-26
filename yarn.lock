@@ -3410,15 +3410,15 @@ attr-accept@^2.2.1:
   resolved "https://registry.yarnpkg.com/attr-accept/-/attr-accept-2.2.2.tgz#646613809660110749e92f2c10833b70968d929b"
   integrity sha512-7prDjvt9HmqiZ0cl5CRjtS84sEyhsHP2coDkaZKRKVfCDo9s7iw7ChVmar78Gu9pC4SoR/28wFu/G5JJhTnqEg==
 
-autoprefixer@10.3.5:
-  version "10.3.5"
-  resolved "https://registry.yarnpkg.com/autoprefixer/-/autoprefixer-10.3.5.tgz#762e6c13e30c5a0e650bf81d9ffd5713f1c8f344"
-  integrity sha512-2H5kQSsyoOMdIehTzIt/sC9ZDIgWqlkG/dbevm9B9xQZ1TDPBHpNUDW5ENqqQQzuaBWEo75JkV0LJe+o5Lnr5g==
+autoprefixer@10.3.6:
+  version "10.3.6"
+  resolved "https://registry.yarnpkg.com/autoprefixer/-/autoprefixer-10.3.6.tgz#537c8a046e32ec46bfe528bcc9e2a5f2d87cd4c4"
+  integrity sha512-3bDjTfF0MfZntwVCSd18XAT2Zndufh3Mep+mafbzdIQEeWbncVRUVDjH8/EPANV9Hq40seJ24QcYAyhUsFz7gQ==
   dependencies:
     browserslist "^4.17.1"
-    caniuse-lite "^1.0.30001259"
+    caniuse-lite "^1.0.30001260"
     fraction.js "^4.1.1"
-    nanocolors "^0.1.5"
+    nanocolors "^0.2.8"
     normalize-range "^0.1.2"
     postcss-value-parser "^4.1.0"
 
@@ -4567,7 +4567,7 @@ camelcase@^5.0.0, camelcase@^5.3.1:
   resolved "https://registry.yarnpkg.com/camelcase/-/camelcase-5.3.1.tgz#e3c9b31569e106811df242f715725a1f4c494320"
   integrity sha512-L28STB170nwWS63UjtlEOE3dldQApaJXZkOI1uMFfzf3rRuPegHaHesyee+YxQ+W6SvRDQV6UrdOdRiR153wJg==
 
-caniuse-lite@^1.0.30000844, caniuse-lite@^1.0.30001259:
+caniuse-lite@^1.0.30000844, caniuse-lite@^1.0.30001259, caniuse-lite@^1.0.30001260:
   version "1.0.30001260"
   resolved "https://registry.yarnpkg.com/caniuse-lite/-/caniuse-lite-1.0.30001260.tgz#e3be3f34ddad735ca4a2736fa9e768ef34316270"
   integrity sha512-Fhjc/k8725ItmrvW5QomzxLeojewxvqiYCKeFcfFEhut28IVLdpHU19dneOmltZQIE5HNbawj1HYD+1f2bM1Dg==
@@ -10327,6 +10327,11 @@ nanocolors@^0.2.2:
   version "0.2.2"
   resolved "https://registry.yarnpkg.com/nanocolors/-/nanocolors-0.2.2.tgz#94a4b7e45ecdebdbea7cb0a8349f9447a9677675"
   integrity sha512-t4mwdKizEGLFeZzDbr1r6SjwKYZQEB0Z/trGsdAIsw5EadaR010/zvJ0arkw6vznyTevcMi9BtppprJ5aqLXRg==
+
+nanocolors@^0.2.8:
+  version "0.2.8"
+  resolved "https://registry.yarnpkg.com/nanocolors/-/nanocolors-0.2.8.tgz#ea9190bb9a6834df3a53b2cf2dc52f5de76b84fd"
+  integrity sha512-lFtwopLYUwJ/w+VcBib+Ti1J+USzc/m2XN9LCCl/AhibkzYlXk6FHeqkJqBWRd70RpjArGWYZQjwa6UgwYycBA==
 
 nanoid@^3.0.2, nanoid@^3.1.20, nanoid@^3.1.25:
   version "3.1.25"
