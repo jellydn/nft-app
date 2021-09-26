@@ -7,9 +7,9 @@
     "test": "test"
   },
   "scripts": {
-    "test": "npm run build && tsc -p test/tsconfig.test.json && cross-env TS_NODE_FILES=true tap --ts test/**/*.test.ts",
-    "start": "fastify start -l info dist/app.js",
-    "build": "npm run clean && tsc",
+    "test": "npm run build:ts && tsc -p test/tsconfig.test.json && cross-env TS_NODE_FILES=true tap --ts test/**/*.test.ts",
+    "start": "ts-node src/server.ts",
+    "build:ts": "npm run clean && tsc",
     "clean": "rimraf dist",
     "dev": "tsc && concurrently -k -p \"[{name}]\" -n \"TypeScript,App\" -c \"yellow.bold,cyan.bold\" \"tsc -w\" \"fastify start --ignore-watch=.ts$ -w -l info -P dist/app.js\""
   },
@@ -18,6 +18,7 @@
   "license": "MIT",
   "dependencies": {
     "@sinclair/typebox": "^0.20.5",
+    "close-with-grace": "^1.1.0",
     "fastify": "^3.21.6",
     "fastify-autoload": "^3.9.0",
     "fastify-cli": "^2.13.0",
@@ -36,6 +37,7 @@
     "fastify-tsconfig": "^1.0.1",
     "tap": "^15.0.10",
     "ts-node": "^10.2.1",
+    "ts-node-dev": "^1.1.8",
     "typescript": "^4.4.3"
   }
 }
