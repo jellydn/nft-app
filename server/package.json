@@ -11,7 +11,7 @@
     "start": "ts-node src/server.ts",
     "build:ts": "npm run clean && tsc",
     "clean": "rimraf dist",
-    "dev": "tsc && concurrently -k -p \"[{name}]\" -n \"TypeScript,App\" -c \"yellow.bold,cyan.bold\" \"tsc -w\" \"fastify start --ignore-watch=.ts$ -w -l info -P dist/app.js\""
+    "dev": "ts-node-dev src/server.ts"
   },
   "keywords": [],
   "author": "Huynh Duc Dung",
@@ -35,7 +35,6 @@
     "@types/busboy": "^0.2.4",
     "@types/node": "^14.17.19",
     "@types/tap": "^15.0.5",
-    "concurrently": "^6.2.1",
     "cross-env": "^7.0.3",
     "tap": "^15.0.10",
     "ts-node-dev": "^1.1.8"
