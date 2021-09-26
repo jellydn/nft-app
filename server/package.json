@@ -26,7 +26,9 @@
     "fastify-multipart": "^5.0.0",
     "fastify-plugin": "^3.0.0",
     "fastify-sensible": "^3.1.1",
-    "nft.storage": "^3.2.2"
+    "nft.storage": "^3.2.2",
+    "ts-node": "^10.2.1",
+    "typescript": "^4.4.3"
   },
   "devDependencies": {
     "@types/busboy": "^0.2.4",
@@ -36,8 +38,6 @@
     "cross-env": "^7.0.3",
     "fastify-tsconfig": "^1.0.1",
     "tap": "^15.0.10",
-    "ts-node": "^10.2.1",
-    "ts-node-dev": "^1.1.8",
-    "typescript": "^4.4.3"
+    "ts-node-dev": "^1.1.8"
   }
 }
