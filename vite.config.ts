@@ -1,6 +1,9 @@
 import reactRefresh from "@vitejs/plugin-react-refresh";
+import { config } from "dotenv";
 import { defineConfig } from "vite";
 import checker from "vite-plugin-checker";
+
+config();
 
 // https://vitejs.dev/config/
 export default defineConfig({
@@ -8,7 +11,7 @@ export default defineConfig({
   server: {
     proxy: {
       "/api": {
-        target: "http://localhost:8080",
+        target: process.env.API_URL || "http://localhost:8080",
         changeOrigin: true,
         rewrite: (path) => path.replace(/^\/api/, ""),
       },
