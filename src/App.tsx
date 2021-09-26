@@ -22,27 +22,34 @@ declare global {
   }
 }
 
+async function requestAccount() {
+  if (window.ethereum?.request) return window.ethereum.request({ method: "eth_requestAccounts" });
+
+  throw new Error("Missing install Metamask. Please access https://metamask.io/ to install extension on your browser");
+}
+
 function NFTApp() {
-  const { library } = useWeb3React();
+  const { library, account } = useWeb3React();
   const [total, setTotal] = useState(0);
   const [page, setPage] = useState(1);
   const [isOpen, setIsOpen] = useState(false);
   const limit = 12;
 
+  const fetchTotal = () => {
+    logger.warn("fetchTotal");
+    const provider = library || new ethers.providers.Web3Provider(window.ethereum);
+    const contract = new ethers.Contract(
+      CONTRACT_DEPLOYED_ADDRESS,
+      MyAwesomeLogoArtifacts.abi,
+      provider
+    ) as MyAwesomeLogo;
+    contract
+      .currentCounter()
+      .then((result) => setTotal(BigNumber.from(result).toNumber()))
+      .catch(logger.error);
+  };
+
   useEffect(() => {
-    const fetchTotal = () => {
-      logger.warn("fetchTotal");
-      const provider = library || new ethers.providers.Web3Provider(window.ethereum);
-      const contract = new ethers.Contract(
-        CONTRACT_DEPLOYED_ADDRESS,
-        MyAwesomeLogoArtifacts.abi,
-        provider
-      ) as MyAwesomeLogo;
-      contract
-        .currentCounter()
-        .then((result) => setTotal(BigNumber.from(result).toNumber()))
-        .catch(logger.error);
-    };
     try {
       fetchTotal();
     } catch (error) {
@@ -50,8 +57,36 @@ function NFTApp() {
     }
   }, [library]);
 
+  const onMintNftTokeN = async (tokenUrl: string) => {
+    const provider = library || new ethers.providers.Web3Provider(window.ethereum);
+    const signer = provider.getSigner();
+    const contract = new ethers.Contract(
+      CONTRACT_DEPLOYED_ADDRESS,
+      MyAwesomeLogoArtifacts.abi,
+      signer
+    ) as MyAwesomeLogo;
+    // get current account
+    try {
+      if (!account) {
+        await requestAccount();
+        return;
+      }
+      const transaction = await contract.freeMint(account, tokenUrl);
+      toast.promise(transaction.wait(), {
+        loading: `Transaction submitted. Wait for confirmation...`,
+        success: <b>Transaction confirmed!</b>,
+        error: <b>Transaction failed!.</b>,
+      });
+
+      // refetch total token after processing
+      await fetchTotal();
+    } catch (error) {
+      logger.error(error);
+    }
+  };
+
   const onUpload = async ({ name, description, file }: { name: string; description: string; file: File }) => {
-    toast("Uploading...");
+    toast("Uploading... Please wait for a moment!");
     const formdata = new FormData();
     formdata.append("name", name);
     formdata.append("description", description);
@@ -108,6 +143,7 @@ function NFTApp() {
               if (result.url) {
                 // TODO: mit a token
                 toast.success(`Uploaded ${result.url}`);
+                return onMintNftTokeN(result.url);
               }
             })
             .catch(logger.error);
