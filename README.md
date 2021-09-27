@@ -10,7 +10,7 @@
 
 ## ✨ [Demo](https://nft-app.productsway.com)
 
-![https://gyazo.com/ba0939bab7012cebee469a195d6904ec.gif](https://gyazo.com/ba0939bab7012cebee469a195d6904ec.gif)
+![https://gyazo.com/fccacc5f480839196343bf95728c9b6a.gif](https://gyazo.com/fccacc5f480839196343bf95728c9b6a.gif)
 
 ## Screenshot
 
@@ -35,8 +35,25 @@ yarn install
 
 ## Usage
 
+### Run Web App
+
 ```sh
+# Prepare .env file
+# Run web site
+cp .env.example .env
 yarn dev
+
+```
+
+### Run API App
+
+```sh
+# Prepare .env file
+# Run web site
+cd server
+cp .env.example .env
+yarn dev
+
 ```
 
 ## Run tests
