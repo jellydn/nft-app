@@ -3,7 +3,7 @@
 /* tslint:disable */
 
 /* eslint-disable */
-import { TypedEventFilter, TypedEvent, TypedListener } from "./commons";
+import type { TypedEventFilter, TypedEvent, TypedListener } from "./common";
 import { FunctionFragment, EventFragment, Result } from "@ethersproject/abi";
 import { BytesLike } from "@ethersproject/bytes";
 import { Listener, Provider } from "@ethersproject/providers";
