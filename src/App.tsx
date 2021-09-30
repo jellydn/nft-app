@@ -28,6 +28,8 @@ async function requestAccount() {
   throw new Error("Missing install Metamask. Please access https://metamask.io/ to install extension on your browser");
 }
 
+const API_URL = import.meta.env.VITE_API_URL;
+
 function NFTApp() {
   const { library, account } = useWeb3React();
   const [total, setTotal] = useState(0);
@@ -97,7 +99,7 @@ function NFTApp() {
     if (file) formdata.append("file", file);
 
     setIsOpen(false);
-    const response = await fetch("/api/nft/upload", {
+    const response = await fetch(API_URL ? API_URL + "/nft/upload" : "/api/nft/upload", {
       method: "POST",
       body: formdata,
     });
