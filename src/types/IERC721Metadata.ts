@@ -3,7 +3,12 @@
 /* tslint:disable */
 
 /* eslint-disable */
-import type { TypedEventFilter, TypedEvent, TypedListener } from "./common";
+import type {
+  TypedEventFilter,
+  TypedEvent,
+  TypedListener,
+  OnEvent,
+} from "./common";
 import { FunctionFragment, EventFragment, Result } from "@ethersproject/abi";
 import { BytesLike } from "@ethersproject/bytes";
 import { Listener, Provider } from "@ethersproject/providers";
@@ -20,16 +25,19 @@ import {
   CallOverrides,
 } from "ethers";
 
-interface IERC721Interface extends ethers.utils.Interface {
+export interface IERC721MetadataInterface extends ethers.utils.Interface {
   functions: {
     "approve(address,uint256)": FunctionFragment;
     "balanceOf(address)": FunctionFragment;
     "getApproved(uint256)": FunctionFragment;
     "isApprovedForAll(address,address)": FunctionFragment;
+    "name()": FunctionFragment;
     "ownerOf(uint256)": FunctionFragment;
     "safeTransferFrom(address,address,uint256)": FunctionFragment;
     "setApprovalForAll(address,bool)": FunctionFragment;
     "supportsInterface(bytes4)": FunctionFragment;
+    "symbol()": FunctionFragment;
+    "tokenURI(uint256)": FunctionFragment;
     "transferFrom(address,address,uint256)": FunctionFragment;
   };
 
@@ -46,6 +54,7 @@ interface IERC721Interface extends ethers.utils.Interface {
     functionFragment: "isApprovedForAll",
     values: [string, string]
   ): string;
+  encodeFunctionData(functionFragment: "name", values?: undefined): string;
   encodeFunctionData(
     functionFragment: "ownerOf",
     values: [BigNumberish]
@@ -62,6 +71,11 @@ interface IERC721Interface extends ethers.utils.Interface {
     functionFragment: "supportsInterface",
     values: [BytesLike]
   ): string;
+  encodeFunctionData(functionFragment: "symbol", values?: undefined): string;
+  encodeFunctionData(
+    functionFragment: "tokenURI",
+    values: [BigNumberish]
+  ): string;
   encodeFunctionData(
     functionFragment: "transferFrom",
     values: [string, string, BigNumberish]
@@ -77,6 +91,7 @@ interface IERC721Interface extends ethers.utils.Interface {
     functionFragment: "isApprovedForAll",
     data: BytesLike
   ): Result;
+  decodeFunctionResult(functionFragment: "name", data: BytesLike): Result;
   decodeFunctionResult(functionFragment: "ownerOf", data: BytesLike): Result;
   decodeFunctionResult(
     functionFragment: "safeTransferFrom",
@@ -90,6 +105,8 @@ interface IERC721Interface extends ethers.utils.Interface {
     functionFragment: "supportsInterface",
     data: BytesLike
   ): Result;
+  decodeFunctionResult(functionFragment: "symbol", data: BytesLike): Result;
+  decodeFunctionResult(functionFragment: "tokenURI", data: BytesLike): Result;
   decodeFunctionResult(
     functionFragment: "transferFrom",
     data: BytesLike
@@ -107,67 +124,51 @@ interface IERC721Interface extends ethers.utils.Interface {
 }
 
 export type ApprovalEvent = TypedEvent<
-  [string, string, BigNumber] & {
-    owner: string;
-    approved: string;
-    tokenId: BigNumber;
-  }
+  [string, string, BigNumber],
+  { owner: string; approved: string; tokenId: BigNumber }
 >;
+
+export type ApprovalEventFilter = TypedEventFilter<ApprovalEvent>;
 
 export type ApprovalForAllEvent = TypedEvent<
-  [string, string, boolean] & {
-    owner: string;
-    operator: string;
-    approved: boolean;
-  }
+  [string, string, boolean],
+  { owner: string; operator: string; approved: boolean }
 >;
+
+export type ApprovalForAllEventFilter = TypedEventFilter<ApprovalForAllEvent>;
 
 export type TransferEvent = TypedEvent<
-  [string, string, BigNumber] & { from: string; to: string; tokenId: BigNumber }
+  [string, string, BigNumber],
+  { from: string; to: string; tokenId: BigNumber }
 >;
 
-export class IERC721 extends BaseContract {
+export type TransferEventFilter = TypedEventFilter<TransferEvent>;
+
+export interface IERC721Metadata extends BaseContract {
   connect(signerOrProvider: Signer | Provider | string): this;
   attach(addressOrName: string): this;
   deployed(): Promise<this>;
 
-  listeners<EventArgsArray extends Array<any>, EventArgsObject>(
-    eventFilter?: TypedEventFilter<EventArgsArray, EventArgsObject>
-  ): Array<TypedListener<EventArgsArray, EventArgsObject>>;
-  off<EventArgsArray extends Array<any>, EventArgsObject>(
-    eventFilter: TypedEventFilter<EventArgsArray, EventArgsObject>,
-    listener: TypedListener<EventArgsArray, EventArgsObject>
-  ): this;
-  on<EventArgsArray extends Array<any>, EventArgsObject>(
-    eventFilter: TypedEventFilter<EventArgsArray, EventArgsObject>,
-    listener: TypedListener<EventArgsArray, EventArgsObject>
-  ): this;
-  once<EventArgsArray extends Array<any>, EventArgsObject>(
-    eventFilter: TypedEventFilter<EventArgsArray, EventArgsObject>,
-    listener: TypedListener<EventArgsArray, EventArgsObject>
-  ): this;
-  removeListener<EventArgsArray extends Array<any>, EventArgsObject>(
-    eventFilter: TypedEventFilter<EventArgsArray, EventArgsObject>,
-    listener: TypedListener<EventArgsArray, EventArgsObject>
-  ): this;
-  removeAllListeners<EventArgsArray extends Array<any>, EventArgsObject>(
-    eventFilter: TypedEventFilter<EventArgsArray, EventArgsObject>
-  ): this;
+  interface: IERC721MetadataInterface;
 
-  listeners(eventName?: string): Array<Listener>;
-  off(eventName: string, listener: Listener): this;
-  on(eventName: string, listener: Listener): this;
-  once(eventName: string, listener: Listener): this;
-  removeListener(eventName: string, listener: Listener): this;
-  removeAllListeners(eventName?: string): this;
-
-  queryFilter<EventArgsArray extends Array<any>, EventArgsObject>(
-    event: TypedEventFilter<EventArgsArray, EventArgsObject>,
+  queryFilter<TEvent extends TypedEvent>(
+    event: TypedEventFilter<TEvent>,
     fromBlockOrBlockhash?: string | number | undefined,
     toBlock?: string | number | undefined
-  ): Promise<Array<TypedEvent<EventArgsArray & EventArgsObject>>>;
+  ): Promise<Array<TEvent>>;
 
-  interface: IERC721Interface;
+  listeners<TEvent extends TypedEvent>(
+    eventFilter?: TypedEventFilter<TEvent>
+  ): Array<TypedListener<TEvent>>;
+  listeners(eventName?: string): Array<Listener>;
+  removeAllListeners<TEvent extends TypedEvent>(
+    eventFilter: TypedEventFilter<TEvent>
+  ): this;
+  removeAllListeners(eventName?: string): this;
+  off: OnEvent<this>;
+  on: OnEvent<this>;
+  once: OnEvent<this>;
+  removeListener: OnEvent<this>;
 
   functions: {
     approve(
@@ -191,6 +192,8 @@ export class IERC721 extends BaseContract {
       operator: string,
       overrides?: CallOverrides
     ): Promise<[boolean]>;
+
+    name(overrides?: CallOverrides): Promise<[string]>;
 
     ownerOf(
       tokenId: BigNumberish,
@@ -223,6 +226,13 @@ export class IERC721 extends BaseContract {
       overrides?: CallOverrides
     ): Promise<[boolean]>;
 
+    symbol(overrides?: CallOverrides): Promise<[string]>;
+
+    tokenURI(
+      tokenId: BigNumberish,
+      overrides?: CallOverrides
+    ): Promise<[string]>;
+
     transferFrom(
       from: string,
       to: string,
@@ -249,6 +259,8 @@ export class IERC721 extends BaseContract {
     operator: string,
     overrides?: CallOverrides
   ): Promise<boolean>;
+
+  name(overrides?: CallOverrides): Promise<string>;
 
   ownerOf(tokenId: BigNumberish, overrides?: CallOverrides): Promise<string>;
 
@@ -278,6 +290,10 @@ export class IERC721 extends BaseContract {
     overrides?: CallOverrides
   ): Promise<boolean>;
 
+  symbol(overrides?: CallOverrides): Promise<string>;
+
+  tokenURI(tokenId: BigNumberish, overrides?: CallOverrides): Promise<string>;
+
   transferFrom(
     from: string,
     to: string,
@@ -304,6 +320,8 @@ export class IERC721 extends BaseContract {
       operator: string,
       overrides?: CallOverrides
     ): Promise<boolean>;
+
+    name(overrides?: CallOverrides): Promise<string>;
 
     ownerOf(tokenId: BigNumberish, overrides?: CallOverrides): Promise<string>;
 
@@ -333,6 +351,10 @@ export class IERC721 extends BaseContract {
       overrides?: CallOverrides
     ): Promise<boolean>;
 
+    symbol(overrides?: CallOverrides): Promise<string>;
+
+    tokenURI(tokenId: BigNumberish, overrides?: CallOverrides): Promise<string>;
+
     transferFrom(
       from: string,
       to: string,
@@ -346,55 +368,34 @@ export class IERC721 extends BaseContract {
       owner?: string | null,
       approved?: string | null,
       tokenId?: BigNumberish | null
-    ): TypedEventFilter<
-      [string, string, BigNumber],
-      { owner: string; approved: string; tokenId: BigNumber }
-    >;
-
+    ): ApprovalEventFilter;
     Approval(
       owner?: string | null,
       approved?: string | null,
       tokenId?: BigNumberish | null
-    ): TypedEventFilter<
-      [string, string, BigNumber],
-      { owner: string; approved: string; tokenId: BigNumber }
-    >;
+    ): ApprovalEventFilter;
 
     "ApprovalForAll(address,address,bool)"(
       owner?: string | null,
       operator?: string | null,
       approved?: null
-    ): TypedEventFilter<
-      [string, string, boolean],
-      { owner: string; operator: string; approved: boolean }
-    >;
-
+    ): ApprovalForAllEventFilter;
     ApprovalForAll(
       owner?: string | null,
       operator?: string | null,
       approved?: null
-    ): TypedEventFilter<
-      [string, string, boolean],
-      { owner: string; operator: string; approved: boolean }
-    >;
+    ): ApprovalForAllEventFilter;
 
     "Transfer(address,address,uint256)"(
       from?: string | null,
       to?: string | null,
       tokenId?: BigNumberish | null
-    ): TypedEventFilter<
-      [string, string, BigNumber],
-      { from: string; to: string; tokenId: BigNumber }
-    >;
-
+    ): TransferEventFilter;
     Transfer(
       from?: string | null,
       to?: string | null,
       tokenId?: BigNumberish | null
-    ): TypedEventFilter<
-      [string, string, BigNumber],
-      { from: string; to: string; tokenId: BigNumber }
-    >;
+    ): TransferEventFilter;
   };
 
   estimateGas: {
@@ -416,6 +417,8 @@ export class IERC721 extends BaseContract {
       operator: string,
       overrides?: CallOverrides
     ): Promise<BigNumber>;
+
+    name(overrides?: CallOverrides): Promise<BigNumber>;
 
     ownerOf(
       tokenId: BigNumberish,
@@ -445,6 +448,13 @@ export class IERC721 extends BaseContract {
 
     supportsInterface(
       interfaceId: BytesLike,
+      overrides?: CallOverrides
+    ): Promise<BigNumber>;
+
+    symbol(overrides?: CallOverrides): Promise<BigNumber>;
+
+    tokenURI(
+      tokenId: BigNumberish,
       overrides?: CallOverrides
     ): Promise<BigNumber>;
 
@@ -479,6 +489,8 @@ export class IERC721 extends BaseContract {
       overrides?: CallOverrides
     ): Promise<PopulatedTransaction>;
 
+    name(overrides?: CallOverrides): Promise<PopulatedTransaction>;
+
     ownerOf(
       tokenId: BigNumberish,
       overrides?: CallOverrides
@@ -507,6 +519,13 @@ export class IERC721 extends BaseContract {
 
     supportsInterface(
       interfaceId: BytesLike,
+      overrides?: CallOverrides
+    ): Promise<PopulatedTransaction>;
+
+    symbol(overrides?: CallOverrides): Promise<PopulatedTransaction>;
+
+    tokenURI(
+      tokenId: BigNumberish,
       overrides?: CallOverrides
     ): Promise<PopulatedTransaction>;
 
