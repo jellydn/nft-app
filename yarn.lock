@@ -2204,7 +2204,7 @@
     lodash.merge "^4.6.2"
     lodash.uniq "^4.5.0"
 
-"@trivago/prettier-plugin-sort-imports@^2.0.4":
+"@trivago/prettier-plugin-sort-imports@2.0.4":
   version "2.0.4"
   resolved "https://registry.yarnpkg.com/@trivago/prettier-plugin-sort-imports/-/prettier-plugin-sort-imports-2.0.4.tgz#2e5bbf80bd87e919202f791008a2fbcdbb2a566f"
   integrity sha512-SCVUhQdbjn/Z4AY7b9JO00fZCeXxiVuarVxYP0n6cX2ijiQkE5HmGrOk32n0u385OebzQ9bZcrc51lAGLjXnFQ==
