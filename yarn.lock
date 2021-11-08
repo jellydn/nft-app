@@ -10319,6 +10319,11 @@ multiformats@^9.0.0, multiformats@^9.0.4, multiformats@^9.3.0, multiformats@^9.4
   resolved "https://registry.yarnpkg.com/multiformats/-/multiformats-9.4.7.tgz#df2caa6ccd975218bbbacd69e45bb76cc2a53654"
   integrity sha512-fZbcdf7LnvokPAZYkv4TLXe7PAg9sQ5qLXcwrAmZOloEb2+5FtFiAY+l3/9wsu4oTJXTV3JSggFQQ2dJLS01vA==
 
+multiformats@^9.4.8:
+  version "9.4.10"
+  resolved "https://registry.yarnpkg.com/multiformats/-/multiformats-9.4.10.tgz#d654d06b28cc066506e4e59b246d65267fb6b93b"
+  integrity sha512-BwWGvgqB/5J/cnWaOA0sXzJ+UGl+kyFAw3Sw1L6TN4oad34C9OpW+GCpYTYPDp4pUaXDC1EjvB3yv9Iodo1EhA==
+
 multihashes@^0.4.15, multihashes@~0.4.15:
   version "0.4.21"
   resolved "https://registry.yarnpkg.com/multihashes/-/multihashes-0.4.21.tgz#dc02d525579f334a7909ade8a122dabb58ccfcb5"
@@ -10405,16 +10410,17 @@ next-tick@~1.0.0:
   resolved "https://registry.yarnpkg.com/next-tick/-/next-tick-1.0.0.tgz#ca86d1fe8828169b0120208e3dc8424b9db8342c"
   integrity sha1-yobR/ogoFpsBICCOPchCS524NCw=
 
-nft.storage@3.3.0:
-  version "3.3.0"
-  resolved "https://registry.yarnpkg.com/nft.storage/-/nft.storage-3.3.0.tgz#ab9cd035e3de4c2106b1a3c52a1048644f94ea6e"
-  integrity sha512-uyoYeZCLhxvRb5W3YPlV/pZPUrYDLzst+/69M3s6Li4E6uw8qtjyPugYkOipN+lJL5O4QfeSoRUPiu3Piawh6A==
+nft.storage@3.4.0:
+  version "3.4.0"
+  resolved "https://registry.yarnpkg.com/nft.storage/-/nft.storage-3.4.0.tgz#4133b7bbe2bf75f8ff49d9a5c96bf9de83f4e64b"
+  integrity sha512-MhyNQBG83OqiAN5b1iIc17sinpv/X8CBMMWIwUnqzDAaZuTwiTQIObwD6FOoaM6UqX5dmPwwkfmFOgyuzswmEw==
   dependencies:
     "@web-std/blob" "^2.1.0"
     "@web-std/fetch" "^2.0.3"
     "@web-std/file" "^1.1.0"
     "@web-std/form-data" "^2.1.0"
     carbites "^1.0.6"
+    multiformats "^9.4.8"
     p-retry "^4.6.1"
     streaming-iterables "^6.0.0"
 
