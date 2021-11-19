@@ -3084,10 +3084,15 @@ side-channel@^1.0.4:
     get-intrinsic "^1.0.2"
     object-inspect "^1.9.0"
 
-signal-exit@^3.0.0, signal-exit@^3.0.2, signal-exit@^3.0.4:
+signal-exit@^3.0.2, signal-exit@^3.0.4:
   version "3.0.4"
   resolved "https://registry.yarnpkg.com/signal-exit/-/signal-exit-3.0.4.tgz#366a4684d175b9cab2081e3681fda3747b6c51d7"
   integrity sha512-rqYhcAnZ6d/vTPGghdrw7iumdcbXpsk1b8IG/rz+VWV51DM0p7XCtMoJ3qhPLIbp3tvyt3pKRbaaEMZYpHto8Q==
+
+signal-exit@^3.0.6:
+  version "3.0.6"
+  resolved "https://registry.yarnpkg.com/signal-exit/-/signal-exit-3.0.6.tgz#24e630c4b0f03fea446a2bd299e62b4a6ca8d0af"
+  integrity sha512-sDl4qMFpijcGw22U5w63KmD3cZJfBuFlVNbVMKje2keoKML7X2UzWbc4XrmEbDwg0NXJc3yv4/ox7b+JWb57kQ==
 
 slice-ansi@^3.0.0:
   version "3.0.0"
@@ -3350,10 +3355,10 @@ tap-yaml@^1.0.0:
   dependencies:
     yaml "^1.5.0"
 
-tap@15.1.1:
-  version "15.1.1"
-  resolved "https://registry.yarnpkg.com/tap/-/tap-15.1.1.tgz#73900bf64086012a927898ba092103f39b5a8146"
-  integrity sha512-7g9WaBK8Cp3f3Ry+OFTwhDjnEjJGGsylOT3V7N+hcONYgSpnhbgVp9ZIyAt++YTwBkRrE/6NxKCCf0MbSiToCg==
+tap@15.1.2:
+  version "15.1.2"
+  resolved "https://registry.yarnpkg.com/tap/-/tap-15.1.2.tgz#f42b7cd7db3acc86262f75cd096c0f05fb2ebfbe"
+  integrity sha512-32FftTGFDnWs6/mcaLm2d6AZ1kMq94w8ybhpnwL4CZYtWIHcp6FyT+NFaZZcajI8NqSXCYku88PMEDMY6vykEw==
   dependencies:
     "@types/react" "*"
     chokidar "^3.3.0"
@@ -3374,7 +3379,7 @@ tap@15.1.1:
     opener "^1.5.1"
     react "*"
     rimraf "^3.0.0"
-    signal-exit "^3.0.0"
+    signal-exit "^3.0.6"
     source-map-support "^0.5.16"
     tap-mocha-reporter "^5.0.0"
     tap-parser "^10.0.1"
