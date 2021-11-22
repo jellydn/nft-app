@@ -17,7 +17,7 @@
   "author": "Huynh Duc Dung",
   "license": "MIT",
   "dependencies": {
-    "@sinclair/typebox": "^0.21.0",
+    "@sinclair/typebox": "^0.22.0",
     "close-with-grace": "^1.1.0",
     "fastify": "^3.21.6",
     "fastify-autoload": "^3.9.0",
