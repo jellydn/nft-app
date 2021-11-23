@@ -27,7 +27,7 @@
     "fastify-plugin": "^3.0.0",
     "fastify-sensible": "^3.1.1",
     "fastify-tsconfig": "^1.0.1",
-    "nft.storage": "^4.0.0",
+    "nft.storage": "^5.0.0",
     "ts-node": "^10.2.1",
     "typescript": "^4.4.3"
   },
