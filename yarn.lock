@@ -13483,10 +13483,10 @@ swarm-js@^0.1.40:
     tar "^4.0.2"
     xhr-request "^1.0.1"
 
-swr@1.0.0-beta.13:
-  version "1.0.0-beta.13"
-  resolved "https://registry.yarnpkg.com/swr/-/swr-1.0.0-beta.13.tgz#f555bc1d314c69d42d665016f6c39e0881b9c58d"
-  integrity sha512-m5+KB6wA4YS1BVUfnZA51NbTF7uQ5YqP3crRwF1CrUvoRXn7TU0U/Zb2Il4hvW9QzzqwZwcbJQnlysLTdnYb/A==
+swr@1.0.1:
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/swr/-/swr-1.0.1.tgz#15f62846b87ee000e52fa07812bb65eb62d79483"
+  integrity sha512-EPQAxSjoD4IaM49rpRHK0q+/NzcwoT8c0/Ylu/u3/6mFj/CWnQVjNJ0MV2Iuw/U+EJSd2TX5czdAwKPYZIG0YA==
   dependencies:
     dequal "2.0.2"
 
@@ -14189,12 +14189,12 @@ usb@^1.6.0:
     node-addon-api "3.0.2"
     prebuild-install "^5.3.3"
 
-use-nft@0.10.1:
-  version "0.10.1"
-  resolved "https://registry.yarnpkg.com/use-nft/-/use-nft-0.10.1.tgz#136674ebcf1f182c35596c76c228afdc6e4491f5"
-  integrity sha512-j+3CSDRByAdnSA22kxls8N2I795qG8xys7QzaloY0E2WGm/BYgLkp68Z43jm4qJPn5mfcUFna5/kt9ULAdcuww==
+use-nft@0.10.2:
+  version "0.10.2"
+  resolved "https://registry.yarnpkg.com/use-nft/-/use-nft-0.10.2.tgz#d8afa7c31dfd3915bd8367d54ddd6702d5a17672"
+  integrity sha512-CjfoD1fqoNqt9TeQ2fV3S4OJKrCtrODW62GOIXq/RQn8IlZEyJg1fOj+wy3wEJTvN+m+bcGsB5lAKDu186Uq6A==
   dependencies:
-    swr "1.0.0-beta.13"
+    swr "1.0.1"
 
 use@^3.1.0:
   version "3.1.1"
