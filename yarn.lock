@@ -15038,10 +15038,10 @@ web3-utils@1.5.2, web3-utils@^1.0.0-beta.31, web3-utils@^1.3.0:
     randombytes "^2.1.0"
     utf8 "3.0.0"
 
-web3.storage@3.4.0:
-  version "3.4.0"
-  resolved "https://registry.yarnpkg.com/web3.storage/-/web3.storage-3.4.0.tgz#1ca2b7d329e57a7c2a8541d0f78de3a327db8480"
-  integrity sha512-0DvcshkzC4RT4/3JP6gnpgqmbNXpdgdjWwhkN80Wd87rqGctR7nQ3R+rzkqACIeLTRZcVyrDc6NVV5lgS2VZSw==
+web3.storage@3.5.0:
+  version "3.5.0"
+  resolved "https://registry.yarnpkg.com/web3.storage/-/web3.storage-3.5.0.tgz#bb024c8b7919fe801de41ff2f5bde8f2b97d45b1"
+  integrity sha512-pDGenLHrMLkDQKm8nR5+g/L51I9bawRWCWn7shNEbJ7VstzSeDXxuUUf8JrLLyyCsOHWY/YF3EB52ZuMf7abDw==
   dependencies:
     "@ipld/car" "^3.1.4"
     "@web-std/blob" "^2.1.0"
