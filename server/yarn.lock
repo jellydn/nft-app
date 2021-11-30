@@ -438,10 +438,10 @@
   resolved "https://registry.yarnpkg.com/@protobufjs/utf8/-/utf8-1.1.0.tgz#a777360b5b39a1a2e5106f8e858f2fd2d060c570"
   integrity sha1-p3c2C1s5oaLlEG+OhY8v0tBgxXA=
 
-"@sinclair/typebox@^0.22.0":
-  version "0.22.0"
-  resolved "https://registry.yarnpkg.com/@sinclair/typebox/-/typebox-0.22.0.tgz#503448f3b76d86f87342739621610e766103a5ee"
-  integrity sha512-KEB7UiEMw43/x2urIAlUD1bu0JUTiTNcEMcGVM0pYq2mAHg8CbVQHMP1xGSCbPWpmoej/oaz3lGLO7XZN9AN9Q==
+"@sinclair/typebox@^0.23.0":
+  version "0.23.0"
+  resolved "https://registry.yarnpkg.com/@sinclair/typebox/-/typebox-0.23.0.tgz#67da07e1e3be6d18f861728ba0a83cc7fee462e3"
+  integrity sha512-G8+yjtQlXVBOSWqsi8ezmmt2Y4VyR+FJOvYV/3DwKcJiAvyU+WcSA9chS5X3H+2VN3L/MEHm/puenGo9S6kbcw==
 
 "@tsconfig/node10@^1.0.7":
   version "1.0.8"
