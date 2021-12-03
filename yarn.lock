@@ -10773,10 +10773,10 @@ next-tick@~1.0.0:
   resolved "https://registry.yarnpkg.com/next-tick/-/next-tick-1.0.0.tgz#ca86d1fe8828169b0120208e3dc8424b9db8342c"
   integrity sha1-yobR/ogoFpsBICCOPchCS524NCw=
 
-nft.storage@5.0.0:
-  version "5.0.0"
-  resolved "https://registry.yarnpkg.com/nft.storage/-/nft.storage-5.0.0.tgz#345fd2dd32ec28f59655d8c2b077bcd698426aab"
-  integrity sha512-3MggpZS63j6/8QQ/hgMlrvnK59VIbMEWCSwbaI6j3mOsHUWbfnNzsxqMPr+UQaAu+erH2d5XhgZf13upJJpHzA==
+nft.storage@5.1.0:
+  version "5.1.0"
+  resolved "https://registry.yarnpkg.com/nft.storage/-/nft.storage-5.1.0.tgz#c4a2a419d741b3dc6212d2e017d657e9e2b9ef0b"
+  integrity sha512-xYFrd0PMGVNfRulH344SxuLHQX/eHglnhLXQcTktBGnCFOQyrH76aNTsKsEEARfWU2hwJVezxrvGid73bdFicQ==
   dependencies:
     "@ipld/car" "^3.1.20"
     "@web-std/blob" "^3.0.1"
