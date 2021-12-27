@@ -26,7 +26,7 @@
     "react-hot-toast": "2.1.1",
     "use-nft": "0.10.2",
     "web3-react": "5.0.5",
-    "web3.storage": "3.5.1"
+    "web3.storage": "3.5.2"
   },
   "devDependencies": {
     "@nomiclabs/hardhat-ethers": "2.0.3",
