@@ -463,10 +463,10 @@
   resolved "https://registry.yarnpkg.com/@tsconfig/node16/-/node16-1.0.2.tgz#423c77877d0569db20e1fc80885ac4118314010e"
   integrity sha512-eZxlbI8GZscaGS7kkc/trHTT5xgrjH3/1n2JDwusC9iahPKWMRvRjJSAN5mCXviuTGQ/lHnhvv8Q1YTpnfz9gA==
 
-"@types/busboy@0.3.1":
-  version "0.3.1"
-  resolved "https://registry.yarnpkg.com/@types/busboy/-/busboy-0.3.1.tgz#296c56843ce5436fb919b6038c385a59ceecc0d8"
-  integrity sha512-8BPLNy4x+7lbTOGkAyUIZrrPEZ7WzbO7YlVGMf9EZi9J9mqILEkYbt/kgVWQ7fizOISo1hM/7cAsWVTa7EhQDg==
+"@types/busboy@0.3.2":
+  version "0.3.2"
+  resolved "https://registry.yarnpkg.com/@types/busboy/-/busboy-0.3.2.tgz#2f29b017513415399c42632ae6a7cfcb1409b79c"
+  integrity sha512-iEvdm9Z9KdSs/ozuh1Z7ZsXrOl8F4M/CLMXPZHr3QuJ4d6Bjn+HBMC5EMKpwpAo8oi8iK9GZfFoHaIMrrZgwVw==
   dependencies:
     "@types/node" "*"
 
