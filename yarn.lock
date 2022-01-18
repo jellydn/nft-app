@@ -1769,10 +1769,10 @@
     "@ethersproject/properties" "^5.5.0"
     "@ethersproject/strings" "^5.5.0"
 
-"@hookform/devtools@4.0.1":
-  version "4.0.1"
-  resolved "https://registry.yarnpkg.com/@hookform/devtools/-/devtools-4.0.1.tgz#d9498550035530db7b7c2bed70a710e896874698"
-  integrity sha512-xVPIK8FGi3Fp7q9qxWrXLwiGxoZzn6g2ihIBQG0ddpiVSAAsH21Jh39tyyYWtkHZkTo9deiPs98SwXnN48hMjg==
+"@hookform/devtools@4.0.2":
+  version "4.0.2"
+  resolved "https://registry.yarnpkg.com/@hookform/devtools/-/devtools-4.0.2.tgz#8a504d21b156fa674a5bcd22279ee6c3c1901e3b"
+  integrity sha512-zihsPnUscEt6uERnVdBSqBdotpemQ0EDfC6F1J69o7EsToqHnMmeym5Kb7GnDDHxYsURgotFgQYnkCM4c4QvsA==
   dependencies:
     "@emotion/react" "^11.1.5"
     "@emotion/styled" "^11.3.0"
