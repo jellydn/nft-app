@@ -18,7 +18,7 @@
     "@web3-react/walletconnect-connector": "6.2.10",
     "daisyui": "1.25.3",
     "loglevel": "1.8.0",
-    "nft.storage": "5.2.0",
+    "nft.storage": "5.2.2",
     "react": "17.0.2",
     "react-dom": "17.0.2",
     "react-dropzone": "11.5.1",
