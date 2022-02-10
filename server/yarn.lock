@@ -313,14 +313,13 @@
     multiformats "^9.0.0"
     varint "^6.0.0"
 
-"@ipld/car@^3.1.20", "@ipld/car@^3.1.4":
-  version "3.1.20"
-  resolved "https://registry.yarnpkg.com/@ipld/car/-/car-3.1.20.tgz#6b14a9b3ef3691c89cf2a1f891800d748eb02722"
-  integrity sha512-5HMxM8/FQLdTSkeRSNG23M5Jwt0cEP2Njkzbg/DfGKzCeYEFEZ+YWH9q2WEpaTBdKsJIkyOGewqrdSgi9/1lZA==
+"@ipld/car@^3.2.3":
+  version "3.2.3"
+  resolved "https://registry.yarnpkg.com/@ipld/car/-/car-3.2.3.tgz#5a3fa8576dde476a9d06229e383ded0bb16c859e"
+  integrity sha512-pXE5mFJlXzJVaBwqAJKGlKqMmxq8H2SLEWBJgkeBDPBIN8ZbscPc3I9itkSQSlS/s6Fgx35Ri3LDTDtodQjCCQ==
   dependencies:
-    "@ipld/dag-cbor" "^6.0.0"
-    "@types/varint" "^6.0.0"
-    multiformats "^9.0.0"
+    "@ipld/dag-cbor" "^7.0.0"
+    multiformats "^9.5.4"
     varint "^6.0.0"
 
 "@ipld/dag-cbor@^6.0.0", "@ipld/dag-cbor@^6.0.3":
@@ -331,6 +330,14 @@
     cborg "^1.2.1"
     multiformats "^9.0.0"
 
+"@ipld/dag-cbor@^6.0.13":
+  version "6.0.15"
+  resolved "https://registry.yarnpkg.com/@ipld/dag-cbor/-/dag-cbor-6.0.15.tgz#aebe7a26c391cae98c32faedb681b1519e3d2372"
+  integrity sha512-Vm3VTSTwlmGV92a3C5aeY+r2A18zbH2amehNhsX8PBa3muXICaWrN8Uri85A5hLH7D7ElhE8PdjxD6kNqUmTZA==
+  dependencies:
+    cborg "^1.5.4"
+    multiformats "^9.5.4"
+
 "@ipld/dag-cbor@^6.0.4":
   version "6.0.13"
   resolved "https://registry.yarnpkg.com/@ipld/dag-cbor/-/dag-cbor-6.0.13.tgz#b68265a3fbb808f2ea3fa247a107399dbc71d5a7"
@@ -338,6 +345,14 @@
   dependencies:
     cborg "^1.2.1"
     multiformats "^9.0.0"
+
+"@ipld/dag-cbor@^7.0.0":
+  version "7.0.0"
+  resolved "https://registry.yarnpkg.com/@ipld/dag-cbor/-/dag-cbor-7.0.0.tgz#afd777fcc2f0f26359c31e5fe957433637f62906"
+  integrity sha512-us/dagGvfQ+acO8uyAfozUQ21xxvI6ZrCWwfbOuk+o+cSpCIKY30lUYRuN3kzWLvTJHvbuCVPVEH38ynM1ZBgw==
+  dependencies:
+    cborg "^1.6.0"
+    multiformats "^9.5.4"
 
 "@ipld/dag-pb@^2.0.2":
   version "2.1.9"
@@ -566,13 +581,21 @@
     "@web-std/stream" "1.0.0"
     web-encoding "1.1.5"
 
-"@web-std/fetch@^3.0.0":
-  version "3.0.0"
-  resolved "https://registry.yarnpkg.com/@web-std/fetch/-/fetch-3.0.0.tgz#70de57091eae3e2b23b0eab0e3f4044d4eea029d"
-  integrity sha512-U1b9gjmBZllDL/B+F4eef0Yq2eJDsmPzZOGGOpoMry/bPIUVT0WCIj3PO6jZaGtcQY8JpyiFJa1S8Z4KJJGl0Q==
+"@web-std/blob@^3.0.3":
+  version "3.0.3"
+  resolved "https://registry.yarnpkg.com/@web-std/blob/-/blob-3.0.3.tgz#9c54f106dd6bf5d48dc6f9019011be9437769509"
+  integrity sha512-D44q1jJ80/rjZ03PXLXkCdqkj3K2LdKN8hHwnKLY7XnqwaNd9mxKTEZNs+XcMsAqvv/0ae7QBlcBDJUty2sPag==
   dependencies:
-    "@web-std/blob" "^3.0.0"
-    "@web-std/form-data" "^3.0.0"
+    "@web-std/stream" "1.0.0"
+    web-encoding "1.1.5"
+
+"@web-std/fetch@^3.0.3":
+  version "3.0.3"
+  resolved "https://registry.yarnpkg.com/@web-std/fetch/-/fetch-3.0.3.tgz#507e1371825298aae61172b0da439570437d3982"
+  integrity sha512-PtaKr6qvw2AmKChugzhQWuTa12dpbogHRBxwcleAZ35UhWucnfD4N+g3f7qYK2OeioSWTK3yMf6n/kOOfqxHaQ==
+  dependencies:
+    "@web-std/blob" "^3.0.3"
+    "@web-std/form-data" "^3.0.2"
     "@web3-storage/multipart-parser" "^1.0.0"
     data-uri-to-buffer "^3.0.1"
 
@@ -587,6 +610,13 @@
   version "3.0.0"
   resolved "https://registry.yarnpkg.com/@web-std/form-data/-/form-data-3.0.0.tgz#b68f3b97133b0517fc175c8d0a91e7a7d5fd9ee0"
   integrity sha512-+Uypn0diE7bXDh0Q1PdTbQ46lm6Ge0t4iZ6cdiTpU4XQHQ/2ZEzqv97Tudi4v2ra/YexN5AHsNotaZoI/tqjCA==
+  dependencies:
+    web-encoding "1.1.5"
+
+"@web-std/form-data@^3.0.2":
+  version "3.0.2"
+  resolved "https://registry.yarnpkg.com/@web-std/form-data/-/form-data-3.0.2.tgz#c71d9def6a593138ea92fe3d1ffbce19f43e869c"
+  integrity sha512-rhc8IRw66sJ0FHcnC84kT3mTN6eACTuNftkt1XSl1Ef6WRKq4Pz65xixxqZymAZl1K3USpwhLci4SKNn4PYxWQ==
   dependencies:
     web-encoding "1.1.5"
 
@@ -1083,6 +1113,11 @@ cborg@^1.2.1:
   version "1.5.0"
   resolved "https://registry.yarnpkg.com/cborg/-/cborg-1.5.0.tgz#3a661fcf759e8deeec3834a144e6d87d82d97787"
   integrity sha512-3t1+s45x5LiACi39HDiSubPZiKXU2rCreu0oi5A1nccQNDHnprCh9ZQKN1Za3eookOmL03e9oKEZ+LJs0iTE8A==
+
+cborg@^1.5.4, cborg@^1.6.0:
+  version "1.6.1"
+  resolved "https://registry.yarnpkg.com/cborg/-/cborg-1.6.1.tgz#d5c6f6cfa8539588918c3936814caddc65e8e5ec"
+  integrity sha512-dOGlTG610S6t3j7EYFxPBH7KiF1OlSAdWtMI4Iv1dabcId/L/nUvkfOEPge+vDp9YoPerEMiDoy5+Vm2oEqmQw==
 
 chalk@^1.1.0:
   version "1.1.3"
@@ -2261,12 +2296,12 @@ ipaddr.js@1.9.1:
   resolved "https://registry.yarnpkg.com/ipaddr.js/-/ipaddr.js-1.9.1.tgz#bff38543eeb8984825079ff3a2a8e6cbd46781b3"
   integrity sha512-0KI/607xoxSToH7GjN1FfSbLoU0+btTicjsQSWQlh/hZykN8KpmMf7uYwPW3R+akZ6R/w18ZlXSHBYXiYUPO3g==
 
-ipfs-car@^0.6.0:
-  version "0.6.0"
-  resolved "https://registry.yarnpkg.com/ipfs-car/-/ipfs-car-0.6.0.tgz#69cefc80e627560d68fa2950f904ee69feee950c"
-  integrity sha512-2qw6u0Or/5cVKUR4bBCF/fzXnePSSIyF7m1hNUfg6kOBR7LJOXq6hhlCgu+2zGWVye9idsW8jEoPM9wYJp67jA==
+ipfs-car@^0.6.2:
+  version "0.6.2"
+  resolved "https://registry.yarnpkg.com/ipfs-car/-/ipfs-car-0.6.2.tgz#ec645cebe29056344abb3545e4e2e99788a4405c"
+  integrity sha512-tliuakkKKtCa4TTnFT3zJKjq/aD8EGKX8Y0ybCyrAW0fo/n2koZpxiLjBvtTs47Rqyji6ggXo+atPbJJ60hJmg==
   dependencies:
-    "@ipld/car" "^3.1.4"
+    "@ipld/car" "^3.2.3"
     "@web-std/blob" "^3.0.1"
     bl "^5.0.0"
     blockstore-core "^1.0.2"
@@ -2283,7 +2318,7 @@ ipfs-car@^0.6.0:
     it-pipe "^1.1.0"
     meow "^9.0.0"
     move-file "^2.1.0"
-    multiformats "^9.3.0"
+    multiformats "^9.6.3"
     stream-to-it "^0.2.3"
     streaming-iterables "^6.0.0"
     uint8arrays "^3.0.0"
@@ -3130,10 +3165,15 @@ multiformats@^9.0.0, multiformats@^9.0.4:
   resolved "https://registry.yarnpkg.com/multiformats/-/multiformats-9.4.7.tgz#df2caa6ccd975218bbbacd69e45bb76cc2a53654"
   integrity sha512-fZbcdf7LnvokPAZYkv4TLXe7PAg9sQ5qLXcwrAmZOloEb2+5FtFiAY+l3/9wsu4oTJXTV3JSggFQQ2dJLS01vA==
 
-multiformats@^9.3.0, multiformats@^9.4.1, multiformats@^9.4.10, multiformats@^9.4.2, multiformats@^9.4.5, multiformats@^9.4.7:
+multiformats@^9.4.1, multiformats@^9.4.2, multiformats@^9.4.5, multiformats@^9.4.7:
   version "9.4.10"
   resolved "https://registry.yarnpkg.com/multiformats/-/multiformats-9.4.10.tgz#d654d06b28cc066506e4e59b246d65267fb6b93b"
   integrity sha512-BwWGvgqB/5J/cnWaOA0sXzJ+UGl+kyFAw3Sw1L6TN4oad34C9OpW+GCpYTYPDp4pUaXDC1EjvB3yv9Iodo1EhA==
+
+multiformats@^9.5.4, multiformats@^9.6.3:
+  version "9.6.3"
+  resolved "https://registry.yarnpkg.com/multiformats/-/multiformats-9.6.3.tgz#9f2aef711ddd0e7b05a1b5f1ad70928544c8c190"
+  integrity sha512-yfXKI66fL0nFzt0nJl26i4wV1qAqbAEIBvfFbkbsne9GrLz6IHvHUoRyxUtlJcdP181ssOgjama6E/VSk4pbrA==
 
 murmurhash3js-revisited@^3.0.0:
   version "3.0.0"
@@ -3160,19 +3200,20 @@ native-fetch@^3.0.0:
   resolved "https://registry.yarnpkg.com/native-fetch/-/native-fetch-3.0.0.tgz#06ccdd70e79e171c365c75117959cf4fe14a09bb"
   integrity sha512-G3Z7vx0IFb/FQ4JxvtqGABsOTIqRWvgQz6e+erkB+JJD6LrszQtMozEHI4EkmgZQvnGHrpLVzUWk7t4sJCIkVw==
 
-nft.storage@^5.0.0:
-  version "5.0.0"
-  resolved "https://registry.yarnpkg.com/nft.storage/-/nft.storage-5.0.0.tgz#345fd2dd32ec28f59655d8c2b077bcd698426aab"
-  integrity sha512-3MggpZS63j6/8QQ/hgMlrvnK59VIbMEWCSwbaI6j3mOsHUWbfnNzsxqMPr+UQaAu+erH2d5XhgZf13upJJpHzA==
+nft.storage@^6.0.0:
+  version "6.0.0"
+  resolved "https://registry.yarnpkg.com/nft.storage/-/nft.storage-6.0.0.tgz#48043d55d08f116158ed387f27dac6bab70e620e"
+  integrity sha512-d4XfIE2QsWh4bBuk2YsPYxyzG9NYAnOwnKzgQCiCyCKUg9pSJZoxU5AlqZMbQXTtbol9qb3b2Ow1SqvK5JpQKw==
   dependencies:
-    "@ipld/car" "^3.1.20"
+    "@ipld/car" "^3.2.3"
+    "@ipld/dag-cbor" "^6.0.13"
     "@web-std/blob" "^3.0.1"
-    "@web-std/fetch" "^3.0.0"
+    "@web-std/fetch" "^3.0.3"
     "@web-std/file" "^3.0.0"
     "@web-std/form-data" "^3.0.0"
     carbites "^1.0.6"
-    ipfs-car "^0.6.0"
-    multiformats "^9.4.10"
+    ipfs-car "^0.6.2"
+    multiformats "^9.6.3"
     p-retry "^4.6.1"
     streaming-iterables "^6.0.0"
 
