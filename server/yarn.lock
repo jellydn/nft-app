@@ -561,10 +561,10 @@
   resolved "https://registry.yarnpkg.com/@types/strip-json-comments/-/strip-json-comments-0.0.30.tgz#9aa30c04db212a9a0649d6ae6fd50accc40748a1"
   integrity sha512-7NQmHra/JILCd1QqpSzl8+mJRc8ZHz3uDm8YV1Ks9IhK0epEiTw8aIErbvH9PI+6XbqhyIQy3462nEsn7UVzjQ==
 
-"@types/tap@15.0.5":
-  version "15.0.5"
-  resolved "https://registry.yarnpkg.com/@types/tap/-/tap-15.0.5.tgz#8b4a2552e6ec40563452317739c9e028bdc03792"
-  integrity sha512-MaP+EgZNFAGRvVjHWv8ldrLvYBn4PnmAlzY7IL3/RPAPkOXdggTSTgLFONbnTpdQTe8+ixYGAySKAm9ESlZm1A==
+"@types/tap@15.0.6":
+  version "15.0.6"
+  resolved "https://registry.yarnpkg.com/@types/tap/-/tap-15.0.6.tgz#0ba2500e4a5ffbfba98d88923000e759b737014c"
+  integrity sha512-ScXtRg7oSra4sBmq534voWPNUrbwt8q9kABA6SsEXx1qXnaxf/mf0BzfRPHW4xem7I0PlzrmWIIXP/iDNeoCvw==
   dependencies:
     "@types/node" "*"
 
