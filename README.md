@@ -41,6 +41,7 @@ yarn install
 # Prepare .env file
 # Run web site
 cp .env.example .env
+npx hardhat compile --network localhost
 yarn dev
 
 ```
@@ -52,6 +53,7 @@ yarn dev
 # Run web site
 cd server
 cp .env.example .env
+yarn install
 yarn dev
 
 ```
