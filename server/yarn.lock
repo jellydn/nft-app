@@ -2858,10 +2858,10 @@ leven@^2.1.0:
   resolved "https://registry.yarnpkg.com/leven/-/leven-2.1.0.tgz#c2e7a9f772094dee9d34202ae8acce4687875580"
   integrity sha1-wuep93IJTe6dNCAq6KzORoeHVYA=
 
-libtap@^1.1.4:
-  version "1.1.4"
-  resolved "https://registry.yarnpkg.com/libtap/-/libtap-1.1.4.tgz#b329a49733f71f6193358664b608f301d096bf62"
-  integrity sha512-jM+QyAeRdVs1bJrNpjlu+l8gRdDkAehqls31AwSnqXghVLUP6nbYeU2Xfs2svYS7ZdksvnHvrxCKRBFEz/BCjA==
+libtap@^1.3.0:
+  version "1.3.0"
+  resolved "https://registry.yarnpkg.com/libtap/-/libtap-1.3.0.tgz#47c3c885d4f25f8db257965db3170237cdcf80dd"
+  integrity sha512-yU5uSY987sVwpWiR5h84ZM96bxvmCQFZ/bOEJ1M7+Us8oez25fLmmLNGFRFGWi2PzuLqAzqzESH7HCaZ/b9IZA==
   dependencies:
     async-hook-domain "^2.0.4"
     bind-obj-methods "^3.0.0"
@@ -2872,11 +2872,10 @@ libtap@^1.1.4:
     own-or-env "^1.0.2"
     signal-exit "^3.0.4"
     stack-utils "^2.0.4"
-    tap-parser "^10.0.1"
+    tap-parser "^11.0.0"
     tap-yaml "^1.0.0"
     tcompare "^5.0.6"
     trivial-deferred "^1.0.1"
-    yapool "^1.0.0"
 
 light-my-request@^4.2.0:
   version "4.4.4"
@@ -3110,6 +3109,13 @@ minipass@^3.0.0, minipass@^3.1.1, minipass@^3.1.5:
   version "3.1.5"
   resolved "https://registry.yarnpkg.com/minipass/-/minipass-3.1.5.tgz#71f6251b0a33a49c01b3cf97ff77eda030dff732"
   integrity sha512-+8NzxD82XQoNKNrl1d/FSi+X8wAEWR+sbYAfIvub4Nz0d22plFG72CEVVaufV8PNf4qSslFTD8VMOxNVhHCjTw==
+  dependencies:
+    yallist "^4.0.0"
+
+minipass@^3.1.6:
+  version "3.1.6"
+  resolved "https://registry.yarnpkg.com/minipass/-/minipass-3.1.6.tgz#3b8150aa688a711a1521af5e8779c1d3bb4f45ee"
+  integrity sha512-rty5kpw9/z8SX9dmxblFA6edItUmwJgMeYDZRrwlIVN27i8gysGbznJwUggw2V/FVqFSDdWy040ZPS811DYAqQ==
   dependencies:
     yallist "^4.0.0"
 
@@ -4314,27 +4320,36 @@ supports-hyperlinks@^2.1.0:
     has-flag "^4.0.0"
     supports-color "^7.0.0"
 
-tap-mocha-reporter@^5.0.0:
-  version "5.0.1"
-  resolved "https://registry.yarnpkg.com/tap-mocha-reporter/-/tap-mocha-reporter-5.0.1.tgz#74f00be2ddd2a380adad45e085795137bc39497a"
-  integrity sha512-1knFWOwd4khx/7uSEnUeaP9IPW3w+sqTgJMhrwah6t46nZ8P25atOKAjSvVDsT67lOPu0nfdOqUwoyKn+3E5pA==
+tap-mocha-reporter@^5.0.3:
+  version "5.0.3"
+  resolved "https://registry.yarnpkg.com/tap-mocha-reporter/-/tap-mocha-reporter-5.0.3.tgz#3e261b2a43092ba8bc0cb67a89b33e283decee05"
+  integrity sha512-6zlGkaV4J+XMRFkN0X+yuw6xHbE9jyCZ3WUKfw4KxMyRGOpYSRuuQTRJyWX88WWuLdVTuFbxzwXhXuS2XE6o0g==
   dependencies:
     color-support "^1.1.0"
     debug "^4.1.1"
     diff "^4.0.1"
     escape-string-regexp "^2.0.0"
     glob "^7.0.5"
-    tap-parser "^10.0.0"
+    tap-parser "^11.0.0"
     tap-yaml "^1.0.0"
     unicode-length "^2.0.2"
 
-tap-parser@^10.0.0, tap-parser@^10.0.1:
+tap-parser@^10.0.1:
   version "10.1.0"
   resolved "https://registry.yarnpkg.com/tap-parser/-/tap-parser-10.1.0.tgz#7b1aac40dbcaa4716c0b58952686eae65d2b74ad"
   integrity sha512-FujQeciDaOiOvaIVGS1Rpb0v4R6XkOjvWCWowlz5oKuhPkEJ8U6pxgqt38xuzYhPt8dWEnfHn2jqpZdJEkW7pA==
   dependencies:
     events-to-array "^1.0.1"
     minipass "^3.0.0"
+    tap-yaml "^1.0.0"
+
+tap-parser@^11.0.0, tap-parser@^11.0.1:
+  version "11.0.1"
+  resolved "https://registry.yarnpkg.com/tap-parser/-/tap-parser-11.0.1.tgz#513be88daa179cd5b158bbb939b8613e6125312b"
+  integrity sha512-5ow0oyFOnXVSALYdidMX94u0GEjIlgc/BPFYLx0yRh9hb8+cFGNJqJzDJlUqbLOwx8+NBrIbxCWkIQi7555c0w==
+  dependencies:
+    events-to-array "^1.0.1"
+    minipass "^3.1.6"
     tap-yaml "^1.0.0"
 
 tap-yaml@^1.0.0:
@@ -4344,10 +4359,10 @@ tap-yaml@^1.0.0:
   dependencies:
     yaml "^1.5.0"
 
-tap@15.1.6:
-  version "15.1.6"
-  resolved "https://registry.yarnpkg.com/tap/-/tap-15.1.6.tgz#dc393e17bead934a2ee734d6124928694f2da2db"
-  integrity sha512-TN7xH6Q2tUPTd6qwmkhuFJcx1vUR8e4dDUpBKc61G0krOzne7Ia6aKIFb8O/0kVazachSSuVME1V8nQ2xwWL8w==
+tap@15.2.3:
+  version "15.2.3"
+  resolved "https://registry.yarnpkg.com/tap/-/tap-15.2.3.tgz#994a8c4604b81b89d424809e0e4df86eb9073211"
+  integrity sha512-EVbovHd/SdevGMUnkNU5JJqC1YC0hzaaZ2jnqs0fKHv9Oudx27qW3Xwox7A6TB92wvR0mqgQPr+Au2w56kD+aQ==
   dependencies:
     "@isaacs/import-jsx" "*"
     "@types/react" "*"
@@ -4361,7 +4376,7 @@ tap@15.1.6:
     isexe "^2.0.0"
     istanbul-lib-processinfo "^2.0.2"
     jackspeak "^1.4.1"
-    libtap "^1.1.4"
+    libtap "^1.3.0"
     minipass "^3.1.1"
     mkdirp "^1.0.4"
     nyc "^15.1.0"
@@ -4370,8 +4385,8 @@ tap@15.1.6:
     rimraf "^3.0.0"
     signal-exit "^3.0.6"
     source-map-support "^0.5.16"
-    tap-mocha-reporter "^5.0.0"
-    tap-parser "^10.0.1"
+    tap-mocha-reporter "^5.0.3"
+    tap-parser "^11.0.1"
     tap-yaml "^1.0.0"
     tcompare "^5.0.7"
     treport "*"
@@ -4846,11 +4861,6 @@ yaml@^1.5.0:
   version "1.10.2"
   resolved "https://registry.yarnpkg.com/yaml/-/yaml-1.10.2.tgz#2301c5ffbf12b467de8da2333a459e29e7920e4b"
   integrity sha512-r3vXyErRCYJ7wg28yvBY5VSoAF8ZvlcW9/BwUzEtUsjvX/DKs24dIkuwjtuprwJJHsbyUbLApepYTR1BN4uHrg==
-
-yapool@^1.0.0:
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/yapool/-/yapool-1.0.0.tgz#f693f29a315b50d9a9da2646a7a6645c96985b6a"
-  integrity sha1-9pPymjFbUNmp2iZGp6ZkXJaYW2o=
 
 yargs-parser@^18.1.2:
   version "18.1.3"
