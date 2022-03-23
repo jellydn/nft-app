@@ -4118,10 +4118,10 @@ tap-yaml@^1.0.0:
   dependencies:
     yaml "^1.5.0"
 
-tap@16.0.0:
-  version "16.0.0"
-  resolved "https://registry.yarnpkg.com/tap/-/tap-16.0.0.tgz#867c619ad6fc2b539a6d5bb594284c058be17522"
-  integrity sha512-EnrFFUIn+/089C051WYPXxNlAnXJ1TkKerh0Osz9lK0Ynb+X5FWBEZxWcZLVKiucdTnV5g97NL8Xaw1CuAkj4Q==
+tap@16.0.1:
+  version "16.0.1"
+  resolved "https://registry.yarnpkg.com/tap/-/tap-16.0.1.tgz#37b032f60496bb01051fa10e5a114c82186602d1"
+  integrity sha512-y32sc4NFWzeOE1mrNvZoS1kRJADI8MCCSaatVBalCNVgusTf59h3t8mHZ3d0wSTQRs05JTOG52WC3KnWovhjPg==
   dependencies:
     "@isaacs/import-jsx" "*"
     "@types/react" "*"
