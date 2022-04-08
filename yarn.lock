@@ -11322,10 +11322,10 @@ next-tick@~1.0.0:
   resolved "https://registry.yarnpkg.com/next-tick/-/next-tick-1.0.0.tgz#ca86d1fe8828169b0120208e3dc8424b9db8342c"
   integrity sha1-yobR/ogoFpsBICCOPchCS524NCw=
 
-nft.storage@6.1.0:
-  version "6.1.0"
-  resolved "https://registry.yarnpkg.com/nft.storage/-/nft.storage-6.1.0.tgz#2cba7f5a5097dd518d56ed1c734dcf0b43297344"
-  integrity sha512-7qK9ZRAIWu7Z4dsdYHHL2TkzMIhijxaH37eK8CzP1JmM/wFX3lwTyGHywlGPmWL8pq7OhS8FgMJlmSyMbAVWYA==
+nft.storage@6.2.0:
+  version "6.2.0"
+  resolved "https://registry.yarnpkg.com/nft.storage/-/nft.storage-6.2.0.tgz#bba76b58663367762873e61b8d994b8defbf5cc3"
+  integrity sha512-kwyRWnQ/rkSv4IEtWeZK//yH1ZFZG8UhitHqlAcGKpSlMBP7DphGIeK1iAymq9J43IEPwxhcSQTyG+fOBbNjIw==
   dependencies:
     "@ipld/car" "^3.2.3"
     "@ipld/dag-cbor" "^6.0.13"
@@ -11338,6 +11338,7 @@ nft.storage@6.1.0:
     multiformats "^9.6.4"
     p-retry "^4.6.1"
     streaming-iterables "^6.0.0"
+    throttled-queue "^2.1.2"
 
 nice-try@^1.0.4:
   version "1.0.5"
@@ -14406,6 +14407,11 @@ then-request@^6.0.0:
     http-response-object "^3.0.1"
     promise "^8.0.0"
     qs "^6.4.0"
+
+throttled-queue@^2.1.2:
+  version "2.1.2"
+  resolved "https://registry.yarnpkg.com/throttled-queue/-/throttled-queue-2.1.2.tgz#52d39708ee5adf019091eed7c820e1def8544b22"
+  integrity sha512-tUa5+OEw0zqNeKFFc/meOruMylj3ZZSS1X1e8WqU2YZ5jFwIU0qQP8IMuLq1eIuqdhHukktwONajChwqEwMkqA==
 
 through2@^2.0.3:
   version "2.0.5"
