@@ -12,7 +12,7 @@ import { Nft } from "./components/Nft";
 import { Pagination } from "./components/Pagination";
 import logger from "./logger";
 import { networkName, CHAIN_ID } from "./networkName";
-import { MyAwesomeLogo } from "./types/MyAwesomeLogo";
+import { MyAwesomeLogo } from "./types";
 
 export const CONTRACT_DEPLOYED_ADDRESS = import.meta.env.VITE_NFT_DEPLOYED_ADDRESS;
 
