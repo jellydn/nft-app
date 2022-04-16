@@ -33,7 +33,7 @@
   },
   "devDependencies": {
     "@types/busboy": "1.5.0",
-    "@types/node": "16.11.26",
+    "@types/node": "16.11.27",
     "@types/tap": "15.0.6",
     "cross-env": "7.0.3",
     "tap": "16.0.1",
