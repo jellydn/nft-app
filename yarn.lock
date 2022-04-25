@@ -2510,12 +2510,7 @@
     "@types/node" "*"
     form-data "^3.0.0"
 
-"@types/node@*", "@types/node@>=13.7.0":
-  version "16.11.26"
-  resolved "https://registry.yarnpkg.com/@types/node/-/node-16.11.26.tgz#63d204d136c9916fb4dcd1b50f9740fe86884e47"
-  integrity sha512-GZ7bu5A6+4DtG7q9GsoHXy3ALcgeIHP4NnL0Vv2wu0uUB/yQex26v0tf6/na1mm0+bS9Uw+0DFex7aaKr2qawQ==
-
-"@types/node@16.11.27":
+"@types/node@*", "@types/node@16.11.27", "@types/node@>=13.7.0":
   version "16.11.27"
   resolved "https://registry.yarnpkg.com/@types/node/-/node-16.11.27.tgz#5da19383bdbeda99bc0d09cfbb88cab7297ebc51"
   integrity sha512-C1pD3kgLoZ56Uuy5lhfOxie4aZlA3UMGLX9rXteq4WitEZH6Rl80mwactt9QG0w0gLFlN/kLBTFnGXtDVWvWQw==
@@ -2574,16 +2569,7 @@
   dependencies:
     "@types/react" "*"
 
-"@types/react@*":
-  version "18.0.5"
-  resolved "https://registry.yarnpkg.com/@types/react/-/react-18.0.5.tgz#1a4d4b705ae6af5aed369dec22800b20f89f5301"
-  integrity sha512-UPxNGInDCIKlfqBrm8LDXYWNfLHwIdisWcsH5GpMyGjhEDLFgTtlRBaoWuCua9HcyuE0rMkmAeZ3FXV1pYLIYQ==
-  dependencies:
-    "@types/prop-types" "*"
-    "@types/scheduler" "*"
-    csstype "^3.0.2"
-
-"@types/react@18.0.6":
+"@types/react@*", "@types/react@18.0.6":
   version "18.0.6"
   resolved "https://registry.yarnpkg.com/@types/react/-/react-18.0.6.tgz#30206c3830af6ce8639b91ace5868bc2d3d1d96c"
   integrity sha512-bPqwzJRzKtfI0mVYr5R+1o9BOE8UEXefwc1LwcBtfnaAn6OoqMhLa/91VA8aeWfDPJt1kHvYKI8RHcQybZLHHA==
@@ -4749,12 +4735,7 @@ camelcase@^6.0.0:
   resolved "https://registry.yarnpkg.com/camelcase/-/camelcase-6.3.0.tgz#5685b95eb209ac9c0c177467778c9c84df58ba9a"
   integrity sha512-Gmy6FhYlCY7uOElZUSbxo2UCDH8owEk996gkbrpsgGtrJLM3J7jGxl9Ic7Qwwj4ivOE5AWZWRMecDdF7hqGjFA==
 
-caniuse-lite@^1.0.30000844, caniuse-lite@^1.0.30001317:
-  version "1.0.30001317"
-  resolved "https://registry.yarnpkg.com/caniuse-lite/-/caniuse-lite-1.0.30001317.tgz#0548fb28fd5bc259a70b8c1ffdbe598037666a1b"
-  integrity sha512-xIZLh8gBm4dqNX0gkzrBeyI86J2eCjWzYAs40q88smG844YIrN4tVQl/RhquHvKEKImWWFIVh1Lxe5n1G/N+GQ==
-
-caniuse-lite@^1.0.30001332:
+caniuse-lite@^1.0.30000844, caniuse-lite@^1.0.30001317, caniuse-lite@^1.0.30001332:
   version "1.0.30001332"
   resolved "https://registry.yarnpkg.com/caniuse-lite/-/caniuse-lite-1.0.30001332.tgz#39476d3aa8d83ea76359c70302eafdd4a1d727dd"
   integrity sha512-10T30NYOEQtN6C11YGg411yebhvpnC6Z102+B95eAsN0oB6KUs01ivE8u+G6FMIRtIrVlYXhL+LUwQ3/hXwDWw==
@@ -8589,6 +8570,33 @@ ipfs-car@^0.6.2:
   version "0.6.2"
   resolved "https://registry.yarnpkg.com/ipfs-car/-/ipfs-car-0.6.2.tgz#ec645cebe29056344abb3545e4e2e99788a4405c"
   integrity sha512-tliuakkKKtCa4TTnFT3zJKjq/aD8EGKX8Y0ybCyrAW0fo/n2koZpxiLjBvtTs47Rqyji6ggXo+atPbJJ60hJmg==
+  dependencies:
+    "@ipld/car" "^3.2.3"
+    "@web-std/blob" "^3.0.1"
+    bl "^5.0.0"
+    blockstore-core "^1.0.2"
+    browser-readablestream-to-it "^1.0.2"
+    idb-keyval "^6.0.3"
+    interface-blockstore "^2.0.2"
+    ipfs-core-types "^0.8.3"
+    ipfs-core-utils "^0.12.1"
+    ipfs-unixfs-exporter "^7.0.4"
+    ipfs-unixfs-importer "^9.0.4"
+    ipfs-utils "^9.0.2"
+    it-all "^1.0.5"
+    it-last "^1.0.5"
+    it-pipe "^1.1.0"
+    meow "^9.0.0"
+    move-file "^2.1.0"
+    multiformats "^9.6.3"
+    stream-to-it "^0.2.3"
+    streaming-iterables "^6.0.0"
+    uint8arrays "^3.0.0"
+
+ipfs-car@^0.7.0:
+  version "0.7.0"
+  resolved "https://registry.yarnpkg.com/ipfs-car/-/ipfs-car-0.7.0.tgz#72955d2b6904e87edfa17bbe5c00c1b3fcb79bb9"
+  integrity sha512-9ser6WWZ1ZMTCGbcVkRXUzOrpQ4SIiLfzIEnk+3LQsXbV09yeZg3ijhRuEXozEIYE68Go9JmOFshamsK9iKlNQ==
   dependencies:
     "@ipld/car" "^3.2.3"
     "@web-std/blob" "^3.0.1"
@@ -13017,10 +13025,10 @@ solidity-comments-extractor@^0.0.7:
   resolved "https://registry.yarnpkg.com/solidity-comments-extractor/-/solidity-comments-extractor-0.0.7.tgz#99d8f1361438f84019795d928b931f4e5c39ca19"
   integrity sha512-wciNMLg/Irp8OKGrh3S2tfvZiZ0NEyILfcRCXCD4mp7SgK/i9gzLfhY2hY7VMCQJ3kH9UB9BzNdibIVMchzyYw==
 
-solidity-coverage@0.7.20:
-  version "0.7.20"
-  resolved "https://registry.yarnpkg.com/solidity-coverage/-/solidity-coverage-0.7.20.tgz#246e9b0dd62f698bb8ddeecdcc46cab26c48b637"
-  integrity sha512-edOXTugUYdqxrtEnIn4vgrGjLPxdexcL0WD8LzAvVA3d1dwgcfRO3k8xQR02ZQnOnWMBi8Cqs0F+kAQQp3JW8g==
+solidity-coverage@0.7.21:
+  version "0.7.21"
+  resolved "https://registry.yarnpkg.com/solidity-coverage/-/solidity-coverage-0.7.21.tgz#20c5615a3a543086b243c2ca36e2951a75316b40"
+  integrity sha512-O8nuzJ9yXiKUx3NdzVvHrUW0DxoNVcGzq/I7NzewNO9EZE3wYAQ4l8BwcnV64r4aC/HB6Vnw/q2sF0BQHv/3fg==
   dependencies:
     "@solidity-parser/parser" "^0.14.0"
     "@truffle/provider" "^0.2.24"
@@ -14942,10 +14950,10 @@ web3-utils@1.5.2, web3-utils@^1.0.0-beta.31, web3-utils@^1.3.0:
     randombytes "^2.1.0"
     utf8 "3.0.0"
 
-web3.storage@4.0.0:
-  version "4.0.0"
-  resolved "https://registry.yarnpkg.com/web3.storage/-/web3.storage-4.0.0.tgz#adca2069b2654ae611bd5b17c384d9f1544c7528"
-  integrity sha512-JVCvh4lbtbigEYpeSyTigTH7CVnW6AARsgOwmNbfd9zbXFjnkSgl5CEHfKBHg+wlqZp9/PxnzDviScuiZ0ZmgA==
+web3.storage@4.2.0:
+  version "4.2.0"
+  resolved "https://registry.yarnpkg.com/web3.storage/-/web3.storage-4.2.0.tgz#64f2be25a29facc1a667d02b6d2f7b13bfc66875"
+  integrity sha512-s7yf9nR9TsnKyPdijQMq48q7NV9WNZ8AWyMroa1F0ZOVExUpx9DVIxsLCCZRJEuMZsitnLSbvXK2CexMNyYKKg==
   dependencies:
     "@ipld/car" "^3.1.4"
     "@web-std/blob" "^3.0.4"
@@ -14956,11 +14964,12 @@ web3.storage@4.0.0:
     carbites "^1.0.6"
     cborg "^1.8.0"
     files-from-path "^0.2.4"
-    ipfs-car "^0.6.2"
+    ipfs-car "^0.7.0"
     ipns "^0.16.0"
     libp2p-crypto "^0.21.0"
     p-retry "^4.5.0"
     streaming-iterables "^6.2.0"
+    throttled-queue "^2.1.2"
     uint8arrays "^3.0.0"
 
 web3@0.20.2:
