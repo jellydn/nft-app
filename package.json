@@ -87,6 +87,6 @@
     "vite-plugin-checker": "0.4.6"
   },
   "engines": {
-    "node": ">=12 <=16"
+    "node": "^12 || ^14 || >= 16"
   }
 }
