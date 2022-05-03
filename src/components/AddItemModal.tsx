@@ -31,7 +31,9 @@ function AddItemModal({ isOpen, onAdd, onClose }: AddItemModalProps) {
     >
   >([]);
   const { getRootProps, getInputProps } = useDropzone({
-    accept: "image/*",
+    accept: {
+      "image/*": [".jpeg", ".png"],
+    },
     onDrop: (acceptedFiles) => {
       setFiles(
         acceptedFiles.map((file) =>
