@@ -8,7 +8,7 @@
 
 ## 🏠 [Homepage](https://nft-app.productsway.com)
 
-## ✨ [Demo](https://nft-app.productsway.com)
+## ✨ [Demo](https://nft-app-demo.productsway.com)
 
 ![https://gyazo.com/fccacc5f480839196343bf95728c9b6a.gif](https://gyazo.com/fccacc5f480839196343bf95728c9b6a.gif)
 
@@ -208,6 +208,10 @@ npx hardhat run --network localhost scripts/upgrade_box.js
 
 - [Simple Store App](https://github.com/jellydn/nft-app/pull/20): counter-like smart contract, read/write value and listen to event from smart contract.
 - [ICO Token App](https://github.com/jellydn/dapp-token-ico): How to create An ERC20 token and implement ICO smart contract (CrowdSale).
+
+## One click deployment
+
+[![Deploy on Railway](https://railway.app/button.svg)](https://railway.app/new/template/6ZY4MT?referralCode=-GINmA)
 
 ## Author
 
