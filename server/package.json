@@ -37,6 +37,6 @@
     "@types/tap": "15.0.7",
     "cross-env": "7.0.3",
     "tap": "16.2.0",
-    "ts-node-dev": "1.1.8"
+    "ts-node-dev": "2.0.0"
   }
 }
