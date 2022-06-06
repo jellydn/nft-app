@@ -8,6 +8,8 @@
 
 ## 🏠 [Homepage](https://nft-app.productsway.com)
 
+[![Blockchain - DApp 101 - Mint a NFT token](https://img.youtube.com/vi/UWJJa1hAYlo/0.jpg)](https://www.youtube.com/watch?v=UWJJa1hAYlo)
+
 ## ✨ [Demo](https://nft-app-demo.productsway.com)
 
 ![https://gyazo.com/fccacc5f480839196343bf95728c9b6a.gif](https://gyazo.com/fccacc5f480839196343bf95728c9b6a.gif)
