@@ -8,6 +8,8 @@
 
 ## 🏠 [Homepage](https://nft-app.productsway.com)
 
+[![Blockchain - DApp 101 - Create your own NFT token](https://img.youtube.com/vi/_veIZBaHkSk/0.jpg)](https://www.youtube.com/watch?v=_veIZBaHkSk)
+
 [![Blockchain - DApp 101 - Mint a NFT token](https://img.youtube.com/vi/UWJJa1hAYlo/0.jpg)](https://www.youtube.com/watch?v=UWJJa1hAYlo)
 
 ## ✨ [Demo](https://nft-app-demo.productsway.com)
