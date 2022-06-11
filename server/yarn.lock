@@ -1506,10 +1506,10 @@ fast-fifo@^1.0.0:
   resolved "https://registry.yarnpkg.com/fast-fifo/-/fast-fifo-1.0.0.tgz#9bc72e6860347bb045a876d1c5c0af11e9b984e7"
   integrity sha512-4VEXmjxLj7sbs8J//cn2qhRap50dGzF5n8fjay8mau+Jn4hxSeR3xPFwxMaQq/pDaq7+KQk0PAbC2+nWDkJrmQ==
 
-fast-json-stringify@^4.0.0:
-  version "4.0.0"
-  resolved "https://registry.yarnpkg.com/fast-json-stringify/-/fast-json-stringify-4.0.0.tgz#b21e49902512aba8a02099e613ee66cd5c13d617"
-  integrity sha512-zv2rRNdLXWr3ZZfpQuE3/QDVeyCOufFOaMTqTGO1r5WB2AJ+ISmbLY2id4W4KG3pcng+MsnBO3ROzh/mlx3uFA==
+fast-json-stringify@4.1.0:
+  version "4.1.0"
+  resolved "https://registry.yarnpkg.com/fast-json-stringify/-/fast-json-stringify-4.1.0.tgz#ec88bce52de835ec9ecd5fc9e589d0ee3c0c7b35"
+  integrity sha512-yy/5SUALH1LxcVFg/tqaA2a3cfXhpZl5MqdyhSJeAmOZg1nQgU0meg0KuRrFaG3iSrrDMWxTittWb12oIBXOcQ==
   dependencies:
     ajv "^8.10.0"
     ajv-formats "^2.1.1"
@@ -1518,10 +1518,10 @@ fast-json-stringify@^4.0.0:
     rfdc "^1.2.0"
     string-similarity "^4.0.1"
 
-fast-json-stringify@^4.1.0:
-  version "4.1.0"
-  resolved "https://registry.yarnpkg.com/fast-json-stringify/-/fast-json-stringify-4.1.0.tgz#ec88bce52de835ec9ecd5fc9e589d0ee3c0c7b35"
-  integrity sha512-yy/5SUALH1LxcVFg/tqaA2a3cfXhpZl5MqdyhSJeAmOZg1nQgU0meg0KuRrFaG3iSrrDMWxTittWb12oIBXOcQ==
+fast-json-stringify@^4.0.0:
+  version "4.0.0"
+  resolved "https://registry.yarnpkg.com/fast-json-stringify/-/fast-json-stringify-4.0.0.tgz#b21e49902512aba8a02099e613ee66cd5c13d617"
+  integrity sha512-zv2rRNdLXWr3ZZfpQuE3/QDVeyCOufFOaMTqTGO1r5WB2AJ+ISmbLY2id4W4KG3pcng+MsnBO3ROzh/mlx3uFA==
   dependencies:
     ajv "^8.10.0"
     ajv-formats "^2.1.1"
