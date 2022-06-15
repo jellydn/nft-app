@@ -29,7 +29,7 @@
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "react-dropzone": "14.2.1",
-    "react-hook-form": "7.32.0",
+    "react-hook-form": "7.32.1",
     "react-hot-toast": "2.2.0",
     "use-nft": "0.11.0",
     "web3-react": "5.0.5",
