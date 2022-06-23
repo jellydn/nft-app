@@ -1513,10 +1513,21 @@ fast-fifo@^1.0.0:
   resolved "https://registry.yarnpkg.com/fast-fifo/-/fast-fifo-1.0.0.tgz#9bc72e6860347bb045a876d1c5c0af11e9b984e7"
   integrity sha512-4VEXmjxLj7sbs8J//cn2qhRap50dGzF5n8fjay8mau+Jn4hxSeR3xPFwxMaQq/pDaq7+KQk0PAbC2+nWDkJrmQ==
 
-fast-json-stringify@4.2.0, fast-json-stringify@^4.2.0:
-  version "4.2.0"
-  resolved "https://registry.yarnpkg.com/fast-json-stringify/-/fast-json-stringify-4.2.0.tgz#eb49243c79d1deca85eeb488caf69007b7336c7c"
-  integrity sha512-9RWBl82H7jwnPlkZ/ghi0VD5OFZVdwgwVui0nYzjnXbPQxJ3ES1+SQcWIoeCJOgrY7JkBkY/69UNZSroFPDRdQ==
+fast-json-stringify@5.0.0:
+  version "5.0.0"
+  resolved "https://registry.yarnpkg.com/fast-json-stringify/-/fast-json-stringify-5.0.0.tgz#91e9707339dad9e2f39d0151483546defe0bd34d"
+  integrity sha512-7eMuzUkZq1eF8y441TCaCThu3ZX5tH4IcPsC7tEW3KmfQWA6lIu5uwkdzhkR3H6PfhnVOHQrSff6k8RG9pVAsA==
+  dependencies:
+    ajv "^8.10.0"
+    ajv-formats "^2.1.1"
+    deepmerge "^4.2.2"
+    fast-uri "^2.1.0"
+    rfdc "^1.2.0"
+
+fast-json-stringify@^4.0.0:
+  version "4.0.0"
+  resolved "https://registry.yarnpkg.com/fast-json-stringify/-/fast-json-stringify-4.0.0.tgz#b21e49902512aba8a02099e613ee66cd5c13d617"
+  integrity sha512-zv2rRNdLXWr3ZZfpQuE3/QDVeyCOufFOaMTqTGO1r5WB2AJ+ISmbLY2id4W4KG3pcng+MsnBO3ROzh/mlx3uFA==
   dependencies:
     ajv "^8.10.0"
     ajv-formats "^2.1.1"
@@ -1525,10 +1536,10 @@ fast-json-stringify@4.2.0, fast-json-stringify@^4.2.0:
     rfdc "^1.2.0"
     string-similarity "^4.0.1"
 
-fast-json-stringify@^4.0.0:
-  version "4.0.0"
-  resolved "https://registry.yarnpkg.com/fast-json-stringify/-/fast-json-stringify-4.0.0.tgz#b21e49902512aba8a02099e613ee66cd5c13d617"
-  integrity sha512-zv2rRNdLXWr3ZZfpQuE3/QDVeyCOufFOaMTqTGO1r5WB2AJ+ISmbLY2id4W4KG3pcng+MsnBO3ROzh/mlx3uFA==
+fast-json-stringify@^4.2.0:
+  version "4.2.0"
+  resolved "https://registry.yarnpkg.com/fast-json-stringify/-/fast-json-stringify-4.2.0.tgz#eb49243c79d1deca85eeb488caf69007b7336c7c"
+  integrity sha512-9RWBl82H7jwnPlkZ/ghi0VD5OFZVdwgwVui0nYzjnXbPQxJ3ES1+SQcWIoeCJOgrY7JkBkY/69UNZSroFPDRdQ==
   dependencies:
     ajv "^8.10.0"
     ajv-formats "^2.1.1"
@@ -1556,6 +1567,11 @@ fast-uri@^2.0.0:
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/fast-uri/-/fast-uri-2.0.0.tgz#a0c1fcbfe769cb023f9d9808798103847de66036"
   integrity sha512-Mt/lDpFwcPcLv3G0Qd3WlIjP5AeCQo/X91TZ9G8Px/3GzkTADX5smwginXYz+iX8mSa5pBN98EObj05X39/JoA==
+
+fast-uri@^2.1.0:
+  version "2.1.0"
+  resolved "https://registry.yarnpkg.com/fast-uri/-/fast-uri-2.1.0.tgz#9279432d6b53675c90116b947ed2bbba582d6fb5"
+  integrity sha512-qKRta6N7BWEFVlyonVY/V+BMLgFqktCUV0QjT259ekAIlbVrMaFnFLxJ4s/JPl4tou56S1BzPufI60bLe29fHA==
 
 fastify-cli@^4.1.1:
   version "4.1.1"
