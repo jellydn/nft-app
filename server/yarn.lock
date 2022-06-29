@@ -1513,10 +1513,10 @@ fast-fifo@^1.0.0:
   resolved "https://registry.yarnpkg.com/fast-fifo/-/fast-fifo-1.0.0.tgz#9bc72e6860347bb045a876d1c5c0af11e9b984e7"
   integrity sha512-4VEXmjxLj7sbs8J//cn2qhRap50dGzF5n8fjay8mau+Jn4hxSeR3xPFwxMaQq/pDaq7+KQk0PAbC2+nWDkJrmQ==
 
-fast-json-stringify@5.0.3:
-  version "5.0.3"
-  resolved "https://registry.yarnpkg.com/fast-json-stringify/-/fast-json-stringify-5.0.3.tgz#209a60a79bf777fdb4669f1aef66b733d7bed343"
-  integrity sha512-livVqQhiM9YIWZp0h/O5SmRR0XmX8sHwgMUJwiQmBSPQ4Tl+UpvQAppVfmU7zLp1qfymFh2X2RCUVgn0bsyJ7Q==
+fast-json-stringify@5.0.5:
+  version "5.0.5"
+  resolved "https://registry.yarnpkg.com/fast-json-stringify/-/fast-json-stringify-5.0.5.tgz#9bcec65128303274600d95f74e4814e360346e68"
+  integrity sha512-NGXE7I6dBcSTM1pprcLEIQ6nHp424mDn8ABleM17Sp7XkyPLlbIDed41/VhUiqnLICX7XiOoFsNHx/nnJ8qhig==
   dependencies:
     ajv "^8.10.0"
     ajv-formats "^2.1.1"
