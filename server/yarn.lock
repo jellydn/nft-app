@@ -536,10 +536,10 @@
   resolved "https://registry.yarnpkg.com/@protobufjs/utf8/-/utf8-1.1.0.tgz#a777360b5b39a1a2e5106f8e858f2fd2d060c570"
   integrity sha1-p3c2C1s5oaLlEG+OhY8v0tBgxXA=
 
-"@sinclair/typebox@^0.23.5":
-  version "0.23.5"
-  resolved "https://registry.yarnpkg.com/@sinclair/typebox/-/typebox-0.23.5.tgz#93f7b9f4e3285a7a9ade7557d9a8d36809cbc47d"
-  integrity sha512-AFBVi/iT4g20DHoujvMH1aEDn8fGJh4xsRGCP6d8RpLPMqsNPvW01Jcn0QysXTsg++/xj25NmJsGyH9xug/wKg==
+"@sinclair/typebox@^0.24.0":
+  version "0.24.0"
+  resolved "https://registry.yarnpkg.com/@sinclair/typebox/-/typebox-0.24.0.tgz#07f233080e6840f41c4fe8eadb172102a7328092"
+  integrity sha512-UsOG+42zjQrmAAdxXitRI43fUYNwef9bq5jSwWKOe9q0NWrR1zkWe1ceXSYwuf3tkC7rJitiT0kHWMkCKiSfzA==
 
 "@tsconfig/node10@^1.0.7":
   version "1.0.8"
