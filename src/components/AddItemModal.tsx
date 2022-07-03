@@ -1,4 +1,3 @@
-import { DevTool } from "@hookform/devtools";
 import React, { useEffect, useState } from "react";
 import { useDropzone } from "react-dropzone";
 import { useForm } from "react-hook-form";
@@ -69,7 +68,6 @@ function AddItemModal({ isOpen, onAdd, onClose }: AddItemModalProps) {
 
   return (
     <div className={isOpen ? "modal modal-open" : "modal"}>
-      <DevTool control={control} />
       <form onSubmit={onSubmit}>
         <div className="modal-box">
           <div className="p-10 card bg-base-200">
