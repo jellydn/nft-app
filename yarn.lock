@@ -14561,10 +14561,10 @@ verror@1.10.0:
     core-util-is "1.0.2"
     extsprintf "^1.2.0"
 
-vite-plugin-checker@0.4.7:
-  version "0.4.7"
-  resolved "https://registry.yarnpkg.com/vite-plugin-checker/-/vite-plugin-checker-0.4.7.tgz#89f799ec731dbdab69bb47b57a04deb92b4c9621"
-  integrity sha512-cpuyopyDWyZO777Q0MM5dO2jmC9UKXQL4PfpxXYIjQ7uQWYGNMEw/hRP3oc/CUTiajB6Ndl1y3Fu93rOboahJA==
+vite-plugin-checker@0.4.8:
+  version "0.4.8"
+  resolved "https://registry.yarnpkg.com/vite-plugin-checker/-/vite-plugin-checker-0.4.8.tgz#e2a97b4c621154fbea6308a46ecb76e02610b676"
+  integrity sha512-MwgKe/No2bhHR9+q9d9VFvrKMITUHUkkcNdMO04Xqid5Es1L8Jeq3Bqtz2ppMG3Z4lGTl3yLYPt8qf14eoCh7A==
   dependencies:
     "@babel/code-frame" "^7.12.13"
     ansi-escapes "^4.3.0"
