@@ -18,7 +18,7 @@
     "@hookform/devtools": "4.1.1",
     "@sentry/react": "7.5.0",
     "@sentry/tracing": "7.5.0",
-    "@tailwindcss/typography": "0.5.2",
+    "@tailwindcss/typography": "0.5.3",
     "@web3-react/core": "6.1.9",
     "@web3-react/injected-connector": "6.0.7",
     "@web3-react/network-connector": "6.2.9",
