@@ -4053,7 +4053,7 @@ trivial-deferred@^1.0.1:
   resolved "https://registry.yarnpkg.com/trivial-deferred/-/trivial-deferred-1.0.1.tgz#376d4d29d951d6368a6f7a0ae85c2f4d5e0658f3"
   integrity sha1-N21NKdlR1jaKb3oK6FwvTV4GWPM=
 
-tsx@^3.7.1:
+tsx@3.7.1:
   version "3.7.1"
   resolved "https://registry.yarnpkg.com/tsx/-/tsx-3.7.1.tgz#36b76628c33abc8cd9cbab60c15a00e50c631f22"
   integrity sha512-dwl1GBdkwVQ9zRxTmETGi+ck8pewNm2QXh+HK6jHxdHmeCjfCL+Db3b4VX/dOMDSS2hle1j5LzQoo8OpVXu6XQ==
