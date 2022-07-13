@@ -1732,19 +1732,19 @@
     "@ethersproject/properties" "^5.6.0"
     "@ethersproject/strings" "^5.6.1"
 
-"@hookform/devtools@4.2.0":
-  version "4.2.0"
-  resolved "https://registry.yarnpkg.com/@hookform/devtools/-/devtools-4.2.0.tgz#ec551849601d3feac2b3be27c88107a8f4d81617"
-  integrity sha512-+MY5L8siEOi4ruSphEz8XWoEh4VpmeoqkTfMsWn/9dsALWZyTF/sjKzr5L+lIDiikkY0DoleSyUDOsi7TTodBA==
+"@hookform/devtools@4.2.1":
+  version "4.2.1"
+  resolved "https://registry.yarnpkg.com/@hookform/devtools/-/devtools-4.2.1.tgz#9366737d822be6504382fef2c118b622398707d8"
+  integrity sha512-sP/+SUbC7SQRxtGZX5Uce0PDzNkio2+tzlXr9xiCxIJ2nnIV2YAVTwjP5I4dmaJj8PtNPHMStoT51JLkCvG2KQ==
   dependencies:
     "@emotion/react" "^11.1.5"
     "@emotion/styled" "^11.3.0"
     "@types/lodash" "^4.14.168"
     little-state-machine "^4.1.0"
     lodash "^4.17.21"
-    nanoid "^4.0.0"
     react-simple-animate "^3.3.12"
     use-deep-compare-effect "^1.8.1"
+    uuid "^8.3.2"
 
 "@humanwhocodes/config-array@^0.9.2":
   version "0.9.2"
@@ -10777,11 +10777,6 @@ nanoid@^3.0.2, nanoid@^3.1.20, nanoid@^3.1.23, nanoid@^3.3.4:
   version "3.3.4"
   resolved "https://registry.yarnpkg.com/nanoid/-/nanoid-3.3.4.tgz#730b67e3cd09e2deacf03c027c81c9d9dbc5e8ab"
   integrity sha512-MqBkQh/OHTS2egovRtLk45wEyNXwF+cokD+1YPf9u5VfJiRdAiRwB2froX5Co9Rh20xs4siNPm8naNotSD6RBw==
-
-nanoid@^4.0.0:
-  version "4.0.0"
-  resolved "https://registry.yarnpkg.com/nanoid/-/nanoid-4.0.0.tgz#6e144dee117609232c3f415c34b0e550e64999a5"
-  integrity sha512-IgBP8piMxe/gf73RTQx7hmnhwz0aaEXYakvqZyE302IXW3HyVNhdNGC+O2MwMAVhLEnvXlvKtGbtJf6wvHihCg==
 
 nanomatch@^1.2.9:
   version "1.2.13"
