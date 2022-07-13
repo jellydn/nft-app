@@ -284,28 +284,28 @@
     "@babel/helper-validator-identifier" "^7.14.9"
     to-fast-properties "^2.0.0"
 
-"@esbuild-kit/cjs-loader@^2.3.0":
-  version "2.3.0"
-  resolved "https://registry.yarnpkg.com/@esbuild-kit/cjs-loader/-/cjs-loader-2.3.0.tgz#db61e68aa746ab776af315844a72d85fb86095fd"
-  integrity sha512-KInrVt8wlKLhWy7+y4a+E+0uBJoWgdx6Xupy+rrF4MFHA/dEt22ACvvChOZSyiqtQieYPtbPkVYSjbC7mOrFVw==
+"@esbuild-kit/cjs-loader@^2.3.1":
+  version "2.3.1"
+  resolved "https://registry.yarnpkg.com/@esbuild-kit/cjs-loader/-/cjs-loader-2.3.1.tgz#462981d49d9af0dba1c9d8f0f1b73ba0b57f187d"
+  integrity sha512-ov6ALYD9xZSPoo5mmGOQtEC/b0xXeUlPy65p8aHMHLF4DfBEe8Y+iquH2lTDsy6Iskc1uMTadF+SVADTSTNJMA==
   dependencies:
-    "@esbuild-kit/core-utils" "^2.0.0"
+    "@esbuild-kit/core-utils" "^2.1.0"
     get-tsconfig "^4.1.0"
 
-"@esbuild-kit/core-utils@^2.0.0", "@esbuild-kit/core-utils@^2.0.2":
-  version "2.0.2"
-  resolved "https://registry.yarnpkg.com/@esbuild-kit/core-utils/-/core-utils-2.0.2.tgz#2b12beb95252ab4a207de16cd2dafcb4de1e1f86"
-  integrity sha512-clNYQUsqtc36pzW5EufMsahcbLG45EaW3YDyf0DlaS0eCMkDXpxIlHwPC0rndUwG6Ytk9sMSD5k1qHbwYEC/OQ==
+"@esbuild-kit/core-utils@^2.1.0":
+  version "2.1.0"
+  resolved "https://registry.yarnpkg.com/@esbuild-kit/core-utils/-/core-utils-2.1.0.tgz#90f3a22b68305ae739a83b02e24ed0cdcba2917f"
+  integrity sha512-fZirrc2KjeTumVjE4bpleWOk2gD83b7WuGeQqOceKFQL+heNKKkNB5G5pekOUTLzfSBc0hP7hCSBoD9TuR0hLw==
   dependencies:
     esbuild "~0.14.47"
     source-map-support "^0.5.21"
 
-"@esbuild-kit/esm-loader@^2.4.0":
-  version "2.4.0"
-  resolved "https://registry.yarnpkg.com/@esbuild-kit/esm-loader/-/esm-loader-2.4.0.tgz#feaa94aeedb2b95cb2b30c77160629fdf2be941e"
-  integrity sha512-zS720jXh06nfg5yAzm6oob4sWN9VTP2E1SonhFgEb6zCBswa4S8fOQ/4Bksz1flDgn56NPqoTTDn2XmWRyMG9Q==
+"@esbuild-kit/esm-loader@^2.4.1":
+  version "2.4.1"
+  resolved "https://registry.yarnpkg.com/@esbuild-kit/esm-loader/-/esm-loader-2.4.1.tgz#5319a95fb46f89ce9d8bdf657c7ac67ebe61b1f9"
+  integrity sha512-6x44rygVfNODm27v0RW3wX5y61mqSrXDvB39G0nomgWWqxG3mjiKtPSwrFppdkrA39QIqDgVlD4gJmPOxnleSw==
   dependencies:
-    "@esbuild-kit/core-utils" "^2.0.0"
+    "@esbuild-kit/core-utils" "^2.1.0"
     get-tsconfig "^4.1.0"
 
 "@fastify/ajv-compiler@^3.1.0":
@@ -4053,14 +4053,14 @@ trivial-deferred@^1.0.1:
   resolved "https://registry.yarnpkg.com/trivial-deferred/-/trivial-deferred-1.0.1.tgz#376d4d29d951d6368a6f7a0ae85c2f4d5e0658f3"
   integrity sha1-N21NKdlR1jaKb3oK6FwvTV4GWPM=
 
-tsx@3.7.1:
-  version "3.7.1"
-  resolved "https://registry.yarnpkg.com/tsx/-/tsx-3.7.1.tgz#36b76628c33abc8cd9cbab60c15a00e50c631f22"
-  integrity sha512-dwl1GBdkwVQ9zRxTmETGi+ck8pewNm2QXh+HK6jHxdHmeCjfCL+Db3b4VX/dOMDSS2hle1j5LzQoo8OpVXu6XQ==
+tsx@3.8.0:
+  version "3.8.0"
+  resolved "https://registry.yarnpkg.com/tsx/-/tsx-3.8.0.tgz#40528c8e5d44fa98877db9dfd463b46fb1c00a23"
+  integrity sha512-PcvTwRXTm6hDWfPihA4n5WW/9SmgFNxKaDKqvLLG+FKNEPA4crsipChzC7PVozPtdOaMfR5QctDlkC/hKoIsxw==
   dependencies:
-    "@esbuild-kit/cjs-loader" "^2.3.0"
-    "@esbuild-kit/core-utils" "^2.0.2"
-    "@esbuild-kit/esm-loader" "^2.4.0"
+    "@esbuild-kit/cjs-loader" "^2.3.1"
+    "@esbuild-kit/core-utils" "^2.1.0"
+    "@esbuild-kit/esm-loader" "^2.4.1"
   optionalDependencies:
     fsevents "~2.3.2"
 
