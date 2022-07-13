@@ -15,7 +15,7 @@
     "package.json": "sort-package-json"
   },
   "dependencies": {
-    "@hookform/devtools": "4.2.0",
+    "@hookform/devtools": "4.2.1",
     "@sentry/react": "7.6.0",
     "@sentry/tracing": "7.6.0",
     "@tailwindcss/typography": "0.5.4",
