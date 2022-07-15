@@ -74,7 +74,7 @@
     "p-queue": "6.6.2",
     "postcss": "8.4.14",
     "prettier": "2.7.1",
-    "prettier-plugin-solidity": "1.0.0-dev.22",
+    "prettier-plugin-solidity": "1.0.0-dev.23",
     "solgraph": "0.3.3",
     "solhint": "3.3.7",
     "solidity-coverage": "0.7.21",
