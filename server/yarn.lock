@@ -2957,10 +2957,10 @@ native-fetch@^3.0.0:
   resolved "https://registry.yarnpkg.com/native-fetch/-/native-fetch-3.0.0.tgz#06ccdd70e79e171c365c75117959cf4fe14a09bb"
   integrity sha512-G3Z7vx0IFb/FQ4JxvtqGABsOTIqRWvgQz6e+erkB+JJD6LrszQtMozEHI4EkmgZQvnGHrpLVzUWk7t4sJCIkVw==
 
-nft.storage@^6.4.0:
-  version "6.4.0"
-  resolved "https://registry.yarnpkg.com/nft.storage/-/nft.storage-6.4.0.tgz#3b9aee48a75e86881ca3b5fd045d89cfcc2b22a9"
-  integrity sha512-b5kgIi9xk+euZpiTzhaDzJey12bOCcOW74ipK5Zwczhgkm3sTFa4F1Bp2XYNqUtPQMXc6DO2v0r3NZ4ctl3iCg==
+nft.storage@^7.0.0:
+  version "7.0.0"
+  resolved "https://registry.yarnpkg.com/nft.storage/-/nft.storage-7.0.0.tgz#9855106a16649673db12684232bb0292694230fe"
+  integrity sha512-6ris9loxF9TNTPY/JghLzdLlvFV3UzWkUcVTfmrRn49jzDUfyT5wMhDmYRBQuknNFN1jf7jlSGNHixs5SpOoOA==
   dependencies:
     "@ipld/car" "^3.2.3"
     "@ipld/dag-cbor" "^6.0.13"
@@ -2970,6 +2970,7 @@ nft.storage@^6.4.0:
     "@web-std/form-data" "^3.0.0"
     carbites "^1.0.6"
     ipfs-car "^0.6.2"
+    it-pipe "^1.1.0"
     multiformats "^9.6.4"
     p-retry "^4.6.1"
     streaming-iterables "^6.0.0"
