@@ -4085,10 +4085,10 @@ trivial-deferred@^1.0.1:
   resolved "https://registry.yarnpkg.com/trivial-deferred/-/trivial-deferred-1.0.1.tgz#376d4d29d951d6368a6f7a0ae85c2f4d5e0658f3"
   integrity sha1-N21NKdlR1jaKb3oK6FwvTV4GWPM=
 
-tsx@3.8.1:
-  version "3.8.1"
-  resolved "https://registry.yarnpkg.com/tsx/-/tsx-3.8.1.tgz#b23a362859f73a6592b12b2c8c537ed78ab29850"
-  integrity sha512-YA2fDf1V9j/6qX/QSnapMmzulbqlx7FeVL6d9ySHDJoECkslAlZO38UuyFCiNPjam74hbyHbJfUF+n2ZT14KDA==
+tsx@3.8.2:
+  version "3.8.2"
+  resolved "https://registry.yarnpkg.com/tsx/-/tsx-3.8.2.tgz#5522dbe28890b63dedb659fc86fb9c5224207c5e"
+  integrity sha512-Jf9izq3Youry5aEarspf6Gm+v/IE2A2xP7YVhtNH1VSCpM0jjACg7C3oD5rIoLBfXWGJSZj4KKC2bwE0TgLb2Q==
   dependencies:
     "@esbuild-kit/cjs-loader" "^2.3.3"
     "@esbuild-kit/core-utils" "^2.1.0"
