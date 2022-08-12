@@ -10,33 +10,46 @@
     "test": "test"
   },
   "scripts": {
-    "build:ts": "npm run clean && tsc",
-    "clean": "rimraf dist",
+    "build": "tsup",
+    "build:ts": "tsup --env.NODE_ENV production",
     "dev": "tsx watch src/server.ts",
     "start": "tsx src/server.ts",
     "test": "npm run build:ts && tsc -p test/tsconfig.test.json && cross-env TS_NODE_FILES=true tap --ts test/**/*.test.ts"
   },
   "dependencies": {
-    "@fastify/autoload": "^5.1.0",
-    "@fastify/cors": "^8.0.0",
+    "@fastify/autoload": "^5.2.0",
+    "@fastify/cors": "^8.1.0",
     "@fastify/multipart": "^7.1.0",
     "@fastify/sensible": "^5.1.0",
-    "@sinclair/typebox": "^0.24.19",
+    "@sinclair/typebox": "^0.24.27",
     "close-with-grace": "^1.1.0",
-    "fastify": "^4.2.1",
-    "fastify-cli": "^5.0.0",
-    "fastify-plugin": "^4.0.0",
+    "fastify": "^4.4.0",
+    "fastify-cli": "^5.0.1",
+    "fastify-plugin": "^4.1.0",
     "fastify-tsconfig": "^1.0.1",
     "nft.storage": "^7.0.0",
     "typescript": "^4.7.4"
   },
   "devDependencies": {
     "@types/busboy": "1.5.0",
-    "@types/node": "16.11.47",
+    "@types/node": "18.7.2",
     "@types/tap": "15.0.7",
     "cross-env": "7.0.3",
     "fast-json-stringify": "5.1.0",
     "tap": "16.3.0",
-    "tsx": "3.8.1"
+    "tsup": "^6.2.2",
+    "tsx": "3.8.2"
+  },
+  "tsup": {
+    "entry": [
+      "src/**/*.ts"
+    ],
+    "splitting": false,
+    "sourcemap": true,
+    "clean": true,
+    "format": [
+      "cjs"
+    ],
+    "target": "es2018"
   }
 }
