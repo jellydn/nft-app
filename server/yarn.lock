@@ -1812,14 +1812,15 @@ fast-glob@^3.2.9:
     merge2 "^1.3.0"
     micromatch "^4.0.4"
 
-fast-json-stringify@5.1.0:
-  version "5.1.0"
-  resolved "https://registry.yarnpkg.com/fast-json-stringify/-/fast-json-stringify-5.1.0.tgz#dc184049d7eed4f61e34f65e97c0763fd043977f"
-  integrity sha512-IybGfbUc1DQgyrp9Myhwlr1Z5vjV37mBkdgcbuvsvUxv5fayG+cHlTQQpXH9nMwUPgp+5Y3RT7QDgx5zJ9NS3A==
+fast-json-stringify@5.2.0:
+  version "5.2.0"
+  resolved "https://registry.yarnpkg.com/fast-json-stringify/-/fast-json-stringify-5.2.0.tgz#0a637b698db602cd8f0c931b0025cf4858e9f5ce"
+  integrity sha512-u5jtrcAK9RINW15iuDKnsuuhqmqre4AmDMp3crRTjUMdAuHMpQUt3IfoMm5wlJm59b74PcajqOl3SjgnC5FPmw==
   dependencies:
     "@fastify/deepmerge" "^1.0.0"
     ajv "^8.10.0"
     ajv-formats "^2.1.1"
+    fast-deep-equal "^3.1.3"
     fast-uri "^2.1.0"
     rfdc "^1.2.0"
 
