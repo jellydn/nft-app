@@ -1,7 +1,6 @@
 import reactRefresh from "@vitejs/plugin-react-refresh";
 import { config } from "dotenv";
 import { defineConfig } from "vite";
-import checker from "vite-plugin-checker";
 
 config();
 
@@ -10,7 +9,7 @@ export default defineConfig(({ command, mode }) => ({
   define: {
     "process.env.NODE_ENV": JSON.stringify(command === "serve" ? "development" : "production"),
   },
-  plugins: [reactRefresh(), checker({ typescript: true })],
+  plugins: [reactRefresh()],
   server: {
     proxy: {
       "/api": {
