@@ -14603,10 +14603,10 @@ use-deep-compare-effect@^1.8.1:
     "@babel/runtime" "^7.12.5"
     dequal "^2.0.2"
 
-use-nft@0.11.0:
-  version "0.11.0"
-  resolved "https://registry.yarnpkg.com/use-nft/-/use-nft-0.11.0.tgz#9fa63958805b8b6def0f8c0f3784763cce76b21f"
-  integrity sha512-zzTe1IAvHDIfTQD3WbaoyBOb9eA5I7A1pI6r5bjrX6dy1C8gUab/gr1Gu5YEOZyRgkatE5v9tzhtINJnHKAxHA==
+use-nft@0.12.0:
+  version "0.12.0"
+  resolved "https://registry.yarnpkg.com/use-nft/-/use-nft-0.12.0.tgz#5fb74737fa7c5261f8d8586684c4715569145d9d"
+  integrity sha512-gXNYQgvnBjGrkLB10INdA2a1SZKQttI0QGIAotxCOedrqjmyX8YF5UAOGdLzPcujKJujEhvxClXqDWWcZpZY7w==
   dependencies:
     swr "1.3.0"
 
