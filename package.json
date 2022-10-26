@@ -16,8 +16,8 @@
   },
   "dependencies": {
     "@hookform/devtools": "4.2.2",
-    "@sentry/react": "7.15.0",
-    "@sentry/tracing": "7.15.0",
+    "@sentry/react": "7.16.0",
+    "@sentry/tracing": "7.16.0",
     "@tailwindcss/typography": "0.5.7",
     "@web3-react/core": "6.1.9",
     "@web3-react/injected-connector": "6.0.7",
