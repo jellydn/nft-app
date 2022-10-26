@@ -4531,10 +4531,10 @@ tsup@6.3.0:
     sucrase "^3.20.3"
     tree-kill "^1.2.2"
 
-tsx@3.10.1:
-  version "3.10.1"
-  resolved "https://registry.yarnpkg.com/tsx/-/tsx-3.10.1.tgz#4ffb1229077f648bbf46c0ed2b098f4cd8dd6d6d"
-  integrity sha512-Gh6xoW4xrdnLs6hYZydVHIQtrgmbZ/DbnJoLsYoI8MxhKAIyu8R7RyF0D5qg9UKi74Nmr4iSlijdz7Q43IGLyQ==
+tsx@3.11.0:
+  version "3.11.0"
+  resolved "https://registry.yarnpkg.com/tsx/-/tsx-3.11.0.tgz#866dd2de4b4b26d92d3e132b9795db2f65db44d3"
+  integrity sha512-q+q4xxu41+AafVwvAGqtNJ1ekPFd33ZhTMXvgIpHMqv/W89efwDRE9IyjhEAZm5iTHsshKaf1BYWSk789BrNCA==
   dependencies:
     "@esbuild-kit/cjs-loader" "^2.4.0"
     "@esbuild-kit/core-utils" "^3.0.0"
