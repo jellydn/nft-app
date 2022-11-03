@@ -21,7 +21,7 @@
     "@fastify/cors": "^8.1.1",
     "@fastify/multipart": "^7.3.0",
     "@fastify/sensible": "^5.1.1",
-    "@sinclair/typebox": "^0.25.1",
+    "@sinclair/typebox": "^0.25.2",
     "close-with-grace": "^1.1.0",
     "fastify": "^4.9.2",
     "fastify-cli": "^5.5.1",
@@ -32,7 +32,7 @@
   },
   "devDependencies": {
     "@types/busboy": "1.5.0",
-    "@types/node": "18.11.7",
+    "@types/node": "18.11.9",
     "@types/tap": "15.0.7",
     "cross-env": "7.0.3",
     "fast-json-stringify": "5.4.0",
