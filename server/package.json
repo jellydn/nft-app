@@ -35,7 +35,7 @@
     "@types/node": "18.11.9",
     "@types/tap": "15.0.7",
     "cross-env": "7.0.3",
-    "fast-json-stringify": "5.4.0",
+    "fast-json-stringify": "5.4.1",
     "tap": "16.3.0",
     "tsup": "6.4.0",
     "tsx": "3.11.0"
