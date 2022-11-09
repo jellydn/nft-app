@@ -355,13 +355,13 @@
   dependencies:
     text-decoding "^1.0.0"
 
-"@fastify/cors@8.1.1":
-  version "8.1.1"
-  resolved "https://registry.yarnpkg.com/@fastify/cors/-/cors-8.1.1.tgz#b4e65275d84bd534a5c5f3ed908211f81fcaa8b7"
-  integrity sha512-YpkNonoJtn7Zcq2uyh0bFPcjW+njWZ9rz5gl8o5NDUvpBIPjg5m/3IHvsq91Pp/fFhLL7XgVOUyk+gMl8tb5FQ==
+"@fastify/cors@8.2.0":
+  version "8.2.0"
+  resolved "https://registry.yarnpkg.com/@fastify/cors/-/cors-8.2.0.tgz#44ce6b28bc111e12679cb02f980f0ce865ff4877"
+  integrity sha512-qDgwpmg6C4D0D3nh8MTMuRXWyEwPnDZDBODaJv90FP2o9ukbahJByW4FtrM5Bpod5KbTf1oIExBmpItbUTQmHg==
   dependencies:
     fastify-plugin "^4.0.0"
-    mnemonist "0.39.4"
+    mnemonist "0.39.5"
 
 "@fastify/deepmerge@^1.0.0":
   version "1.1.0"
@@ -585,10 +585,10 @@
   resolved "https://registry.yarnpkg.com/@protobufjs/utf8/-/utf8-1.1.0.tgz#a777360b5b39a1a2e5106f8e858f2fd2d060c570"
   integrity sha1-p3c2C1s5oaLlEG+OhY8v0tBgxXA=
 
-"@sinclair/typebox@0.25.2":
-  version "0.25.2"
-  resolved "https://registry.yarnpkg.com/@sinclair/typebox/-/typebox-0.25.2.tgz#8de5684b8ef7c46444d3ee54f6711d6f4e74aa6a"
-  integrity sha512-QWjo2shO8oUWM6rSwIz7tUY8+WxP0fhUYQvaFA5eq+sECaQjQaRZIBXgWhWzzsB+lbgjljB1zRFfyX8mudn1gQ==
+"@sinclair/typebox@0.25.5":
+  version "0.25.5"
+  resolved "https://registry.yarnpkg.com/@sinclair/typebox/-/typebox-0.25.5.tgz#8f8d6650efbe318db20616687278f7d2d37f7164"
+  integrity sha512-cjauXt7Has9yaVcQ0c/DEckBTVimsty3ycyzpAJfQM/zTcfC4r6+CF8J/Ax7AHNxAhDA903OSe7Fs5TPFdLiLA==
 
 "@types/busboy@1.5.0":
   version "1.5.0"
@@ -1823,10 +1823,10 @@ fast-glob@^3.2.9:
     merge2 "^1.3.0"
     micromatch "^4.0.4"
 
-fast-json-stringify@5.4.0:
-  version "5.4.0"
-  resolved "https://registry.yarnpkg.com/fast-json-stringify/-/fast-json-stringify-5.4.0.tgz#6d5066a13bb84f237141375588ddaabfaad6ba2d"
-  integrity sha512-PIzon53oX/zEGLrGbu4DpfNcYiV4K4rk+JsVrawRPO/G8cNBEMZ3KlIk2BCGqN+m1KCCA4zt5E7Hh3GG9ojRVA==
+fast-json-stringify@5.4.1:
+  version "5.4.1"
+  resolved "https://registry.yarnpkg.com/fast-json-stringify/-/fast-json-stringify-5.4.1.tgz#06c18426c21d8cfbb0c925f99370e583c4ce4cc5"
+  integrity sha512-P7S9WXEnMqu6seBnzAFmgZ+T3KCD+Do+pNIJsmk/6OlDHZVjl6KzsQB3TFHKQb2Q8N7C9l31WS7/LZGF5hT1FA==
   dependencies:
     "@fastify/deepmerge" "^1.0.0"
     ajv "^8.10.0"
@@ -3207,10 +3207,10 @@ mkdirp@^1.0.4:
   resolved "https://registry.yarnpkg.com/mkdirp/-/mkdirp-1.0.4.tgz#3eb5ed62622756d79a5f0e2a221dfebad75c2f7e"
   integrity sha512-vVqVZQyf3WLx2Shd0qJ9xuvqgAyKPLAiqITEtqW0oIUjzo3PePDd6fW9iFz30ef7Ysp/oiWqbhszeGWW2T6Gzw==
 
-mnemonist@0.39.4:
-  version "0.39.4"
-  resolved "https://registry.yarnpkg.com/mnemonist/-/mnemonist-0.39.4.tgz#62bfd347a5fe1e44aaedf8b44f21d324a16f8ec9"
-  integrity sha512-WlE2Ugow1ENH5un0OthjsjpJb/nbkUQ/jUOHtZUqh58JNzEHNxkm0tIFRAoExsANW/fTN/rxBUMFY/7jPDvxdQ==
+mnemonist@0.39.5:
+  version "0.39.5"
+  resolved "https://registry.yarnpkg.com/mnemonist/-/mnemonist-0.39.5.tgz#5850d9b30d1b2bc57cc8787e5caa40f6c3420477"
+  integrity sha512-FPUtkhtJ0efmEFGpU14x7jGbTB+s18LrzRL2KgoWz9YvcY3cPomz8tih01GbHwnGk/OmkOKfqd/RAQoc8Lm7DQ==
   dependencies:
     obliterator "^2.0.1"
 
