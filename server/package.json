@@ -18,10 +18,10 @@
   },
   "dependencies": {
     "@fastify/autoload": "5.4.1",
-    "@fastify/cors": "8.1.1",
+    "@fastify/cors": "8.2.0",
     "@fastify/multipart": "7.3.0",
     "@fastify/sensible": "5.1.1",
-    "@sinclair/typebox": "0.25.2",
+    "@sinclair/typebox": "0.25.5",
     "close-with-grace": "1.1.0",
     "fastify": "4.9.2",
     "fastify-cli": "5.5.1",
@@ -35,7 +35,7 @@
     "@types/node": "18.11.9",
     "@types/tap": "15.0.7",
     "cross-env": "7.0.3",
-    "fast-json-stringify": "5.4.0",
+    "fast-json-stringify": "5.4.1",
     "tap": "16.3.0",
     "tsup": "6.4.0",
     "tsx": "3.11.0"
