@@ -2,7 +2,7 @@
   "name": "nft-app",
   "version": "0.1.0",
   "scripts": {
-    "build": "npx dardhat compile --network localhost && tsc && vite build",
+    "build": "npx hardhat compile --network localhost && tsc && vite build",
     "dev": "vite",
     "lint:sol": "npx solhint 'contracts/**/*.sol'",
     "prepare": "husky install",
