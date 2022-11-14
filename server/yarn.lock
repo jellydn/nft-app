@@ -1895,10 +1895,10 @@ fast-uri@^2.1.0:
   resolved "https://registry.yarnpkg.com/fast-uri/-/fast-uri-2.1.0.tgz#9279432d6b53675c90116b947ed2bbba582d6fb5"
   integrity sha512-qKRta6N7BWEFVlyonVY/V+BMLgFqktCUV0QjT259ekAIlbVrMaFnFLxJ4s/JPl4tou56S1BzPufI60bLe29fHA==
 
-fastify-cli@5.5.1:
-  version "5.5.1"
-  resolved "https://registry.yarnpkg.com/fastify-cli/-/fastify-cli-5.5.1.tgz#f543074535e296adacb933655027b505109f6b72"
-  integrity sha512-ChxBQmobWZIRMVCAv6gqHosDoqm2rePEVcUSscQDc6s3HkTYMtGNYdeTsf28XKViUQI+Gty2YHItTkFt/X9uog==
+fastify-cli@5.6.0:
+  version "5.6.0"
+  resolved "https://registry.yarnpkg.com/fastify-cli/-/fastify-cli-5.6.0.tgz#7b51b90fb055f9c9fa503091f649b87bc0989ffa"
+  integrity sha512-17S9x8LVKx9kB2PWSh6yf/OXLLJiFm/bHE4vY1eWGSH4kQaeh7Ry3P9jDw5RWPauamlHpoGXlJskdKghPKeChQ==
   dependencies:
     chalk "^4.1.2"
     chokidar "^3.5.2"
@@ -4594,10 +4594,10 @@ ts-interface-checker@^0.1.9:
   resolved "https://registry.yarnpkg.com/ts-interface-checker/-/ts-interface-checker-0.1.13.tgz#784fd3d679722bc103b1b4b8030bcddb5db2a699"
   integrity sha512-Y/arvbn+rrz3JCKl9C4kVNfTfSm2/mEp5FSz5EsZSANGPSlQrpRI5M4PKF+mJnE52jOO90PnPSc3Ur3bTQw0gA==
 
-tsup@6.4.0:
-  version "6.4.0"
-  resolved "https://registry.yarnpkg.com/tsup/-/tsup-6.4.0.tgz#d860955c5b248a61959a97dbae5e0365129b9fa4"
-  integrity sha512-4OlbqIK/SF+cJp0mMqPM2pKULvgj/1S2Gm3I1aFoFGIryUOyIqPZBoqKkqVQT6uFtWJ5AHftIv0riXKfHox1zQ==
+tsup@6.5.0:
+  version "6.5.0"
+  resolved "https://registry.yarnpkg.com/tsup/-/tsup-6.5.0.tgz#1be97481b7a56385b7c40d01bdabb4196f3649cf"
+  integrity sha512-36u82r7rYqRHFkD15R20Cd4ercPkbYmuvRkz3Q1LCm5BsiFNUgpo36zbjVhCOgvjyxNBWNKHsaD5Rl8SykfzNA==
   dependencies:
     bundle-require "^3.1.2"
     cac "^6.7.12"
