@@ -13,7 +13,7 @@ export function Header() {
       <div className="flex-1 px-2 mx-2">
         <span className="text-lg font-bold">{active ? "🟢" : error ? "🔴" : "🟠"}</span>
       </div>
-      <div className="flex-none hidden px-2 mx-2 lg:flex">
+      <div className="hidden flex-none px-2 mx-2 lg:flex">
         <div className="flex items-stretch">
           <ChainId />
           <Account />

@@ -9,7 +9,7 @@ type Props = {
 
 export function Pagination({ onChange, totalPage, currentPage }: Props) {
   return (
-    <div className="flex justify-center w-full py-4 space-x-2">
+    <div className="flex justify-center py-4 space-x-2 w-full">
       {Array.from(Array(totalPage).keys()).map((i) => (
         <button
           key={i}

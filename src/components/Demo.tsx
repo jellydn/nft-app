@@ -69,7 +69,7 @@ export default function Demo() {
                 fill="none"
                 viewBox="0 0 24 24"
                 stroke="#ff5722"
-                className="w-6 h-6 mx-2"
+                className="mx-2 w-6 h-6"
               >
                 <path
                   strokeLinecap="round"
@@ -83,8 +83,8 @@ export default function Demo() {
           </div>
         </>
       )}
-      <div className="flex flex-col max-w-xs mx-auto">
-        <figure className="container justify-center w-full px-10 pt-10 mx-auto text-white">
+      <div className="flex flex-col mx-auto max-w-xs">
+        <figure className="container justify-center px-10 pt-10 mx-auto w-full text-white">
           <img src={logo} alt="metamask" className="mask mask-squircle" />
         </figure>
         <button

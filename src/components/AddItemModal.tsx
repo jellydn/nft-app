@@ -46,7 +46,7 @@ function AddItemModal({ isOpen, onAdd, onClose }: AddItemModalProps) {
 
   const thumbs = files.map((file) => (
     <div className="avatar" key={file.name}>
-      <div className="w-auto h-24 mb-8 rounded-btn">
+      <div className="mb-8 w-auto h-24 rounded-btn">
         <img src={file.preview} alt={file.name} />
       </div>
     </div>

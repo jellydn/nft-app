@@ -12,6 +12,7 @@
   "lint-staged": {
     "*.js": "eslint --cache --fix",
     "*.{js,css,md}": "prettier --write",
+    "*.{tsx,jsx}": "rustywind --write",
     "package.json": "sort-package-json"
   },
   "dependencies": {
@@ -75,6 +76,7 @@
     "postcss": "8.4.19",
     "prettier": "2.7.1",
     "prettier-plugin-solidity": "1.0.0-rc.1",
+    "rustywind": "^0.15.1",
     "solgraph": "0.3.3",
     "solhint": "3.3.7",
     "solidity-coverage": "0.8.2",

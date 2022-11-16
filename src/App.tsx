@@ -118,7 +118,7 @@ function NFTApp() {
         <button
           type="button"
           onClick={() => setIsOpen(true)}
-          className="ml-2 btn btn-lg hover:btn-active hover:text-green-200"
+          className="ml-2 hover:text-green-200 btn btn-lg hover:btn-active"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -158,7 +158,7 @@ function NFTApp() {
         onClose={() => setIsOpen(false)}
       />
 
-      <div className="container grid gap-2 xl:grid-cols-3 md:grid-cols-2 sm:grid-cols-1">
+      <div className="container grid gap-2 sm:grid-cols-1 md:grid-cols-2 xl:grid-cols-3">
         {Array.from(Array(limit).keys())
           .filter((i) => i + 1 + (page - 1) * limit < total)
           .map((i) => (

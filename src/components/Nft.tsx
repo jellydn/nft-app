@@ -12,7 +12,7 @@ export function Nft({ tokenId }: { tokenId: string }) {
     return (
       <div className="text-center text-gray-200 bg-gray-700 rounded shadow card">
         <h2 className="my-2 text-4xl font-bold card-title">#{tokenId}</h2>
-        <div className="items-center justify-center card-body">
+        <div className="justify-center items-center card-body">
           <div className="text-center btn btn-ghost btn-sm btn-circle loading">Loading…</div>
         </div>
       </div>
@@ -28,9 +28,9 @@ export function Nft({ tokenId }: { tokenId: string }) {
     );
 
   return (
-    <div className="text-center bg-gray-500 rounded-md shadow-md text-gray-50 card">
+    <div className="text-center text-gray-50 bg-gray-500 rounded-md shadow-md card">
       <h2 className="my-2 text-4xl font-bold card-title">#{tokenId}</h2>
-      <figure className="px-4 pt-4 ">
+      <figure className="px-4 pt-4">
         <Image src={nft.image} alt={nft.name} className="mask mask-sircleu" />
       </figure>
       <div className="card-body">

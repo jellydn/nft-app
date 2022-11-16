@@ -14,7 +14,7 @@ const Image = (props: React.ImgHTMLAttributes<HTMLImageElement>) => {
               fill="none"
               viewBox="0 0 24 24"
               stroke="#ff5722"
-              className="w-6 h-6 mx-2"
+              className="mx-2 w-6 h-6"
             >
               <path
                 strokeLinecap="round"
