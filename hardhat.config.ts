@@ -7,7 +7,7 @@ import { config } from "dotenv";
 import { readFileSync } from "fs";
 import "hardhat-gas-reporter";
 import { task } from "hardhat/config";
-import { NFTStorage, File } from "nft.storage";
+import { File, NFTStorage } from "nft.storage";
 import { join } from "path";
 import "solidity-coverage";
 
@@ -78,29 +78,28 @@ export default {
       chainId: 1337,
       initialBaseFeePerGas: 0, // workaround from https://github.com/sc-forks/solidity-coverage/issues/652#issuecomment-896330136 . Remove when that issue is closed.
     },
-    ropsten: {
-      url: process.env.ROPSTEN_PROVIDER_URL || "",
-      accounts: process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
-    },
-    rinkeby: {
-      url: process.env.RINKEBY_PROVIDER_URL || "",
-      accounts: process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
-    },
     tomotestnet: {
       chainId: 89,
       url: process.env.TOMO_PROVIDER_URL || "https://rpc.testnet.tomochain.com",
-      accounts: process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
+      accounts: process.env.PRIVATE_KEY !== undefined
+        ? [process.env.PRIVATE_KEY]
+        : [],
     },
     matictestnet: {
       chainId: 80001,
-      url:
-        process.env.MATIC_PROVIDER_URL || "https://speedy-nodes-nyc.moralis.io/036063875a28828fa0c00596/polygon/mumbai",
-      accounts: process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
+      url: process.env.MATIC_PROVIDER_URL ||
+        "https://speedy-nodes-nyc.moralis.io/036063875a28828fa0c00596/polygon/mumbai",
+      accounts: process.env.PRIVATE_KEY !== undefined
+        ? [process.env.PRIVATE_KEY]
+        : [],
     },
     bsctestnet: {
       chainId: 97,
-      url: process.env.BSC_PROVIDER_URL || "https://speedy-nodes-nyc.moralis.io/036063875a28828fa0c00596/bsc/testnet",
-      accounts: process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
+      url: process.env.BSC_PROVIDER_URL ||
+        "https://speedy-nodes-nyc.moralis.io/036063875a28828fa0c00596/bsc/testnet",
+      accounts: process.env.PRIVATE_KEY !== undefined
+        ? [process.env.PRIVATE_KEY]
+        : [],
     },
   },
   gasReporter: {
