@@ -299,10 +299,10 @@
     ajv-formats "^2.1.1"
     fast-uri "^2.0.0"
 
-"@fastify/autoload@5.5.0":
-  version "5.5.0"
-  resolved "https://registry.yarnpkg.com/@fastify/autoload/-/autoload-5.5.0.tgz#0a6be3cf7e5d6ebaa5d7086ac38f9b4fd8628654"
-  integrity sha512-lWx4SvPBL9PI5j/I4A0zkDI+KyvMSo5rJeVMCsT7eeiJ2TzM8+l1ZGK/9RCmq3AycHeOTU7WB5JYmOOIW4iCsA==
+"@fastify/autoload@5.6.0":
+  version "5.6.0"
+  resolved "https://registry.yarnpkg.com/@fastify/autoload/-/autoload-5.6.0.tgz#57be8df6707cabd12620eee9ee7c23b34122b8f2"
+  integrity sha512-WvIPDfhpMmWlZxUkIB7ncIw+y0BVrRanFncx/llRnPjDqyHMSPlNEnu48l22biQ/2W02PUS2TLihhH6faBZAQw==
   dependencies:
     pkg-up "^3.1.0"
 
