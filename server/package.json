@@ -24,7 +24,7 @@
     "@sinclair/typebox": "0.25.10",
     "close-with-grace": "1.1.0",
     "fastify": "4.10.2",
-    "fastify-cli": "5.6.0",
+    "fastify-cli": "5.6.1",
     "fastify-plugin": "4.3.0",
     "fastify-tsconfig": "1.0.1",
     "nft.storage": "7.0.0",
