@@ -2335,10 +2335,10 @@
   resolved "https://registry.yarnpkg.com/@openzeppelin/contracts/-/contracts-4.8.0.tgz#6854c37df205dd2c056bdfa1b853f5d732109109"
   integrity sha512-AGuwhRRL+NaKx73WKRNzeCxOCOCxpaqF+kp8TJ89QzAipSwZy/NoflkWaL9bywXFRhIzXt8j38sfF7KBKCPWLw==
 
-"@openzeppelin/hardhat-upgrades@1.21.0":
-  version "1.21.0"
-  resolved "https://registry.yarnpkg.com/@openzeppelin/hardhat-upgrades/-/hardhat-upgrades-1.21.0.tgz#e90fb7d858093f35a300b3a5a2fd32bca6179dfc"
-  integrity sha512-Kwl7IN0Hlhj4HluMTTl0DrtU90OI/Q6rG3sAyd2pv3fababe9EuZqs9DydOlkWM45JwTzC+eBzX3TgHsqI13eA==
+"@openzeppelin/hardhat-upgrades@1.22.0":
+  version "1.22.0"
+  resolved "https://registry.yarnpkg.com/@openzeppelin/hardhat-upgrades/-/hardhat-upgrades-1.22.0.tgz#2a432c72a428a9f277201646bc1a248021538f06"
+  integrity sha512-1qyZnDaxl0C8tne7ykNRa/fxw3FrNCY2M3fGuCiQW5DDkJoXhLgm3JVsXwl6X7q9mQSrik4vgBbI3ErmxmZTYg==
   dependencies:
     "@openzeppelin/upgrades-core" "^1.20.0"
     chalk "^4.1.0"
@@ -5971,10 +5971,10 @@ d@1, d@^1.0.1:
     es5-ext "^0.10.50"
     type "^1.0.1"
 
-daisyui@2.43.2:
-  version "2.43.2"
-  resolved "https://registry.yarnpkg.com/daisyui/-/daisyui-2.43.2.tgz#8a7e560204b14d15800931b6875cbb08d08ef363"
-  integrity sha512-GLOCqzv5YUtnVhVz6HrcoZUULFk7UL/Eyr2732UG1Q2e5rz77lOzSlGKpZyzi1vrdsPgagn29vxLgx/MvaQiIA==
+daisyui@2.45.0:
+  version "2.45.0"
+  resolved "https://registry.yarnpkg.com/daisyui/-/daisyui-2.45.0.tgz#38fce0129b4db9c5063781c588c5be11d29aa791"
+  integrity sha512-hAWs7vQLxsWXCd3KMLAMBrZPO6OdU0gIDfOKGmZlyM0ro/pW3J2eGEaBs90Dy8w8L6wD/w1s8Ujd7zG8TYtD3g==
   dependencies:
     color "^4.2"
     css-selector-tokenizer "^0.8.0"
