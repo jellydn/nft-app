@@ -1,4 +1,3 @@
-import * as Sentry from "@sentry/react";
 import { useWeb3React, Web3ReactProvider } from "@web3-react/core";
 import { BigNumber, ethers, getDefaultProvider } from "ethers";
 import React, { useEffect, useState } from "react";
@@ -234,4 +233,4 @@ function App() {
   );
 }
 
-export default Sentry.withErrorBoundary(App, { fallback: <p>an error has occurred</p> });
+export default App
