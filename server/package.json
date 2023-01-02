@@ -17,13 +17,13 @@
     "test": "npm run build:ts && tsc -p test/tsconfig.test.json && cross-env TS_NODE_FILES=true tap --ts test/**/*.test.ts"
   },
   "dependencies": {
-    "@fastify/autoload": "5.6.0",
+    "@fastify/autoload": "5.7.0",
     "@fastify/cors": "8.2.0",
     "@fastify/multipart": "7.3.0",
     "@fastify/sensible": "5.2.0",
     "@sinclair/typebox": "0.25.16",
     "close-with-grace": "1.1.0",
-    "fastify": "4.10.2",
+    "fastify": "4.11.0",
     "fastify-cli": "5.7.0",
     "fastify-plugin": "4.4.0",
     "fastify-tsconfig": "1.0.1",
