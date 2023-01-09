@@ -36,9 +36,9 @@
     "@types/tap": "15.0.7",
     "cross-env": "7.0.3",
     "fast-json-stringify": "5.5.0",
-    "tap": "16.3.2",
+    "tap": "16.3.3",
     "tsup": "6.5.0",
-    "tsx": "3.12.1"
+    "tsx": "3.12.2"
   },
   "tsup": {
     "entry": [
