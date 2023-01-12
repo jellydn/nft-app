@@ -300,10 +300,10 @@
     ajv-formats "^2.1.1"
     fast-uri "^2.0.0"
 
-"@fastify/autoload@5.7.0":
-  version "5.7.0"
-  resolved "https://registry.yarnpkg.com/@fastify/autoload/-/autoload-5.7.0.tgz#cda41d64ac4a9e05808fa353c55ec2940bd2041b"
-  integrity sha512-RQ3g5zZnvdhq7yQJAPJq+D73lg/ZFZoPriaQ3Ul0BiJKAZhtLZSefll/kxgwEj0/rp705OUwvQMQTLgXBBMdGQ==
+"@fastify/autoload@5.7.1":
+  version "5.7.1"
+  resolved "https://registry.yarnpkg.com/@fastify/autoload/-/autoload-5.7.1.tgz#bd5fd2f496d3ef8c6f41bbab6666eae04bd260e6"
+  integrity sha512-F5c94MYAF0tacVu6X4/1ojO7fzmgrJXsqitDtpqknXgiHZpeFNhYSnNCUHPz6UDRKsfkDohmh0fiPTtOd8clzQ==
   dependencies:
     pkg-up "^3.1.0"
 
