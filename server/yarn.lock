@@ -339,10 +339,10 @@
   dependencies:
     fast-json-stringify "^5.0.0"
 
-"@fastify/multipart@7.3.0":
-  version "7.3.0"
-  resolved "https://registry.yarnpkg.com/@fastify/multipart/-/multipart-7.3.0.tgz#152908c32fbca9fbe55ee6ca114b818d4c9d1e9b"
-  integrity sha512-tbzQiRFxoADCn0G10CqiQ/nDWWcfegtwg826Pfz2h7+XvuqJhGnko0TbafrWIY7hnGD+sNCGMdiTVsxxs6zigA==
+"@fastify/multipart@7.4.0":
+  version "7.4.0"
+  resolved "https://registry.yarnpkg.com/@fastify/multipart/-/multipart-7.4.0.tgz#53ccc0bf433c94adab405f79d0a5ec31d5d37ead"
+  integrity sha512-jl8KCMOjzniAMnF2/VdYFhGB03Oqtl24plxcnsKpdnRLu/ihVz4cNPz9bPn8mLUQW4r3dUlh6emINtZdJczkbg==
   dependencies:
     "@fastify/busboy" "^1.0.0"
     "@fastify/deepmerge" "^1.0.0"
@@ -1575,10 +1575,10 @@ fast-uri@^2.0.0, fast-uri@^2.1.0:
   resolved "https://registry.yarnpkg.com/fast-uri/-/fast-uri-2.2.0.tgz#519a0f849bef714aad10e9753d69d8f758f7445a"
   integrity sha512-cIusKBIt/R/oI6z/1nyfe2FvGKVTohVRfvkOhvx0nCEW+xf5NoCXjAHcWp93uOUBchzYcsvPlrapAdX1uW+YGg==
 
-fastify-cli@5.7.0:
-  version "5.7.0"
-  resolved "https://registry.yarnpkg.com/fastify-cli/-/fastify-cli-5.7.0.tgz#2075f794c7023ea4a50b961ae5f901832d8d5209"
-  integrity sha512-mLQfyA1oAtK70voA9eYnYVVKAuKdSWkfcrj93EmX2b+sAMynPIbItqAajBXrPCMvARPgdJ3aHSANdyY8OLFhWg==
+fastify-cli@5.7.1:
+  version "5.7.1"
+  resolved "https://registry.yarnpkg.com/fastify-cli/-/fastify-cli-5.7.1.tgz#2563718df61f91c9d3a4a5416d91d96454f2a862"
+  integrity sha512-0FgQux1TK+zsRxVLDCF4F+x2ilHDeaJB2TouHIHWRS0+cM6aC+bBSqHva/myrlZs/1lQCAe294DvZkAuJyHySw==
   dependencies:
     "@fastify/deepmerge" "^1.2.0"
     chalk "^4.1.2"
