@@ -652,10 +652,10 @@
   resolved "https://registry.yarnpkg.com/@protobufjs/utf8/-/utf8-1.1.0.tgz#a777360b5b39a1a2e5106f8e858f2fd2d060c570"
   integrity sha512-Vvn3zZrhQZkkBE8LSuW3em98c0FwgO4nxzv6OdSxPKJIEKY2bGbHn+mhGIPerzI4twdxaP8/0+06HBpwf345Lw==
 
-"@sinclair/typebox@0.25.24":
-  version "0.25.24"
-  resolved "https://registry.yarnpkg.com/@sinclair/typebox/-/typebox-0.25.24.tgz#8c7688559979f7079aacaf31aa881c3aa410b718"
-  integrity sha512-XJfwUVUKDHF5ugKwIcxEgc9k8b7HbznCp6eUfWgu710hMPNIO4aw4/zB5RogDQz8nd6gyCDpU9O/m6qYEWY6yQ==
+"@sinclair/typebox@0.26.0":
+  version "0.26.0"
+  resolved "https://registry.yarnpkg.com/@sinclair/typebox/-/typebox-0.26.0.tgz#49b2b2f52147e4145486c778a727dcdcd65d4682"
+  integrity sha512-tpJrwq/npjYCZ5x//33zRKlgOg8lsBKuQ7MhmItrde/URJshRwDJsJzPwGSUqVetRCDDmcUP5P3Ux1XtAU7l1g==
 
 "@types/busboy@1.5.0":
   version "1.5.0"
