@@ -23,7 +23,7 @@
     "@fastify/sensible": "5.2.0",
     "@sinclair/typebox": "0.25.24",
     "close-with-grace": "1.1.0",
-    "fastify": "4.14.1",
+    "fastify": "4.15.0",
     "fastify-cli": "5.7.1",
     "fastify-plugin": "4.5.0",
     "fastify-tsconfig": "1.0.1",
@@ -32,13 +32,13 @@
   },
   "devDependencies": {
     "@types/busboy": "1.5.0",
-    "@types/node": "18.15.3",
+    "@types/node": "18.15.5",
     "@types/tap": "15.0.8",
     "cross-env": "7.0.3",
     "fast-json-stringify": "5.6.2",
     "tap": "16.3.4",
     "tsup": "6.7.0",
-    "tsx": "3.12.5"
+    "tsx": "3.12.6"
   },
   "tsup": {
     "entry": [
