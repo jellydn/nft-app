@@ -816,10 +816,10 @@
   resolved "https://registry.yarnpkg.com/@protobufjs/utf8/-/utf8-1.1.0.tgz#a777360b5b39a1a2e5106f8e858f2fd2d060c570"
   integrity sha512-Vvn3zZrhQZkkBE8LSuW3em98c0FwgO4nxzv6OdSxPKJIEKY2bGbHn+mhGIPerzI4twdxaP8/0+06HBpwf345Lw==
 
-"@sinclair/typebox@0.28.18":
-  version "0.28.18"
-  resolved "https://registry.yarnpkg.com/@sinclair/typebox/-/typebox-0.28.18.tgz#4a13c7ea3393d00e581717a8a750128e631c0831"
-  integrity sha512-I19d36CXlLAsm+nrl7VKsYyirFLtdebT2nlfV3Knvo0tnk8B8UKyt3DEqNJexEb/2pKPtdXNLcr72aJtfl6whA==
+"@sinclair/typebox@0.28.19":
+  version "0.28.19"
+  resolved "https://registry.yarnpkg.com/@sinclair/typebox/-/typebox-0.28.19.tgz#bcc9b0fb26082ea8d052e59cacadf096b60fcf81"
+  integrity sha512-J08onOXZeCXEwB/Kpri/1l3b8Fs1EzG301kDCEikf5+E0TH8SzY1Edfq8T4ebNzXFcs34gonv20LjMn4Bzthow==
 
 "@types/busboy@1.5.0":
   version "1.5.0"
@@ -843,10 +843,15 @@
   resolved "https://registry.yarnpkg.com/@types/minimist/-/minimist-1.2.2.tgz#ee771e2ba4b3dc5b372935d549fd9617bf345b8c"
   integrity sha512-jhuKLIRrhvCPLqwPcx6INqmKeiA5EWrsCOPhrlFSrbrmU4ZMPjj5Ul/oLCMDO98XRUIwVm78xICz4EPCektzeQ==
 
-"@types/node@*", "@types/node@20.3.1", "@types/node@>=13.7.0":
+"@types/node@*", "@types/node@>=13.7.0":
   version "20.3.1"
   resolved "https://registry.yarnpkg.com/@types/node/-/node-20.3.1.tgz#e8a83f1aa8b649377bb1fb5d7bac5cb90e784dfe"
   integrity sha512-EhcH/wvidPy1WeML3TtYFGR83UzjxeWRen9V402T8aUGYsCHOmfoisV3ZSg03gAFIbLq8TnWOJ0f4cALtnSEUg==
+
+"@types/node@20.3.2":
+  version "20.3.2"
+  resolved "https://registry.yarnpkg.com/@types/node/-/node-20.3.2.tgz#fa6a90f2600e052a03c18b8cb3fd83dd4e599898"
+  integrity sha512-vOBLVQeCQfIcF/2Y7eKFTqrMnizK5lRNQ7ykML/5RuwVXVWxYkgwS7xbt4B6fKCUPgbSL5FSsjHQpaGQP/dQmw==
 
 "@types/normalize-package-data@^2.4.0":
   version "2.4.1"
