@@ -816,10 +816,10 @@
   resolved "https://registry.yarnpkg.com/@protobufjs/utf8/-/utf8-1.1.0.tgz#a777360b5b39a1a2e5106f8e858f2fd2d060c570"
   integrity sha512-Vvn3zZrhQZkkBE8LSuW3em98c0FwgO4nxzv6OdSxPKJIEKY2bGbHn+mhGIPerzI4twdxaP8/0+06HBpwf345Lw==
 
-"@sinclair/typebox@0.28.19":
-  version "0.28.19"
-  resolved "https://registry.yarnpkg.com/@sinclair/typebox/-/typebox-0.28.19.tgz#bcc9b0fb26082ea8d052e59cacadf096b60fcf81"
-  integrity sha512-J08onOXZeCXEwB/Kpri/1l3b8Fs1EzG301kDCEikf5+E0TH8SzY1Edfq8T4ebNzXFcs34gonv20LjMn4Bzthow==
+"@sinclair/typebox@0.28.20":
+  version "0.28.20"
+  resolved "https://registry.yarnpkg.com/@sinclair/typebox/-/typebox-0.28.20.tgz#978652a10ced0102aec86e8e088837ab7d0d5871"
+  integrity sha512-QCF3BGfacwD+3CKhGsMeixnwOmX4AWgm61nKkNdRStyLVu0mpVFYlDSY8gVBOOED1oSwzbJauIWl/+REj8K5+w==
 
 "@types/busboy@1.5.0":
   version "1.5.0"
