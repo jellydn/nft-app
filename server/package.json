@@ -28,7 +28,7 @@
     "fastify-plugin": "4.5.0",
     "fastify-tsconfig": "1.0.1",
     "nft.storage": "7.1.0",
-    "typescript": "5.1.5"
+    "typescript": "5.1.6"
   },
   "devDependencies": {
     "@types/busboy": "1.5.0",
