@@ -816,10 +816,10 @@
   resolved "https://registry.yarnpkg.com/@protobufjs/utf8/-/utf8-1.1.0.tgz#a777360b5b39a1a2e5106f8e858f2fd2d060c570"
   integrity sha512-Vvn3zZrhQZkkBE8LSuW3em98c0FwgO4nxzv6OdSxPKJIEKY2bGbHn+mhGIPerzI4twdxaP8/0+06HBpwf345Lw==
 
-"@sinclair/typebox@0.28.20":
-  version "0.28.20"
-  resolved "https://registry.yarnpkg.com/@sinclair/typebox/-/typebox-0.28.20.tgz#978652a10ced0102aec86e8e088837ab7d0d5871"
-  integrity sha512-QCF3BGfacwD+3CKhGsMeixnwOmX4AWgm61nKkNdRStyLVu0mpVFYlDSY8gVBOOED1oSwzbJauIWl/+REj8K5+w==
+"@sinclair/typebox@0.29.0":
+  version "0.29.0"
+  resolved "https://registry.yarnpkg.com/@sinclair/typebox/-/typebox-0.29.0.tgz#a19842180595a9a77d57407091707a2739feb508"
+  integrity sha512-htPaB6O/USun7JviXuzHnIchTbwgSdKijwt/ho8l9agmvbFcYnrSPOi2qNRzqNOBnHjXMUPoCXri4C6SwkOy3g==
 
 "@types/busboy@1.5.0":
   version "1.5.0"
@@ -1818,10 +1818,10 @@ fastify-tsconfig@1.0.1:
   resolved "https://registry.yarnpkg.com/fastify-tsconfig/-/fastify-tsconfig-1.0.1.tgz#ec90e45fa8aa72b81178757bd5940c7875037639"
   integrity sha512-BXkTG3JYcjJb3xX5R5FcE9ciscV/h7YtmnkiSaNAONd1g6ooMSN/4GWfhA8hnS6SRZFYBBxsn8719Mj9lbCOtA==
 
-fastify@4.19.0:
-  version "4.19.0"
-  resolved "https://registry.yarnpkg.com/fastify/-/fastify-4.19.0.tgz#2475b4cf0075aa7bd3b9651ee9fc57a1bf67cee0"
-  integrity sha512-Fb7w46k3kum/V+OMiw2/LN1lo2xqhJqwTsv+LGie5n7YNdA9bmDUntXfcec9rG6VRDXIBfPf5xmFv2wooBdxzg==
+fastify@4.19.1:
+  version "4.19.1"
+  resolved "https://registry.yarnpkg.com/fastify/-/fastify-4.19.1.tgz#5a95fb2f0480d0f6c36e17155fc05c3b4e67055b"
+  integrity sha512-99r7xae02BUWI1H8exJidkFJXi/SUZpO18YIJ6SSWIB1bb5CN659ga0iB85oLD+C4D9LeTOKplOJ1/YcFsK7oQ==
   dependencies:
     "@fastify/ajv-compiler" "^3.5.0"
     "@fastify/error" "^3.2.0"
