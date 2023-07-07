@@ -22,7 +22,7 @@
     "@web3-react/injected-connector": "6.0.7",
     "@web3-react/network-connector": "6.2.9",
     "@web3-react/walletconnect-connector": "6.2.13",
-    "daisyui": "3.1.10",
+    "daisyui": "3.1.11",
     "loglevel": "1.8.1",
     "nft.storage": "7.1.0",
     "react": "18.2.0",
@@ -83,7 +83,7 @@
     "ts-node": "10.9.1",
     "typechain": "8.2.0",
     "typescript": "5.1.6",
-    "vite": "4.4.1"
+    "vite": "4.4.2"
   },
   "engines": {
     "node": ">=12.0.0 <13.0.0-0||>=14.0.0 <15.0.0-0||>=16.0.0 <17.0.0-0 || >=18.12.0"
