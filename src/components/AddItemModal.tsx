@@ -8,9 +8,9 @@ type FormValues = {
 };
 
 type AddItemModalProps = {
-  isOpen: boolean;
-  onAdd: (formData: FormValues, files: Array<File>) => void;
-  onClose: () => void;
+  readonly isOpen: boolean;
+  readonly onAdd: (formData: FormValues, files: File[]) => void;
+  readonly onClose: () => void;
 };
 
 function AddItemModal({ isOpen, onAdd, onClose }: AddItemModalProps) {
@@ -33,19 +33,19 @@ function AddItemModal({ isOpen, onAdd, onClose }: AddItemModalProps) {
     accept: {
       "image/*": [".jpeg", ".png"],
     },
-    onDrop: (acceptedFiles) => {
+    onDrop(acceptedFiles) {
       setFiles(
         acceptedFiles.map((file) =>
           Object.assign(file, {
             preview: URL.createObjectURL(file),
-          })
-        )
+          }),
+        ),
       );
     },
   });
 
   const thumbs = files.map((file) => (
-    <div className="avatar" key={file.name}>
+    <div key={file.name} className="avatar">
       <div className="mb-8 w-auto h-24 rounded-btn">
         <img src={file.preview} alt={file.name} />
       </div>
@@ -55,9 +55,12 @@ function AddItemModal({ isOpen, onAdd, onClose }: AddItemModalProps) {
   useEffect(
     () => () => {
       // Make sure to revoke the data uris to avoid memory leaks
-      files.forEach((file: any) => URL.revokeObjectURL(file.preview));
+      files.forEach((file: any) => {
+        // eslint-disable-next-line @typescript-eslint/no-unsafe-argument
+        URL.revokeObjectURL(file.preview);
+      });
     },
-    [files]
+    [files],
   );
 
   const onSubmit = handleSubmit((data) => {
@@ -78,7 +81,7 @@ function AddItemModal({ isOpen, onAdd, onClose }: AddItemModalProps) {
                     className: "input",
                   })}
                 />
-                <p>Drag 'n' drop some files here, or click to select files</p>
+                <p>Drag & drop some files here, or click to select files</p>
                 <em>(Only *.jpeg and *.png images will be accepted)</em>
               </div>
               <aside>{thumbs}</aside>
@@ -97,7 +100,7 @@ function AddItemModal({ isOpen, onAdd, onClose }: AddItemModalProps) {
               />
               {errors.name && (
                 <label className="label">
-                  <span className="label-text-alt">{errors.name.message || "Required"}</span>
+                  <span className="label-text-alt">{errors.name.message ?? "Required"}</span>
                 </label>
               )}
             </div>
@@ -115,10 +118,10 @@ function AddItemModal({ isOpen, onAdd, onClose }: AddItemModalProps) {
                     : "h-24 textarea textarea-bordered"
                 }
                 placeholder="Description"
-              ></textarea>
+              />
               {errors.description && (
                 <label className="label">
-                  <span className="label-text-alt">{errors.description.message || "Required"}</span>
+                  <span className="label-text-alt">{errors.description.message ?? "Required"}</span>
                 </label>
               )}
             </div>
@@ -128,7 +131,7 @@ function AddItemModal({ isOpen, onAdd, onClose }: AddItemModalProps) {
             <button type="submit" className="btn btn-primary">
               Add
             </button>
-            <button type="button" onClick={onClose} className="btn">
+            <button type="button" className="btn" onClick={onClose}>
               Close
             </button>
           </div>

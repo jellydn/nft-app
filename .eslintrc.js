@@ -5,7 +5,11 @@ module.exports = {
     mocha: true,
     node: true,
   },
-  extends: ["plugin:node/recommended", "airbnb", "prettier"],
+  extends: ["productsway/react"],
+  ignorePatterns: ["dist", ".eslintrc.js", "vite.config.ts"],
+  parserOptions: {
+    project: ["./tsconfig.json"],
+  },
   overrides: [
     {
       files: ["hardhat.config.js"],

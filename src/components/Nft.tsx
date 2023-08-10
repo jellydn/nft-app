@@ -5,7 +5,7 @@ import Image from "./Image";
 
 export const CONTRACT_DEPLOYED_ADDRESS = import.meta.env.VITE_NFT_DEPLOYED_ADDRESS;
 
-export function Nft({ tokenId }: { tokenId: string }) {
+export function Nft({ tokenId }: { readonly tokenId: string }) {
   const { loading, error, nft } = useNft(CONTRACT_DEPLOYED_ADDRESS, tokenId);
 
   if (loading)
@@ -18,7 +18,7 @@ export function Nft({ tokenId }: { tokenId: string }) {
       </div>
     );
 
-  if (error || !nft)
+  if (error ?? !nft)
     return (
       <div className="alert alert-error">
         <div className="flex-1">
@@ -38,7 +38,7 @@ export function Nft({ tokenId }: { tokenId: string }) {
         <p>{nft.description}</p>
         <p>Owner: {nft.owner}</p>
         <div className="justify-center card-actions">
-          <a target="_blank" href={nft.metadataUrl} className="btn btn-outline btn-accent">
+          <a target="_blank" href={nft.metadataUrl} className="btn btn-outline btn-accent" rel="noreferrer">
             More info
           </a>
         </div>

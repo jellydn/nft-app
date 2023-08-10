@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-unsafe-argument */
 import { useWeb3React, Web3ReactProvider } from "@web3-react/core";
 import { BigNumber, ethers, getDefaultProvider } from "ethers";
 import React, { useEffect, useState } from "react";
@@ -12,11 +13,12 @@ import { Nft } from "./components/Nft";
 import { Pagination } from "./components/Pagination";
 import logger from "./logger";
 import { networkName, CHAIN_ID } from "./networkName";
-import { MyAwesomeLogo } from "./types";
+import { type MyAwesomeLogo } from "./types";
 
 export const CONTRACT_DEPLOYED_ADDRESS = import.meta.env.VITE_NFT_DEPLOYED_ADDRESS;
 
 declare global {
+  // eslint-disable-next-line @typescript-eslint/consistent-type-definitions
   interface Window {
     ethereum: ethers.providers.ExternalProvider;
   }
@@ -43,11 +45,13 @@ function NFTApp() {
     const contract = new ethers.Contract(
       CONTRACT_DEPLOYED_ADDRESS,
       MyAwesomeLogoArtifacts.abi,
-      provider
+      provider,
     ) as MyAwesomeLogo;
     contract
       .currentCounter()
-      .then((result) => setTotal(BigNumber.from(result).toNumber()))
+      .then((result) => {
+        setTotal(BigNumber.from(result).toNumber());
+      })
       .catch(logger.error);
   };
 
@@ -65,26 +69,31 @@ function NFTApp() {
     const contract = new ethers.Contract(
       CONTRACT_DEPLOYED_ADDRESS,
       MyAwesomeLogoArtifacts.abi,
-      signer
+      signer,
     ) as MyAwesomeLogo;
-    // get current account
+    // Get current account
     try {
       if (!account) {
         await requestAccount();
         // TODO: support retry after account is selected
         return;
       }
-      const transaction = await contract.freeMint(account, tokenUrl);
-      toast.promise(transaction.wait(), {
-        loading: `Transaction submitted. Wait for confirmation...`,
-        success: <b>Transaction confirmed!</b>,
-        error: <b>Transaction failed!.</b>,
-      });
 
-      // refetch total token after processing
+      const transaction = await contract.freeMint(account, tokenUrl);
+      toast
+        .promise(transaction.wait(), {
+          loading: `Transaction submitted. Wait for confirmation...`,
+          success: <b>Transaction confirmed!</b>,
+          error: <b>Transaction failed!.</b>,
+        })
+        .catch(logger.error);
+
+      // Refetch total token after processing
       transaction
         .wait()
-        .then(() => fetchTotal())
+        .then(() => {
+          fetchTotal();
+        })
         .catch(logger.error);
     } catch (error) {
       logger.error(error);
@@ -107,6 +116,7 @@ function NFTApp() {
     if (result.error) {
       toast.error(result.message);
     }
+
     return result;
   };
 
@@ -116,8 +126,10 @@ function NFTApp() {
         NFT Items
         <button
           type="button"
-          onClick={() => setIsOpen(true)}
           className="ml-2 hover:text-green-200 btn btn-lg hover:btn-active"
+          onClick={() => {
+            setIsOpen(true);
+          }}
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -145,16 +157,17 @@ function NFTApp() {
             description: formData.description,
             file: files[0],
           })
-            .then((result) => {
+            .then(async (result) => {
               if (result.url) {
-                // TODO: mit a token
                 toast.success(`Uploaded ${result.url}`);
                 return onMintNftTokeN(result.url);
               }
             })
             .catch(logger.error);
         }}
-        onClose={() => setIsOpen(false)}
+        onClose={() => {
+          setIsOpen(false);
+        }}
       />
 
       <div className="container grid gap-2 sm:grid-cols-1 md:grid-cols-2 xl:grid-cols-3">

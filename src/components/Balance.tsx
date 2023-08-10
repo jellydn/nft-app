@@ -4,22 +4,22 @@ import React from "react";
 
 export function Balance() {
   const { account, library, chainId } = useWeb3React();
-  const [balance, setBalance] = React.useState<number | null>();
+  const [balance, setBalance] = React.useState<number | undefined>();
 
   React.useEffect((): any => {
-    if (!!account && !!library) {
+    if (Boolean(account) && Boolean(library)) {
       let stale = false;
 
       library
         .getBalance(account)
-        .then((balance: any) => {
+        .then((balance: React.SetStateAction<number | undefined>) => {
           if (!stale) {
             setBalance(balance);
           }
         })
         .catch(() => {
           if (!stale) {
-            setBalance(null);
+            setBalance(undefined);
           }
         });
 
@@ -28,7 +28,7 @@ export function Balance() {
         setBalance(undefined);
       };
     }
-  }, [account, library, chainId]); // ensures refresh if referential identity of library doesn't change across chainIds
+  }, [account, library, chainId]); // Ensures refresh if referential identity of library doesn't change across chainIds
 
   return (
     <div className="btn btn-ghost btn-sm rounded-btn">
