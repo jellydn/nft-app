@@ -1,3 +1,5 @@
+/* eslint-disable @typescript-eslint/no-unsafe-argument */
+/* eslint-disable no-alert */
 import { Web3Provider } from "@ethersproject/providers";
 import { useWeb3React, UnsupportedChainIdError } from "@web3-react/core";
 import {
@@ -14,20 +16,21 @@ import logo from "../metamask.png";
 import { networkName, CHAIN_ID } from "../networkName";
 import { Header } from "./Header";
 
-function getErrorMessage(error: Error) {
+function getErrorMessage(error?: Error) {
   if (error instanceof NoEthereumProviderError) {
     return "No Ethereum browser extension detected, install MetaMask on desktop or visit from a dApp browser on mobile.";
-  } else if (error instanceof UnsupportedChainIdError) {
-    return "You're connected to an unsupported network.";
-  } else if (
-    error instanceof UserRejectedRequestErrorInjected ||
-    error instanceof UserRejectedRequestErrorWalletConnect
-  ) {
-    return "Please authorize this website to access your Ethereum account.";
-  } else {
-    logger.error(error);
-    return "An unknown error occurred. Check the console for more details.";
   }
+
+  if (error instanceof UnsupportedChainIdError) {
+    return "You're connected to an unsupported network.";
+  }
+
+  if (error instanceof UserRejectedRequestErrorInjected || error instanceof UserRejectedRequestErrorWalletConnect) {
+    return "Please authorize this website to access your Ethereum account.";
+  }
+
+  logger.error(error);
+  return "An unknown error occurred. Check the console for more details.";
 }
 
 export function getLibrary(provider: any): Web3Provider {
@@ -40,7 +43,7 @@ export default function Demo() {
   const context = useWeb3React<Web3Provider>();
   const { connector, library, account, activate, deactivate, active, error, chainId } = context;
 
-  // handle logic to recognize the connector currently being activated
+  // Handle logic to recognize the connector currently being activated
   const [activatingConnector, setActivatingConnector] = React.useState<any>();
   React.useEffect(() => {
     if (activatingConnector && activatingConnector === connector) {
@@ -48,51 +51,50 @@ export default function Demo() {
     }
   }, [activatingConnector, connector]);
 
-  // handle logic to eagerly connect to the injected ethereum provider, if it exists and has granted access already
+  // Handle logic to eagerly connect to the injected ethereum provider, if it exists and has granted access already
   const triedEager = useEagerConnect();
 
-  // handle logic to connect in reaction to certain events on the injected ethereum provider, if it exists
-  useInactiveListener(!triedEager || !!activatingConnector);
+  // Handle logic to connect in reaction to certain events on the injected ethereum provider, if it exists
+  useInactiveListener(!triedEager || Boolean(activatingConnector));
 
   const activating = injected === activatingConnector;
   const connected = injected === connector;
-  const disabled = !triedEager || !!activatingConnector || connected || !!error;
+  const disabled = !triedEager || Boolean(activatingConnector) || connected || Boolean(error);
   return (
     <>
       <Header />
       {chainId !== Number(CHAIN_ID) && (
-        <>
-          <div className="alert">
-            <div className="flex-1">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="#ff5722"
-                className="mx-2 w-6 h-6"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M18.364 18.364A9 9 0 005.636 5.636m12.728 12.728A9 9 0 015.636 5.636m12.728 12.728L5.636 5.636"
-                />
-              </svg>
-              <label>Please connect your MetaMask to the {networkName[Number(CHAIN_ID)]} network.</label>
-            </div>
+        <div className="alert">
+          <div className="flex-1">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="#ff5722"
+              className="mx-2 w-6 h-6"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth={2}
+                d="M18.364 18.364A9 9 0 005.636 5.636m12.728 12.728A9 9 0 015.636 5.636m12.728 12.728L5.636 5.636"
+              />
+            </svg>
+            <label>Please connect your MetaMask to the {networkName[Number(CHAIN_ID)]} network.</label>
           </div>
-        </>
+        </div>
       )}
       <div className="flex flex-col mx-auto max-w-xs">
         <figure className="container justify-center px-10 pt-10 mx-auto w-full text-white">
           <img src={logo} alt="metamask" className="mask mask-squircle" />
         </figure>
         <button
+          type="button"
           className="btn btn-primary"
           disabled={disabled}
-          onClick={() => {
+          onClick={async () => {
             setActivatingConnector(injected);
-            activate(injected);
+            await activate(injected);
           }}
         >
           <div>
@@ -109,6 +111,7 @@ export default function Demo() {
       <div>
         {(active || error) && (
           <button
+            type="button"
             className="btn btn-secondary"
             onClick={() => {
               deactivate();
@@ -118,24 +121,26 @@ export default function Demo() {
           </button>
         )}
 
-        {!!error && <h4 style={{ marginTop: "1rem", marginBottom: "0" }}>{getErrorMessage(error)}</h4>}
+        {Boolean(error) && <h4 style={{ marginTop: "1rem", marginBottom: "0" }}>{getErrorMessage(error)}</h4>}
       </div>
 
       <div className="divider" />
-      {!!(library && account) && (
+      {Boolean(library && account) && (
         <div>
           <button
+            type="button"
             className="btn btn-primary"
             onClick={() => {
-              library
-                .getSigner(account)
-                .signMessage("👋")
-                .then((signature: any) => {
-                  window.alert(`Success!\n\n${signature}`);
-                })
-                .catch((error: any) => {
-                  window.alert("Failure!" + (error && error.message ? `\n\n${error.message}` : ""));
-                });
+              if (library && account)
+                library
+                  .getSigner(account)
+                  .signMessage("👋")
+                  .then((signature: any) => {
+                    window.alert(`Success!\n\n${signature}`);
+                  })
+                  .catch((error: any) => {
+                    window.alert("Failure!" + (error?.message ? `\n\n${error.message}` : ""));
+                  });
             }}
           >
             Sign Message

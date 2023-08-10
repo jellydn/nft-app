@@ -1,11 +1,12 @@
 import React, { useState } from "react";
 
-const Image = (props: React.ImgHTMLAttributes<HTMLImageElement>) => {
+function Image(props: React.ImgHTMLAttributes<HTMLImageElement>) {
   const [isLoaded, setIsLoaded] = useState(false);
   const [isError, setIsError] = useState(false);
   return (
     <>
-      {!isLoaded ? <div className="btn btn-ghost btn-sm btn-circle loading">Loading NFT Asset…</div> : null}
+      {isLoaded ? null : <div className="btn btn-ghost btn-sm btn-circle loading">Loading NFT Asset…</div>}
+
       {isError && isLoaded ? (
         <div className="text-white alert">
           <div className="flex-1">
@@ -40,6 +41,6 @@ const Image = (props: React.ImgHTMLAttributes<HTMLImageElement>) => {
       />
     </>
   );
-};
+}
 
 export default Image;
