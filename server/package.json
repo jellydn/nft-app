@@ -21,24 +21,24 @@
     "@fastify/cors": "8.3.0",
     "@fastify/multipart": "7.7.3",
     "@fastify/sensible": "5.2.0",
-    "@sinclair/typebox": "0.31.1",
+    "@sinclair/typebox": "0.31.11",
     "close-with-grace": "1.2.0",
-    "fastify": "4.21.0",
+    "fastify": "4.22.2",
     "fastify-cli": "5.8.0",
     "fastify-plugin": "4.5.1",
     "fastify-tsconfig": "1.0.1",
     "nft.storage": "7.1.1",
-    "typescript": "5.1.6"
+    "typescript": "5.2.2"
   },
   "devDependencies": {
     "@types/busboy": "1.5.0",
-    "@types/node": "20.5.2",
+    "@types/node": "20.5.9",
     "@types/tap": "15.0.8",
     "cross-env": "7.0.3",
     "fast-json-stringify": "5.8.0",
     "tap": "16.3.8",
     "tsup": "7.2.0",
-    "tsx": "3.12.7"
+    "tsx": "3.12.8"
   },
   "tsup": {
     "entry": [
