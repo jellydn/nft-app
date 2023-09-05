@@ -21,7 +21,7 @@
     "@fastify/cors": "8.3.0",
     "@fastify/multipart": "7.7.3",
     "@fastify/sensible": "5.2.0",
-    "@sinclair/typebox": "0.31.11",
+    "@sinclair/typebox": "0.31.14",
     "close-with-grace": "1.2.0",
     "fastify": "4.22.2",
     "fastify-cli": "5.8.0",
