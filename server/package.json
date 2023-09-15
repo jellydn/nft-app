@@ -31,7 +31,7 @@
     "typescript": "5.2.2"
   },
   "devDependencies": {
-    "@types/busboy": "1.5.0",
+    "@types/busboy": "1.5.1",
     "@types/node": "20.6.1",
     "@types/tap": "15.0.9",
     "cross-env": "7.0.3",
