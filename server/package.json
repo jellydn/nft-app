@@ -26,7 +26,7 @@
     "fastify": "4.23.2",
     "fastify-cli": "5.8.0",
     "fastify-plugin": "4.5.1",
-    "fastify-tsconfig": "1.0.1",
+    "fastify-tsconfig": "2.0.0",
     "nft.storage": "7.1.1",
     "typescript": "5.2.2"
   },
