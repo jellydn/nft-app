@@ -1,0 +1,22 @@
+{
+  "$schema": "https://raw.githubusercontent.com/streetsidesoftware/cspell/main/cspell.schema.json",
+  "version": "0.2",
+  "language": "en",
+  "globRoot": ".",
+  "dictionaryDefinitions": [
+    {
+      "name": "nft-app",
+      "path": "./nft-app.txt",
+      "addWords": true
+    }
+  ],
+  "dictionaries": [
+    "nft-app"
+  ],
+  "ignorePaths": [
+    "node_modules",
+    "dist",
+    "build",
+    "/nft-app.txt"
+  ]
+}
