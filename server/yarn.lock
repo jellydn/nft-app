@@ -348,36 +348,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@esbuild-kit/cjs-loader@npm:^2.4.2":
-  version: 2.4.4
-  resolution: "@esbuild-kit/cjs-loader@npm:2.4.4"
-  dependencies:
-    "@esbuild-kit/core-utils": "npm:^3.2.3"
-    get-tsconfig: "npm:^4.7.0"
-  checksum: 021df0d4de26d4eb0fa1fb8dfe4da8f745a6e711ffaa352de566e9af4246e5d9e00a5926550c625e6ff5e439a362584cd7c4dda1130241c23cbd74c586670deb
-  languageName: node
-  linkType: hard
-
-"@esbuild-kit/core-utils@npm:^3.2.3, @esbuild-kit/core-utils@npm:^3.3.0, @esbuild-kit/core-utils@npm:^3.3.2":
-  version: 3.3.2
-  resolution: "@esbuild-kit/core-utils@npm:3.3.2"
-  dependencies:
-    esbuild: "npm:~0.18.20"
-    source-map-support: "npm:^0.5.21"
-  checksum: d856f5bd720814593f911d781ed7558a3f8ec1a39802f3831d0eea0d1306e0e2dc11b7b2443af621c413ec6557f1f3034a9a4f1472a4cb40e52cd6e3b356aa05
-  languageName: node
-  linkType: hard
-
-"@esbuild-kit/esm-loader@npm:^2.6.3":
-  version: 2.6.5
-  resolution: "@esbuild-kit/esm-loader@npm:2.6.5"
-  dependencies:
-    "@esbuild-kit/core-utils": "npm:^3.3.2"
-    get-tsconfig: "npm:^4.7.0"
-  checksum: 6894b29176eda62bdce0d458d57f32daed5cb8fcff14cb3ddfbc995cfe3e2fa8599f3b0b1af66db446903b30167f57069f27e9cf79a69cf9b41f557115811cde
-  languageName: node
-  linkType: hard
-
 "@esbuild/android-arm64@npm:0.18.20":
   version: 0.18.20
   resolution: "@esbuild/android-arm64@npm:0.18.20"
@@ -550,12 +520,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@fastify/autoload@npm:5.7.1":
-  version: 5.7.1
-  resolution: "@fastify/autoload@npm:5.7.1"
-  dependencies:
-    pkg-up: "npm:^3.1.0"
-  checksum: 950a6a196660c1ce5830ce47cb06c72c285d6bda4787b76bd1c2559234c51fc56d82624b8f585d40319fec4ff2d829862cf632f982772f52aad80818dfdb3644
+"@fastify/autoload@npm:5.8.0":
+  version: 5.8.0
+  resolution: "@fastify/autoload@npm:5.8.0"
+  checksum: 58e0301ff3161eb46f39d42f076f088bee5d6dd54f78f08fc2c099500fa6ae714c73fb0101e23d33c802c93e3abf40ab3793af6fe82f3f4a0f0497496bc47f01
   languageName: node
   linkType: hard
 
@@ -568,13 +536,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@fastify/cors@npm:8.3.0":
-  version: 8.3.0
-  resolution: "@fastify/cors@npm:8.3.0"
+"@fastify/cors@npm:8.4.1":
+  version: 8.4.1
+  resolution: "@fastify/cors@npm:8.4.1"
   dependencies:
     fastify-plugin: "npm:^4.0.0"
     mnemonist: "npm:0.39.5"
-  checksum: 0bfc03e650679144b436ec5c83a85a0c6e7d68445dd80ca911f5c8d9c9717642ba604e44d4376d29d740e14d5a4f76ce1f1906d88ce6df8a53e0b5acdb3999e9
+  checksum: 9c06f91c09126d8af2fc5472766174602bd9594ca5b55cd28a766609a5f0d977d7860495873321d8322fe70f976829c9563129c1ad2a8bc36bd758ff9721a14e
   languageName: node
   linkType: hard
 
@@ -592,6 +560,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@fastify/error@npm:^3.4.0":
+  version: 3.4.0
+  resolution: "@fastify/error@npm:3.4.0"
+  checksum: 548216c10662a4c2f210c7c40f98195c530b646cf8d27ea35d18c0d513fe2f33b2ba2611a61619a1ec3163e8c0fefca05a671bc87a355df30476fee224bda3b3
+  languageName: node
+  linkType: hard
+
 "@fastify/fast-json-stringify-compiler@npm:^4.3.0":
   version: 4.3.0
   resolution: "@fastify/fast-json-stringify-compiler@npm:4.3.0"
@@ -601,20 +576,19 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@fastify/multipart@npm:7.7.3":
-  version: 7.7.3
-  resolution: "@fastify/multipart@npm:7.7.3"
+"@fastify/multipart@npm:8.0.0":
+  version: 8.0.0
+  resolution: "@fastify/multipart@npm:8.0.0"
   dependencies:
     "@fastify/busboy": "npm:^1.0.0"
     "@fastify/deepmerge": "npm:^1.0.0"
     "@fastify/error": "npm:^3.0.0"
     "@fastify/swagger": "npm:^8.3.1"
     "@fastify/swagger-ui": "npm:^1.8.0"
-    end-of-stream: "npm:^1.4.4"
     fastify-plugin: "npm:^4.0.0"
     secure-json-parse: "npm:^2.4.0"
     stream-wormhole: "npm:^1.1.0"
-  checksum: 1700dfeaa6d634f61c8108d145d97cf1a818bee3e9ddf50294dcac3c220e43a3e5fa3e6dbe69f30630cb5b9931e1eab4bf8d9c167f656ce58daa4b611f116a9d
+  checksum: e4220992c16d3f9fc921317f0e989f9934bc629088ae848b476dca54b79a9d9c19870652cd7b1d725a944315283bd089c86aa88fd74d7eaeab048c08739414e9
   languageName: node
   linkType: hard
 
@@ -631,9 +605,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@fastify/sensible@npm:5.3.0":
-  version: 5.3.0
-  resolution: "@fastify/sensible@npm:5.3.0"
+"@fastify/sensible@npm:5.5.0":
+  version: 5.5.0
+  resolution: "@fastify/sensible@npm:5.5.0"
   dependencies:
     "@lukeed/ms": "npm:^2.0.1"
     fast-deep-equal: "npm:^3.1.1"
@@ -642,7 +616,7 @@ __metadata:
     http-errors: "npm:^2.0.0"
     type-is: "npm:^1.6.18"
     vary: "npm:^1.1.2"
-  checksum: 5c6a812caac1c7191ad61f59042b0933a0f5e1798655956574372d637d1ff94e4f417918d20349fe192ee8ea3bac14ea34ed33cc75aab78736aa787800deb78b
+  checksum: 7871d4d09e75f72f8b1564c99a38d28158d1eeb78830dd79160cc0c56c8870ade6bf504c6cc8cca4dcc7726b2b84be80a032f2cbeb0392a60f1466f9b13f9a1d
   languageName: node
   linkType: hard
 
@@ -965,19 +939,19 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@sinclair/typebox@npm:0.31.15":
-  version: 0.31.15
-  resolution: "@sinclair/typebox@npm:0.31.15"
-  checksum: 94fca416580ad6c65ced62373a526a856b391628a5f837479fbb31084d79cd65609bfcf335b5e4cbc99df52b150190166a2c56cfb5ae01023768bb823169d757
+"@sinclair/typebox@npm:0.31.21":
+  version: 0.31.21
+  resolution: "@sinclair/typebox@npm:0.31.21"
+  checksum: 55b912f008833e9e591faaf74f02de31f7655303ad36f31ff7a5c734772e7890b402ef46e8a4ce34475c38c3ccfb9a05f56bed978b3ff2ac3d4ba7e7fc048ebf
   languageName: node
   linkType: hard
 
-"@types/busboy@npm:1.5.1":
-  version: 1.5.1
-  resolution: "@types/busboy@npm:1.5.1"
+"@types/busboy@npm:1.5.2":
+  version: 1.5.2
+  resolution: "@types/busboy@npm:1.5.2"
   dependencies:
     "@types/node": "npm:*"
-  checksum: 82a7d86acab0518f1de911b84312b0c7c1562701d740c33385cff3b0e53ac2083fb0814c074df8e5b1b3e64221c70335a0a3b4a7d17b4032f43276bdd79bb98f
+  checksum: 6b62474716320052e52891e4c5539aabb69a91cef5a99eec8e94baf09f46a40f02218c336670d47c5127bd1e8ca717561cbe86caa78d2e25168f45be67d483cf
   languageName: node
   linkType: hard
 
@@ -1002,10 +976,19 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/node@npm:*, @types/node@npm:20.6.2, @types/node@npm:>=13.7.0":
+"@types/node@npm:*, @types/node@npm:>=13.7.0":
   version: 20.6.2
   resolution: "@types/node@npm:20.6.2"
   checksum: e490a743f97779797e1cccb2cba9eb7b753c376a401e88fd3ba9b999e0e8f9851417f250639663e42e5d068f885b650972f8edbd9a3175c2f7b14e4ef206479c
+  languageName: node
+  linkType: hard
+
+"@types/node@npm:20.8.10":
+  version: 20.8.10
+  resolution: "@types/node@npm:20.8.10"
+  dependencies:
+    undici-types: "npm:~5.26.4"
+  checksum: caaa3ae9294f1bfdacb029a916c64af63cbcea613a52f53ea86f93c91779859af177b2b68113ef835194519f5e76cadda08559929b68297f1a8a568c207f9f66
   languageName: node
   linkType: hard
 
@@ -1048,12 +1031,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/tap@npm:15.0.9":
-  version: 15.0.9
-  resolution: "@types/tap@npm:15.0.9"
+"@types/tap@npm:15.0.10":
+  version: 15.0.10
+  resolution: "@types/tap@npm:15.0.10"
   dependencies:
     "@types/node": "npm:*"
-  checksum: 9649b6fd34bc35d5bd6011f1a65aa59133272c73500a37ec0527e0e034de162964ce69e6efdfd25d859d1627af39b00f2933742153123da03af5b199bc0fe737
+  checksum: 19ebd88a08551f7799f1ce0bc7ad3f722f461c7f2e95134f3b3710a35a0cbc6da3817fc0e66720f161653e0417bc6e86e3e9f554e37792156372b8d930f95ba5
   languageName: node
   linkType: hard
 
@@ -2065,7 +2048,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"end-of-stream@npm:^1.1.0, end-of-stream@npm:^1.4.4":
+"end-of-stream@npm:^1.1.0":
   version: 1.4.4
   resolution: "end-of-stream@npm:1.4.4"
   dependencies:
@@ -2278,6 +2261,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"fast-content-type-parse@npm:^1.1.0":
+  version: 1.1.0
+  resolution: "fast-content-type-parse@npm:1.1.0"
+  checksum: 882bf990fa5d64be1825ce183818db43900ece0d7ef184cb9409bae8ed1001acbe536a657b1496382cb3e308e71ab39cc399bbdae70cba1745eecaeca4e55384
+  languageName: node
+  linkType: hard
+
 "fast-copy@npm:^3.0.0":
   version: 3.0.1
   resolution: "fast-copy@npm:3.0.1"
@@ -2319,7 +2309,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"fast-json-stringify@npm:5.8.0, fast-json-stringify@npm:^5.7.0":
+"fast-json-stringify@npm:5.8.0, fast-json-stringify@npm:^5.7.0, fast-json-stringify@npm:^5.8.0":
   version: 5.8.0
   resolution: "fast-json-stringify@npm:5.8.0"
   dependencies:
@@ -2363,9 +2353,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"fastify-cli@npm:5.8.0":
-  version: 5.8.0
-  resolution: "fastify-cli@npm:5.8.0"
+"fastify-cli@npm:5.9.0":
+  version: 5.9.0
+  resolution: "fastify-cli@npm:5.9.0"
   dependencies:
     "@fastify/deepmerge": "npm:^1.2.0"
     chalk: "npm:^4.1.2"
@@ -2386,7 +2376,7 @@ __metadata:
     yargs-parser: "npm:^21.1.1"
   bin:
     fastify: cli.js
-  checksum: 6d46b05875f92ad621598c0b5fec7842f64ec349d6d9dd335dbc73333e4b67ac6be1a0877906992b4642e7732afbd3fe44e3c43b8299e76f977cc0becd95e5a6
+  checksum: 816cf964cd96bfc89deb4581e52f62b1ce47b69e7965a58233657574756e43c1d0c2cda37c924dbc31162394cf3f86721572f8f1e5b83605dd6f36daddb4b5ff
   languageName: node
   linkType: hard
 
@@ -2397,14 +2387,38 @@ __metadata:
   languageName: node
   linkType: hard
 
-"fastify-tsconfig@npm:1.0.1":
-  version: 1.0.1
-  resolution: "fastify-tsconfig@npm:1.0.1"
-  checksum: fdad2bf12b63a7791a12160e33c545634ea5c5d5157e4a50bb8fa6e90ccaa72adf2b3d916f4fd6930f97ad1cff04d080b249f5765aa775a4331526a8286f9ae4
+"fastify-tsconfig@npm:2.0.0":
+  version: 2.0.0
+  resolution: "fastify-tsconfig@npm:2.0.0"
+  checksum: 69e7105732c3d6b951a546d34d9efe36beb4569c8324eb439e522ec90a38d3119e6931ee0ad06aae72a390990c68c142c11b8458a72ce74eb5bda155964cf47f
   languageName: node
   linkType: hard
 
-"fastify@npm:4.23.2, fastify@npm:^4.0.0":
+"fastify@npm:4.24.3":
+  version: 4.24.3
+  resolution: "fastify@npm:4.24.3"
+  dependencies:
+    "@fastify/ajv-compiler": "npm:^3.5.0"
+    "@fastify/error": "npm:^3.4.0"
+    "@fastify/fast-json-stringify-compiler": "npm:^4.3.0"
+    abstract-logging: "npm:^2.0.1"
+    avvio: "npm:^8.2.1"
+    fast-content-type-parse: "npm:^1.1.0"
+    fast-json-stringify: "npm:^5.8.0"
+    find-my-way: "npm:^7.7.0"
+    light-my-request: "npm:^5.11.0"
+    pino: "npm:^8.16.0"
+    process-warning: "npm:^2.2.0"
+    proxy-addr: "npm:^2.0.7"
+    rfdc: "npm:^1.3.0"
+    secure-json-parse: "npm:^2.7.0"
+    semver: "npm:^7.5.4"
+    toad-cache: "npm:^3.3.0"
+  checksum: 36018767b25cde307942f52172eedfc7c1ce186162222334e19caa607e3d29fe3de04cff2c08f21096d45fa4b071cd58a319392a6dbb5b5dbdf8230b38405c3e
+  languageName: node
+  linkType: hard
+
+"fastify@npm:^4.0.0":
   version: 4.23.2
   resolution: "fastify@npm:4.23.2"
   dependencies:
@@ -2465,6 +2479,17 @@ __metadata:
     fast-querystring: "npm:^1.0.0"
     safe-regex2: "npm:^2.0.0"
   checksum: 562fb28fe1b05c35ae76a6ec95d971eb56fc33b95f2a5ae9fbab3e3c98692720e1466f27ceb55cd2a949e4540ac55c6a2d824fe79fb7091ecd0ab7d84393d1d7
+  languageName: node
+  linkType: hard
+
+"find-my-way@npm:^7.7.0":
+  version: 7.7.0
+  resolution: "find-my-way@npm:7.7.0"
+  dependencies:
+    fast-deep-equal: "npm:^3.1.3"
+    fast-querystring: "npm:^1.0.0"
+    safe-regex2: "npm:^2.0.0"
+  checksum: 6b4fef5f3a21a73c5428337a02ce2f90af055e3fade6f57f3444a76d7f58a43891aba26597014ff02f9fd9071abfdd32b92ff2435aadaf96dd2316920c456f6e
   languageName: node
   linkType: hard
 
@@ -2569,7 +2594,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"fsevents@npm:~2.3.2":
+"fsevents@npm:~2.3.2, fsevents@npm:~2.3.3":
   version: 2.3.3
   resolution: "fsevents@npm:2.3.3"
   dependencies:
@@ -2579,7 +2604,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"fsevents@patch:fsevents@npm%3A~2.3.2#optional!builtin<compat/fsevents>":
+"fsevents@patch:fsevents@npm%3A~2.3.2#optional!builtin<compat/fsevents>, fsevents@patch:fsevents@npm%3A~2.3.3#optional!builtin<compat/fsevents>":
   version: 2.3.3
   resolution: "fsevents@patch:fsevents@npm%3A2.3.3#optional!builtin<compat/fsevents>::version=2.3.3&hash=df0bf1"
   dependencies:
@@ -2663,12 +2688,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"get-tsconfig@npm:^4.7.0":
-  version: 4.7.0
-  resolution: "get-tsconfig@npm:4.7.0"
+"get-tsconfig@npm:^4.7.2":
+  version: 4.7.2
+  resolution: "get-tsconfig@npm:4.7.2"
   dependencies:
     resolve-pkg-maps: "npm:^1.0.0"
-  checksum: 5844d18a705535808cf535010d9443b47b462c6e91ed00d94500602f220ecb8e518325d5b1f9e0c515c67025819c3df193194144a456e1d8f1cd70b5d48b52aa
+  checksum: 169b2beababfbb16e8a0ae813ee59d3e14d4960231c816615161ab5be68ec07a394dce59695742ac84295e2efab8d9e89bcf3abaf5e253dfbec3496e01bb9a65
   languageName: node
   linkType: hard
 
@@ -3712,7 +3737,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"light-my-request@npm:^5.9.1":
+"light-my-request@npm:^5.11.0, light-my-request@npm:^5.9.1":
   version: 5.11.0
   resolution: "light-my-request@npm:5.11.0"
   dependencies:
@@ -4256,25 +4281,25 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "nft-api@workspace:."
   dependencies:
-    "@fastify/autoload": "npm:5.7.1"
-    "@fastify/cors": "npm:8.3.0"
-    "@fastify/multipart": "npm:7.7.3"
-    "@fastify/sensible": "npm:5.3.0"
-    "@sinclair/typebox": "npm:0.31.15"
-    "@types/busboy": "npm:1.5.1"
-    "@types/node": "npm:20.6.2"
-    "@types/tap": "npm:15.0.9"
+    "@fastify/autoload": "npm:5.8.0"
+    "@fastify/cors": "npm:8.4.1"
+    "@fastify/multipart": "npm:8.0.0"
+    "@fastify/sensible": "npm:5.5.0"
+    "@sinclair/typebox": "npm:0.31.21"
+    "@types/busboy": "npm:1.5.2"
+    "@types/node": "npm:20.8.10"
+    "@types/tap": "npm:15.0.10"
     close-with-grace: "npm:1.2.0"
     cross-env: "npm:7.0.3"
     fast-json-stringify: "npm:5.8.0"
-    fastify: "npm:4.23.2"
-    fastify-cli: "npm:5.8.0"
+    fastify: "npm:4.24.3"
+    fastify-cli: "npm:5.9.0"
     fastify-plugin: "npm:4.5.1"
-    fastify-tsconfig: "npm:1.0.1"
+    fastify-tsconfig: "npm:2.0.0"
     nft.storage: "npm:7.1.1"
     tap: "npm:16.3.8"
     tsup: "npm:7.2.0"
-    tsx: "npm:3.12.10"
+    tsx: "npm:3.14.0"
     typescript: "npm:5.2.2"
   languageName: unknown
   linkType: soft
@@ -4760,6 +4785,27 @@ __metadata:
   bin:
     pino: bin.js
   checksum: d2a5392da372d279f2ff0465d6a6f2033303d7cf8d2020938ae5e00e750a006388148edb8bad2c3f41227e365c3b179fb692d220566fe79e32ac5ed051bd4183
+  languageName: node
+  linkType: hard
+
+"pino@npm:^8.16.0":
+  version: 8.16.1
+  resolution: "pino@npm:8.16.1"
+  dependencies:
+    atomic-sleep: "npm:^1.0.0"
+    fast-redact: "npm:^3.1.1"
+    on-exit-leak-free: "npm:^2.1.0"
+    pino-abstract-transport: "npm:v1.1.0"
+    pino-std-serializers: "npm:^6.0.0"
+    process-warning: "npm:^2.0.0"
+    quick-format-unescaped: "npm:^4.0.3"
+    real-require: "npm:^0.2.0"
+    safe-stable-stringify: "npm:^2.3.1"
+    sonic-boom: "npm:^3.7.0"
+    thread-stream: "npm:^2.0.0"
+  bin:
+    pino: bin.js
+  checksum: 06ea391095e895f1f94adda231fb51565e2935a9cad87e6559b7e074a6dadc8bd279367dbe119b1649774480a53c97214f32daa4c14b21a853d50c60a4c28976
   languageName: node
   linkType: hard
 
@@ -5270,7 +5316,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"secure-json-parse@npm:^2.4.0, secure-json-parse@npm:^2.5.0":
+"secure-json-parse@npm:^2.4.0, secure-json-parse@npm:^2.5.0, secure-json-parse@npm:^2.7.0":
   version: 2.7.0
   resolution: "secure-json-parse@npm:2.7.0"
   checksum: f57eb6a44a38a3eeaf3548228585d769d788f59007454214fab9ed7f01fbf2e0f1929111da6db28cf0bcc1a2e89db5219a59e83eeaec3a54e413a0197ce879e4
@@ -5295,7 +5341,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"semver@npm:^7.3.4, semver@npm:^7.3.5, semver@npm:^7.5.0, semver@npm:^7.5.3":
+"semver@npm:^7.3.4, semver@npm:^7.3.5, semver@npm:^7.5.0, semver@npm:^7.5.3, semver@npm:^7.5.4":
   version: 7.5.4
   resolution: "semver@npm:7.5.4"
   dependencies:
@@ -5416,6 +5462,15 @@ __metadata:
   dependencies:
     atomic-sleep: "npm:^1.0.0"
   checksum: c5d387d9e35726a60afe5b5c54317db2428158ecaf3769fb16418e50d2a47176cbd800bf664a410dc0aab0792b421d394ce6edaf63b796ac3c7986f01933cddd
+  languageName: node
+  linkType: hard
+
+"sonic-boom@npm:^3.7.0":
+  version: 3.7.0
+  resolution: "sonic-boom@npm:3.7.0"
+  dependencies:
+    atomic-sleep: "npm:^1.0.0"
+  checksum: 57a3d560efb77f4576db111168ee2649c99e7869fda6ce0ec2a4e5458832d290ba58d74b073ddb5827d9a30f96d23cff79157993d919e1a6d5f28d8b6391c7f0
   languageName: node
   linkType: hard
 
@@ -5898,6 +5953,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"toad-cache@npm:^3.3.0":
+  version: 3.3.0
+  resolution: "toad-cache@npm:3.3.0"
+  checksum: df2e7fef3991e238197796d3ddd548e1a6b8cb569de8ee053949dcebb689a5ffdbaf2c2642c035768c00d114eb5d4db96925247cc9ccec9d88a6e6d58c95c76a
+  languageName: node
+  linkType: hard
+
 "toidentifier@npm:1.0.1":
   version: 1.0.1
   resolution: "toidentifier@npm:1.0.1"
@@ -6005,20 +6067,20 @@ __metadata:
   languageName: node
   linkType: hard
 
-"tsx@npm:3.12.10":
-  version: 3.12.10
-  resolution: "tsx@npm:3.12.10"
+"tsx@npm:3.14.0":
+  version: 3.14.0
+  resolution: "tsx@npm:3.14.0"
   dependencies:
-    "@esbuild-kit/cjs-loader": "npm:^2.4.2"
-    "@esbuild-kit/core-utils": "npm:^3.3.0"
-    "@esbuild-kit/esm-loader": "npm:^2.6.3"
-    fsevents: "npm:~2.3.2"
+    esbuild: "npm:~0.18.20"
+    fsevents: "npm:~2.3.3"
+    get-tsconfig: "npm:^4.7.2"
+    source-map-support: "npm:^0.5.21"
   dependenciesMeta:
     fsevents:
       optional: true
   bin:
-    tsx: dist/cli.js
-  checksum: df5b387763abb87955f12cf49fb7b1da662325586ab43e88f5ce8113102336cecb82f1d758948a039a61d9fbb019f6c57b86a8eca6085e6efeb88eaba5174764
+    tsx: dist/cli.mjs
+  checksum: b6c938bdae9c656aef2aa0130ee6aa8f3487b5d411d5f7934b705c28ff44ab268db3dde123cf5237b4e5e2ab4441a0bad4b1a39e3ff2170d138538e44082f05d
   languageName: node
   linkType: hard
 
@@ -6102,6 +6164,13 @@ __metadata:
   dependencies:
     multiformats: "npm:^9.4.2"
   checksum: 9946668e04f29b46bbb73cca3d190f63a2fbfe5452f8e6551ef4257d9d597b72da48fa895c15ef2ef772808a5335b3305f69da5f13a09f8c2924896b409565ff
+  languageName: node
+  linkType: hard
+
+"undici-types@npm:~5.26.4":
+  version: 5.26.5
+  resolution: "undici-types@npm:5.26.5"
+  checksum: bb673d7876c2d411b6eb6c560e0c571eef4a01c1c19925175d16e3a30c4c428181fb8d7ae802a261f283e4166a0ac435e2f505743aa9e45d893f9a3df017b501
   languageName: node
   linkType: hard
 
