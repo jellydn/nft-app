@@ -19,7 +19,7 @@
   "dependencies": {
     "@fastify/autoload": "5.7.1",
     "@fastify/cors": "8.3.0",
-    "@fastify/multipart": "7.7.3",
+    "@fastify/multipart": "8.0.0",
     "@fastify/sensible": "5.3.0",
     "@sinclair/typebox": "0.31.15",
     "close-with-grace": "1.2.0",
