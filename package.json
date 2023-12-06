@@ -76,7 +76,7 @@
     "ts-node": "10.9.1",
     "typechain": "8.3.2",
     "typescript": "5.2.2",
-    "vite": "5.0.4"
+    "vite": "5.0.5"
   },
   "engines": {
     "node": ">=18.12.0"
