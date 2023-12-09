@@ -11922,13 +11922,13 @@ p-map@^4.0.0:
   dependencies:
     aggregate-error "^3.0.0"
 
-p-queue@7.4.1:
-  version "7.4.1"
-  resolved "https://registry.yarnpkg.com/p-queue/-/p-queue-7.4.1.tgz#7f86f853048beca8272abdbb7cec1ed2afc0f265"
-  integrity sha512-vRpMXmIkYF2/1hLBKisKeVYJZ8S2tZ0zEAmIJgdVKP2nq0nh4qCdf8bgw+ZgKrkh71AOCaqzwbJJk1WtdcF3VA==
+p-queue@8.0.0:
+  version "8.0.0"
+  resolved "https://registry.yarnpkg.com/p-queue/-/p-queue-8.0.0.tgz#f92b4855b81cc478765d44f2361f0e517f5e1bc7"
+  integrity sha512-7LAaj8F47D5963LiTIAb/4UWR6w6SnDrDlxXg9ev/U0Lg9h35Kg8C8KiBry0c6MUofSicdLsEvS0j25gHAyCuA==
   dependencies:
     eventemitter3 "^5.0.1"
-    p-timeout "^5.0.2"
+    p-timeout "^6.1.2"
 
 p-retry@^4.5.0, p-retry@^4.6.1:
   version "4.6.2"
@@ -11938,10 +11938,10 @@ p-retry@^4.5.0, p-retry@^4.6.1:
     "@types/retry" "0.12.0"
     retry "^0.13.1"
 
-p-timeout@^5.0.2:
-  version "5.1.0"
-  resolved "https://registry.yarnpkg.com/p-timeout/-/p-timeout-5.1.0.tgz#b3c691cf4415138ce2d9cfe071dba11f0fee085b"
-  integrity sha512-auFDyzzzGZZZdHz3BtET9VEz0SE/uMEAx7uWfGPucfzEwwe/xH0iVeZibQmANYE/hp9T2+UUZT5m+BKyrDp3Ew==
+p-timeout@^6.1.2:
+  version "6.1.2"
+  resolved "https://registry.yarnpkg.com/p-timeout/-/p-timeout-6.1.2.tgz#22b8d8a78abf5e103030211c5fc6dee1166a6aa5"
+  integrity sha512-UbD77BuZ9Bc9aABo74gfXhNvzC9Tx7SxtHSh1fxvx3jTLLYvmVhiQZZrJzqqU0jKbN32kb5VOKiLEQI/3bIjgQ==
 
 p-try@^1.0.0:
   version "1.0.0"
