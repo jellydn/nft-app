@@ -1839,10 +1839,10 @@ fast-uri@^2.0.0, fast-uri@^2.1.0:
   resolved "https://registry.yarnpkg.com/fast-uri/-/fast-uri-2.3.0.tgz#bdae493942483d299e7285dcb4627767d42e2793"
   integrity sha512-eel5UKGn369gGEWOqBShmFJWfq/xSJvsgDzgLYC845GneayWvXBf0lJCBn5qTABfewy1ZDPoaR5OZCP+kssfuw==
 
-fastify-cli@5.9.0:
-  version "5.9.0"
-  resolved "https://registry.yarnpkg.com/fastify-cli/-/fastify-cli-5.9.0.tgz#014c7a0b578b1f4e676a2a6ed7f82880432bef80"
-  integrity sha512-CaIte5SwkLuvlzpdd1Al1VRVVwm2TQVV4bfVP4oz/Z54KVSo6pqNTgnxWOmyzdcNUbFnhJ3Z4vRjzvHoymP5cQ==
+fastify-cli@6.0.1:
+  version "6.0.1"
+  resolved "https://registry.yarnpkg.com/fastify-cli/-/fastify-cli-6.0.1.tgz#9461b5fc95045faddd528698cfce490ae92b4572"
+  integrity sha512-iGN4ULaftZr1qR7OTOQT4tbsduneQWXeF85EUnMeYGmxo5PPfrJ/o9r+X7hMgdnUGCDu2STCYDlMKNYtYYGdgA==
   dependencies:
     "@fastify/deepmerge" "^1.2.0"
     chalk "^4.1.2"
