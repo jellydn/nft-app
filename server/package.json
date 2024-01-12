@@ -18,12 +18,12 @@
   },
   "dependencies": {
     "@fastify/autoload": "5.8.0",
-    "@fastify/cors": "8.4.2",
-    "@fastify/multipart": "8.0.0",
+    "@fastify/cors": "8.5.0",
+    "@fastify/multipart": "8.1.0",
     "@fastify/sensible": "5.5.0",
-    "@sinclair/typebox": "0.31.28",
+    "@sinclair/typebox": "0.32.9",
     "close-with-grace": "1.2.0",
-    "fastify": "4.24.3",
+    "fastify": "4.25.2",
     "fastify-cli": "5.9.0",
     "fastify-plugin": "4.5.1",
     "fastify-tsconfig": "2.0.0",
@@ -32,13 +32,13 @@
   },
   "devDependencies": {
     "@types/busboy": "1.5.3",
-    "@types/node": "20.10.4",
+    "@types/node": "20.11.0",
     "@types/tap": "15.0.11",
     "cross-env": "7.0.3",
-    "fast-json-stringify": "5.9.1",
-    "tap": "16.3.9",
+    "fast-json-stringify": "5.10.0",
+    "tap": "16.3.10",
     "tsup": "8.0.1",
-    "tsx": "4.6.2"
+    "tsx": "4.7.0"
   },
   "engines": {
     "node": ">=18.12.0"
