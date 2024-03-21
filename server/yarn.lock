@@ -184,12 +184,10 @@
   resolved "https://registry.yarnpkg.com/@fastify/autoload/-/autoload-5.8.0.tgz#533257b868a1ac7e65d720c7ff815aa6a53825cc"
   integrity sha512-bF86vl+1Kk91S41WIL9NrKhcugGQg/cQ959aTaombkCjA+9YAbgVCKKu2lRqtMsosDZ0CNRfVnaLYoHQIDUI2A==
 
-"@fastify/busboy@^1.0.0":
-  version "1.2.1"
-  resolved "https://registry.yarnpkg.com/@fastify/busboy/-/busboy-1.2.1.tgz#9c6db24a55f8b803b5222753b24fe3aea2ba9ca3"
-  integrity sha512-7PQA7EH43S0CxcOa9OeAnaeA0oQ+e/DHNPZwSQM9CQHW76jle5+OvLdibRp/Aafs9KXbLhxyjOTkRjWUbQEd3Q==
-  dependencies:
-    text-decoding "^1.0.0"
+"@fastify/busboy@^2.1.0":
+  version "2.1.1"
+  resolved "https://registry.yarnpkg.com/@fastify/busboy/-/busboy-2.1.1.tgz#b9da6a878a371829a0502c9b6c1c143ef6663f4d"
+  integrity sha512-vBZP4NlzfOlerQTnba4aqZoMhE/a9HY7HRqoOPaETQcSQuWEIyZMHGfVu6w9wGtGK5fED5qRs2DteVCjOH60sA==
 
 "@fastify/cors@9.0.1":
   version "9.0.1"
@@ -223,12 +221,12 @@
   dependencies:
     fast-deep-equal "^3.1.3"
 
-"@fastify/multipart@8.1.0":
-  version "8.1.0"
-  resolved "https://registry.yarnpkg.com/@fastify/multipart/-/multipart-8.1.0.tgz#92b1cd482202b469b6c08aba568f0cda6fc543ba"
-  integrity sha512-sRX9X4ZhAqRbe2kDvXY2NK7i6Wf1Rm2g/CjpGYYM7+Np8E6uWQXcj761j08qPfPO8PJXM+vJ7yrKbK1GPB+OeQ==
+"@fastify/multipart@8.2.0":
+  version "8.2.0"
+  resolved "https://registry.yarnpkg.com/@fastify/multipart/-/multipart-8.2.0.tgz#90359b78eccd0f944cf145a2e907d167a3a6c731"
+  integrity sha512-OZ8nsyyoS2TV7Yeu3ZdrdDGsKUTAbfjrKC9jSxGgT2qdgek+BxpWX31ZubTrWMNZyU5xwk4ox6AvTjAbYWjrWg==
   dependencies:
-    "@fastify/busboy" "^1.0.0"
+    "@fastify/busboy" "^2.1.0"
     "@fastify/deepmerge" "^1.0.0"
     "@fastify/error" "^3.0.0"
     fastify-plugin "^4.0.0"
@@ -631,10 +629,10 @@
     "@sigstore/core" "^1.0.0"
     "@sigstore/protobuf-specs" "^0.3.0"
 
-"@sinclair/typebox@0.32.16":
-  version "0.32.16"
-  resolved "https://registry.yarnpkg.com/@sinclair/typebox/-/typebox-0.32.16.tgz#1c5f3a0007aa751dfc382f977a0994c648489849"
-  integrity sha512-jNsVbv3jV58KBSXIhnEOuEI6mquQbW72HcDDEAHH22qvCaiwGozcaLbL4NEfInMqkDZ0FLFctjOGx4ysxVY8Lw==
+"@sinclair/typebox@0.32.18":
+  version "0.32.18"
+  resolved "https://registry.yarnpkg.com/@sinclair/typebox/-/typebox-0.32.18.tgz#6d342310d85a993edec9a32fce9eb3d03d2bb008"
+  integrity sha512-ioMK5TA5YOloYf/GcnF+1fT4eTvowJes2j7Pm0Ivlm9xq61keqQw/XtbQQnPG8O4uq2y2DDenU8OqNc93xn11Q==
 
 "@tapjs/after-each@1.1.19":
   version "1.1.19"
@@ -4436,11 +4434,6 @@ test-exclude@^6.0.0:
     glob "^7.1.4"
     minimatch "^3.0.4"
 
-text-decoding@^1.0.0:
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/text-decoding/-/text-decoding-1.0.0.tgz#38a5692d23b5c2b12942d6e245599cb58b1bc52f"
-  integrity sha512-/0TJD42KDnVwKmDK6jj3xP7E2MG7SHAOG4tyTgyUCRPdHwvkquYNLEQltmdMa3owq3TkddCVcTsoctJI8VQNKA==
-
 thenify-all@^1.0.0:
   version "1.6.0"
   resolved "https://registry.yarnpkg.com/thenify-all/-/thenify-all-1.6.0.tgz#1a1918d402d8fc3f98fbf234db0bcc8cc10e9726"
@@ -4632,10 +4625,10 @@ typescript@5.2:
   resolved "https://registry.yarnpkg.com/typescript/-/typescript-5.3.3.tgz#b3ce6ba258e72e6305ba66f5c9b452aaee3ffe37"
   integrity sha512-pXWcraxM0uxAS+tN0AG/BF2TyqmHO014Z070UsJ+pFvYuRSq8KH8DmWpnbXe0pEPDHXZV3FcAbJkijJ5oNEnWw==
 
-typescript@5.4.2:
-  version "5.4.2"
-  resolved "https://registry.yarnpkg.com/typescript/-/typescript-5.4.2.tgz#0ae9cebcfae970718474fe0da2c090cad6577372"
-  integrity sha512-+2/g0Fds1ERlP6JsakQQDXjZdZMM+rqpamFZJEKh4kwTIn3iDkgKtby0CeNd5ATNZ4Ry1ax15TMx0W2V+miizQ==
+typescript@5.4.3:
+  version "5.4.3"
+  resolved "https://registry.yarnpkg.com/typescript/-/typescript-5.4.3.tgz#5c6fedd4c87bee01cd7a528a30145521f8e0feff"
+  integrity sha512-KrPd3PKaCLr78MalgiwJnA25Nm8HAmdwN3mYUYZgG/wizIo9EainNVQI9/yDavtVFRN2h3k8uf3GLHuhDMgEHg==
 
 uint8arrays@^3.0.0:
   version "3.1.1"
