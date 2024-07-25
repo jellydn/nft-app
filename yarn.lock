@@ -13707,10 +13707,10 @@ solgraph@1.0.2:
     graphlib "^2.1.8"
     graphlib-dot "^0.6.4"
 
-solhint@4.5.2:
-  version "4.5.2"
-  resolved "https://registry.yarnpkg.com/solhint/-/solhint-4.5.2.tgz#a3fa101366dd1fb37009d24a9f16c99a4a745b5d"
-  integrity sha512-o7MNYS5QPgE6l+PTGOTAUtCzo0ZLnffQsv586hntSHBe2JbSDfkoxfhAOcjZjN4OesTgaX4UEEjCjH9y/4BP5w==
+solhint@5.0.1:
+  version "5.0.1"
+  resolved "https://registry.yarnpkg.com/solhint/-/solhint-5.0.1.tgz#f0f783bd9d945e5a27b102295a3f28edba241d6c"
+  integrity sha512-QeQLS9HGCnIiibt+xiOa/+MuP7BWz9N7C5+Mj9pLHshdkNhuo3AzCpWmjfWVZBUuwIUO3YyCRVIcYLR3YOKGfg==
   dependencies:
     "@solidity-parser/parser" "^0.18.0"
     ajv "^6.12.6"
