@@ -317,10 +317,15 @@
     fastify-plugin "^4.0.0"
     mnemonist "0.39.6"
 
-"@fastify/deepmerge@^1.0.0", "@fastify/deepmerge@^1.2.0":
+"@fastify/deepmerge@^1.0.0":
   version "1.3.0"
   resolved "https://registry.yarnpkg.com/@fastify/deepmerge/-/deepmerge-1.3.0.tgz#8116858108f0c7d9fd460d05a7d637a13fe3239a"
   integrity sha512-J8TOSBq3SoZbDhM9+R/u77hP93gz/rajSA+K2kGyijPpORPWUXHUpTaleoj+92As0S9uPRP7Oi8IqMf0u+ro6A==
+
+"@fastify/deepmerge@^2.0.0":
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/@fastify/deepmerge/-/deepmerge-2.0.0.tgz#794e98a4eefd6e1edde852e924e25f47b0fed7d8"
+  integrity sha512-fsaybTGDyQ5KpPsplQqb9yKdCf2x/pbNpMNk8Tvp3rRz7lVcupKysH4b2ELMN2P4Hak1+UqTYdTj/u4FNV2p0g==
 
 "@fastify/error@^3.0.0", "@fastify/error@^3.3.0", "@fastify/error@^3.4.0":
   version "3.4.1"
@@ -2094,12 +2099,12 @@ fast-uri@^3.0.1:
   resolved "https://registry.yarnpkg.com/fast-uri/-/fast-uri-3.0.1.tgz#cddd2eecfc83a71c1be2cc2ef2061331be8a7134"
   integrity sha512-MWipKbbYiYI0UC7cl8m/i/IWTqfC8YXsqjzybjddLsFjStroQzsHXkc73JutMvBiXmOvapk+axIl79ig5t55Bw==
 
-fastify-cli@6.2.1:
-  version "6.2.1"
-  resolved "https://registry.yarnpkg.com/fastify-cli/-/fastify-cli-6.2.1.tgz#e8322c9bd6f19152ff574ec95b0e837f7e290ce1"
-  integrity sha512-i8CJZWD/5P0Vfx0HPLw7XMA7cyaYQDrKehWIUxmcueJsnd5KNsX6TTVn997dOiQvlmDU33di0AoBLDBf8zxBoA==
+fastify-cli@6.3.0:
+  version "6.3.0"
+  resolved "https://registry.yarnpkg.com/fastify-cli/-/fastify-cli-6.3.0.tgz#42206223840648a9b65de1fd77b8f664c7b109e1"
+  integrity sha512-FORXCwuBiNAArMMxp5hTthQCU9Xa7oO1wnCsGSgvuWC2k5ZarEEIXNm5RekcO9koZDQ0NACU6gGRF96Tf7ZI7Q==
   dependencies:
-    "@fastify/deepmerge" "^1.2.0"
+    "@fastify/deepmerge" "^2.0.0"
     chalk "^4.1.2"
     chokidar "^3.5.2"
     close-with-grace "^1.1.0"
