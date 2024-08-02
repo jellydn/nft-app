@@ -32,13 +32,13 @@
   },
   "devDependencies": {
     "@types/busboy": "1.5.4",
-    "@types/node": "20.14.13",
+    "@types/node": "20.14.14",
     "@types/tap": "15.0.11",
     "cross-env": "7.0.3",
     "fast-json-stringify": "6.0.0",
     "tap": "21.0.0",
-    "tsup": "8.2.3",
-    "tsx": "4.16.3"
+    "tsup": "8.2.4",
+    "tsx": "4.16.5"
   },
   "engines": {
     "node": ">=18.12.0"
