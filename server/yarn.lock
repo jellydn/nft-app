@@ -1118,10 +1118,10 @@
   dependencies:
     undici-types "~5.26.4"
 
-"@types/node@20.14.13":
-  version "20.14.13"
-  resolved "https://registry.yarnpkg.com/@types/node/-/node-20.14.13.tgz#bf4fe8959ae1c43bc284de78bd6c01730933736b"
-  integrity sha512-+bHoGiZb8UiQ0+WEtmph2IWQCjIqg8MDZMAV+ppRRhUZnquF5mQkP/9vpSwJClEiSM/C7fZZExPzfU0vJTyp8w==
+"@types/node@20.14.14":
+  version "20.14.14"
+  resolved "https://registry.yarnpkg.com/@types/node/-/node-20.14.14.tgz#6b655d4a88623b0edb98300bb9dd2107225f885e"
+  integrity sha512-d64f00982fS9YoOgJkAMolK7MN8Iq3TDdVjchbYHdEmjth/DHowx82GnoA+tVUAN+7vxfYUgAzi+JXbKNd2SDQ==
   dependencies:
     undici-types "~5.26.4"
 
@@ -4915,10 +4915,10 @@ tshy@^3.0.0, tshy@^3.0.2:
     typescript "^5.5.3"
     walk-up-path "^4.0.0"
 
-tsup@8.2.3:
-  version "8.2.3"
-  resolved "https://registry.yarnpkg.com/tsup/-/tsup-8.2.3.tgz#4a1ff2962a4d7c8265fea661b0dd9668de58916d"
-  integrity sha512-6YNT44oUfXRbZuSMNmN36GzwPPIlD2wBccY7looM2fkTcxkf2NEmwr3OZuDZoySklnrIG4hoEtzy8yUXYOqNcg==
+tsup@8.2.4:
+  version "8.2.4"
+  resolved "https://registry.yarnpkg.com/tsup/-/tsup-8.2.4.tgz#5e31790c1e66392cee384ad746ed51c106614beb"
+  integrity sha512-akpCPePnBnC/CXgRrcy72ZSntgIEUa1jN0oJbbvpALWKNOz1B7aM+UVDWGRGIO/T/PZugAESWDJUAb5FD48o8Q==
   dependencies:
     bundle-require "^5.0.0"
     cac "^6.7.14"
@@ -4937,10 +4937,10 @@ tsup@8.2.3:
     sucrase "^3.35.0"
     tree-kill "^1.2.2"
 
-tsx@4.16.3:
-  version "4.16.3"
-  resolved "https://registry.yarnpkg.com/tsx/-/tsx-4.16.3.tgz#56eb2f14f67b798e8bd8a907a9ceec57cba0e8b9"
-  integrity sha512-MP8AEUxVnboD2rCC6kDLxnpDBNWN9k3BSVU/0/nNxgm70bPBnfn+yCKcnOsIVPQwdkbKYoFOlKjjWZWJ2XCXUg==
+tsx@4.16.5:
+  version "4.16.5"
+  resolved "https://registry.yarnpkg.com/tsx/-/tsx-4.16.5.tgz#49c2a8f4d4d66bd7cf538e23e7368a1919a9a1ca"
+  integrity sha512-ArsiAQHEW2iGaqZ8fTA1nX0a+lN5mNTyuGRRO6OW3H/Yno1y9/t1f9YOI1Cfoqz63VAthn++ZYcbDP7jPflc+A==
   dependencies:
     esbuild "~0.21.5"
     get-tsconfig "^4.7.5"
