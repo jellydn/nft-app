@@ -1,6 +1,6 @@
 # Welcome to nft-app 👋
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[![All Contributors](https://img.shields.io/badge/all_contributors-1-orange.svg?style=flat-square)](#contributors-)
+[![All Contributors](https://img.shields.io/badge/all_contributors-2-orange.svg?style=flat-square)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 ![Version](https://img.shields.io/badge/version-0.0.1-blue.svg?cacheSeconds=2592000)
@@ -254,6 +254,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 <table>
   <tbody>
     <tr>
+      <td align="center" valign="top" width="14.28%"><a href="https://productsway.com/"><img src="https://avatars.githubusercontent.com/u/870029?v=4?s=100" width="100px;" alt="Dung Duc Huynh (Kaka)"/><br /><sub><b>Dung Duc Huynh (Kaka)</b></sub></a><br /><a href="https://github.com/jellydn/nft-app/commits?author=jellydn" title="Documentation">📖</a> <a href="https://github.com/jellydn/nft-app/commits?author=jellydn" title="Code">💻</a></td>
       <td align="center" valign="top" width="14.28%"><a href="https://tholf.org/"><img src="https://avatars.githubusercontent.com/u/16504501?v=4?s=100" width="100px;" alt="tomholford"/><br /><sub><b>tomholford</b></sub></a><br /><a href="https://github.com/jellydn/nft-app/commits?author=tomholford" title="Documentation">📖</a></td>
     </tr>
   </tbody>
