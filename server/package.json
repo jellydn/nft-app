@@ -38,7 +38,7 @@
     "fast-json-stringify": "6.0.0",
     "tap": "21.0.0",
     "tsup": "8.2.4",
-    "tsx": "4.16.5"
+    "tsx": "4.17.0"
   },
   "engines": {
     "node": ">=18.12.0"
