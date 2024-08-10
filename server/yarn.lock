@@ -663,10 +663,10 @@
     "@sigstore/core" "^1.1.0"
     "@sigstore/protobuf-specs" "^0.3.2"
 
-"@sinclair/typebox@0.33.0":
-  version "0.33.0"
-  resolved "https://registry.yarnpkg.com/@sinclair/typebox/-/typebox-0.33.0.tgz#02091efe2c58f88e5a953b9ef76db63bd711ab8d"
-  integrity sha512-y4wDeA3hHRpUtHlTDpWEtAnU8wTVzOuDJfn1Q7t42TXXHBrhHOK+Ij7y1zJAyXnDuIrEBVw8sLW1Uzl2WCyz+A==
+"@sinclair/typebox@0.33.4":
+  version "0.33.4"
+  resolved "https://registry.yarnpkg.com/@sinclair/typebox/-/typebox-0.33.4.tgz#0afe3910a940fa08266a316900826169fe91dfb1"
+  integrity sha512-IUMFWdOtTqJ5F/rCjy2f3InRS9i4EWaCAMRsXVpUUQVi8hVByz/ifOi41Qt0Law8lz01/6zTz67vT70sB1VZbw==
 
 "@tapjs/after-each@4.0.0":
   version "4.0.0"
@@ -993,10 +993,10 @@
   dependencies:
     undici-types "~6.13.0"
 
-"@types/node@20.14.14":
-  version "20.14.14"
-  resolved "https://registry.yarnpkg.com/@types/node/-/node-20.14.14.tgz#6b655d4a88623b0edb98300bb9dd2107225f885e"
-  integrity sha512-d64f00982fS9YoOgJkAMolK7MN8Iq3TDdVjchbYHdEmjth/DHowx82GnoA+tVUAN+7vxfYUgAzi+JXbKNd2SDQ==
+"@types/node@20.14.15":
+  version "20.14.15"
+  resolved "https://registry.yarnpkg.com/@types/node/-/node-20.14.15.tgz#e59477ab7bc7db1f80c85540bfd192a0becc588b"
+  integrity sha512-Fz1xDMCF/B00/tYSVMlmK7hVeLh7jE5f3B7X1/hmV0MJBwE27KlS7EvD/Yp+z1lm8mVhwV5w+n8jOZG8AfTlKw==
   dependencies:
     undici-types "~5.26.4"
 
