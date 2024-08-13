@@ -799,10 +799,10 @@
     signal-exit "^4.0.2"
     uuid "^8.3.2"
 
-"@tapjs/reporter@4.0.0":
-  version "4.0.0"
-  resolved "https://registry.yarnpkg.com/@tapjs/reporter/-/reporter-4.0.0.tgz#6cb589a49e7b09297adeccc536fda0945b7e6a2c"
-  integrity sha512-NCWPEtRQUziPzpYmy1HsB8d3zRgV+Uzy9yd5dnQ8JmKqixjtBY9bhQLVXJmQ3x3DB0mjJjv8pVcA/XZJasQmjQ==
+"@tapjs/reporter@4.0.1":
+  version "4.0.1"
+  resolved "https://registry.yarnpkg.com/@tapjs/reporter/-/reporter-4.0.1.tgz#6a3938763bfbbb812ed4b087b4f4ec5d17e0a095"
+  integrity sha512-bS7pOGV99GAhYY/LxNxL4Qq0Ldi4k8DZDC25gonVQrNUW2zYpSBerhrnsz1KDXdaD2OKDtSR8oW2FxUyL6n83A==
   dependencies:
     "@tapjs/config" "5.0.0"
     "@tapjs/stack" "4.0.0"
@@ -818,16 +818,16 @@
     tap-yaml "4.0.0"
     tcompare "9.0.0"
 
-"@tapjs/run@4.0.0":
-  version "4.0.0"
-  resolved "https://registry.yarnpkg.com/@tapjs/run/-/run-4.0.0.tgz#3c789fd57745ccfb94c6b2939a976c56935e3072"
-  integrity sha512-GPZ28g+G5aGzOl6Vik8fB+4oeJQbdKDa6vdZzTGiMCpTQM0ysvBMwBo6yZ84YzZDlOkXEOuj08LSZC3ikNeRDA==
+"@tapjs/run@4.0.1":
+  version "4.0.1"
+  resolved "https://registry.yarnpkg.com/@tapjs/run/-/run-4.0.1.tgz#4446809f959cd60899c61c0843fedee0cc5b8b81"
+  integrity sha512-jll1tiMhxFajfHIGBF/eK+Ob0uEqXBnQq/ONNc9heqcCtcXhC4iYGzhoK+sw03MxwrbRtNomQ7dRqiT0IOjS6w==
   dependencies:
     "@tapjs/after" "3.0.0"
     "@tapjs/before" "4.0.0"
     "@tapjs/config" "5.0.0"
     "@tapjs/processinfo" "^3.1.8"
-    "@tapjs/reporter" "4.0.0"
+    "@tapjs/reporter" "4.0.1"
     "@tapjs/spawn" "4.0.0"
     "@tapjs/stdin" "4.0.0"
     "@tapjs/test" "4.0.0"
@@ -4450,10 +4450,10 @@ tap-yaml@4.0.0:
     yaml "^2.4.1"
     yaml-types "^0.4.0"
 
-tap@21.0.0:
-  version "21.0.0"
-  resolved "https://registry.yarnpkg.com/tap/-/tap-21.0.0.tgz#34e0eed3ccc45e543bb27cfd33fe3a8fdd2b5576"
-  integrity sha512-iQHgScpN6VeAnKot3ZgafKvoE0VQfYGaKXSZfSLeHo3P9qKqcwYQdDW2VkVXm6TF10f1/TSYFYoMV0Th+7mieg==
+tap@21.0.1:
+  version "21.0.1"
+  resolved "https://registry.yarnpkg.com/tap/-/tap-21.0.1.tgz#120308ff86b82467aa4fc917524b9fce5699da47"
+  integrity sha512-FE8H5Nt2mKU96DX4XgjqBkKzMcxvVkmbKhaNWOk2lUNRpqJNKqBOO5R6q7shr7JoUh1DHwdNWmppg8vWXQh2lQ==
   dependencies:
     "@tapjs/after" "3.0.0"
     "@tapjs/after-each" "4.0.0"
@@ -4467,7 +4467,7 @@ tap@21.0.0:
     "@tapjs/intercept" "4.0.0"
     "@tapjs/mock" "4.0.0"
     "@tapjs/node-serialize" "4.0.0"
-    "@tapjs/run" "4.0.0"
+    "@tapjs/run" "4.0.1"
     "@tapjs/snapshot" "4.0.0"
     "@tapjs/spawn" "4.0.0"
     "@tapjs/stdin" "4.0.0"
