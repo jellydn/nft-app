@@ -1495,7 +1495,12 @@ cliui@^8.0.1:
     strip-ansi "^6.0.1"
     wrap-ansi "^7.0.0"
 
-close-with-grace@1.3.0, close-with-grace@^1.1.0:
+close-with-grace@2.1.0:
+  version "2.1.0"
+  resolved "https://registry.yarnpkg.com/close-with-grace/-/close-with-grace-2.1.0.tgz#fa8ddbcf99bc16b0c5a21e7fd1fcc3575ae29409"
+  integrity sha512-rME1AtzKc9dfpLr8XBVhXqhVZDvtaIA7FIpjPaO+DmDsomaTNtuEBZMoNDgIvjHYK5q8/Afxy34YTXInUBsT1A==
+
+close-with-grace@^1.1.0:
   version "1.3.0"
   resolved "https://registry.yarnpkg.com/close-with-grace/-/close-with-grace-1.3.0.tgz#ff0f5889ad076f79c9d4308db75cc827027366b8"
   integrity sha512-lvm0rmLIR5bNz4CRKW6YvCfn9Wg5Wb9A8PJ3Bb+hjyikgC1RO1W3J4z9rBXQYw97mAte7dNSQI8BmUsxdlXQyw==
