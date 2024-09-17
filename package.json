@@ -76,7 +76,7 @@
     "ts-node": "10.9.2",
     "typechain": "8.3.2",
     "typescript": "5.5.4",
-    "vite": "5.4.2"
+    "vite": "5.4.6"
   },
   "packageManager": "yarn@1.22.22",
   "engines": {
