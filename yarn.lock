@@ -3314,10 +3314,10 @@
   resolved "https://registry.yarnpkg.com/@types/node/-/node-11.11.6.tgz#df929d1bb2eee5afdda598a41930fe50b43eaa6a"
   integrity sha512-Exw4yUWMBXM3X+8oqzJNRqZSwUAaS4+7NdvHqQuFi/d+synz++xmX3QIf+BFqneW8N31R8Ky+sikfZUXq07ggQ==
 
-"@types/node@20.16.15":
-  version "20.16.15"
-  resolved "https://registry.yarnpkg.com/@types/node/-/node-20.16.15.tgz#826f97ca53a213d190124ca6a972206f06a88b69"
-  integrity sha512-DV58qQz9dBMqVVn+qnKwGa51QzCD4YM/tQM16qLKxdf5tqz5W4QwtrMzjSTbabN1cFTSuyxVYBy+QWHjWW8X/g==
+"@types/node@20.17.0":
+  version "20.17.0"
+  resolved "https://registry.yarnpkg.com/@types/node/-/node-20.17.0.tgz#d0620ba0fe4cf2a0f12351c7bdd805fc4e1f036b"
+  integrity sha512-a7zRo0f0eLo9K5X9Wp5cAqTUNGzuFLDG2R7C4HY2BhcMAsxgSPuRvAC1ZB6QkuUQXf0YZAgfOX2ZyrBa2n4nHQ==
   dependencies:
     undici-types "~6.19.2"
 
@@ -8981,10 +8981,10 @@ hardhat-gas-reporter@2.2.1:
     sha1 "^1.1.1"
     viem "2.7.14"
 
-hardhat@2.22.14:
-  version "2.22.14"
-  resolved "https://registry.yarnpkg.com/hardhat/-/hardhat-2.22.14.tgz#389bb3789a52adc0b1a3b4bfc9b891239d5a2b42"
-  integrity sha512-sD8vHtS9l5QQVHzyPPe3auwZDJyZ0fG3Z9YENVa4oOqVEefCuHcPzdU736rei3zUKTqkX0zPIHkSMHpu02Fq1A==
+hardhat@2.22.15:
+  version "2.22.15"
+  resolved "https://registry.yarnpkg.com/hardhat/-/hardhat-2.22.15.tgz#319b4948f875968fde3f0d09a7edfe74e16b1365"
+  integrity sha512-BpTGa9PE/sKAaHi4s/S1e9WGv63DR1m7Lzfd60C8gSEchDPfAJssVRSq0MZ2v2k76ig9m0kHAwVLf5teYwu/Mw==
   dependencies:
     "@ethersproject/abi" "^5.1.2"
     "@metamask/eth-sig-util" "^4.0.0"
@@ -13300,10 +13300,10 @@ rustbn.js@~0.2.0:
   resolved "https://registry.yarnpkg.com/rustbn.js/-/rustbn.js-0.2.0.tgz#8082cb886e707155fd1cb6f23bd591ab8d55d0ca"
   integrity sha512-4VlvkRUuCJvr2J6Y0ImW7NvTCriMi7ErOAqWk1y69vAdoNIzCF3yPmgeNzx+RQTLEDFq5sHfscn1MwHxP9hNfA==
 
-rustywind@0.22.0:
-  version "0.22.0"
-  resolved "https://registry.yarnpkg.com/rustywind/-/rustywind-0.22.0.tgz#712372a0e999ef41114b1fe139dc405f5d895ed3"
-  integrity sha512-LtghXmyAHUmALr/dKbHjvTaxwA/faHg1H/dQ2cVFxAwMDuBKmMzYY/A67iu5q8jH47PvCXeRRMd5aFIqVwiWpQ==
+rustywind@0.23.1:
+  version "0.23.1"
+  resolved "https://registry.yarnpkg.com/rustywind/-/rustywind-0.23.1.tgz#3c220a2f7053e6700220800061e2a2d7725ea5f4"
+  integrity sha512-JsobObh0PX7/xga9tKLAFxAxJejYSCU2kb47fypbuEQL1toGY44Z3cmkIUP0oyyaK4IU0sXSwm37p5WJRQUxaA==
   dependencies:
     https-proxy-agent "^4.0.0"
     proxy-from-env "^1.1.0"
