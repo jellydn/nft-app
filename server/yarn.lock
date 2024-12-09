@@ -989,12 +989,12 @@
   resolved "https://registry.yarnpkg.com/@types/retry/-/retry-0.12.0.tgz#2b35eccfcee7d38cd72ad99232fbd58bffb3c84d"
   integrity sha512-wWKOClTTiizcZhXnPY4wikVAwmdYHp8q6DmC+EJUzAMsycb7HB32Kh9RN4+0gExjmPmZSAQjgURXIGATPegAvA==
 
-"@types/tap@15.0.12":
-  version "15.0.12"
-  resolved "https://registry.yarnpkg.com/@types/tap/-/tap-15.0.12.tgz#e91b6a2e949d18f71e14bda421b9044c75d3fb0f"
-  integrity sha512-QuVlxQEBOBASkirrwp0ciwO9stIzOdRMHyaYYsexeVSAYwR4sq+YIYaQbVaYXSXi8+yPf22ZZNieRCB8KAJrTA==
+"@types/tap@18.0.0":
+  version "18.0.0"
+  resolved "https://registry.yarnpkg.com/@types/tap/-/tap-18.0.0.tgz#77670eb3f95fb1660a076b82a1bfe602502cd271"
+  integrity sha512-caqy4dfOj/mdGpMdjRIsJc0HDCMUeCLCxbf1mlfAbpDGzOOqd5yQ4hRMxiER+sR7Wx1y3gNEPqFw0ySp4uI/jQ==
   dependencies:
-    "@types/node" "*"
+    tap "*"
 
 "@web-std/blob@^3.0.1", "@web-std/blob@^3.0.3":
   version "3.0.5"
@@ -4369,7 +4369,7 @@ tap-yaml@4.0.0:
     yaml "^2.4.1"
     yaml-types "^0.4.0"
 
-tap@21.0.1:
+tap@*, tap@21.0.1:
   version "21.0.1"
   resolved "https://registry.yarnpkg.com/tap/-/tap-21.0.1.tgz#120308ff86b82467aa4fc917524b9fce5699da47"
   integrity sha512-FE8H5Nt2mKU96DX4XgjqBkKzMcxvVkmbKhaNWOk2lUNRpqJNKqBOO5R6q7shr7JoUh1DHwdNWmppg8vWXQh2lQ==
