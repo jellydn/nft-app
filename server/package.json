@@ -32,7 +32,7 @@
   },
   "devDependencies": {
     "@types/busboy": "1.5.4",
-    "@types/node": "20.16.15",
+    "@types/node": "22.13.13",
     "@types/tap": "15.0.12",
     "cross-env": "7.0.3",
     "fast-json-stringify": "6.0.0",
