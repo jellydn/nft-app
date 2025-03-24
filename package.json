@@ -44,7 +44,7 @@
     "@trivago/prettier-plugin-sort-imports": "4.3.0",
     "@typechain/ethers-v5": "11.1.2",
     "@typechain/hardhat": "9.1.0",
-    "@types/chai": "4.3.20",
+    "@types/chai": "5.2.1",
     "@types/mocha": "10.0.9",
     "@types/node": "20.16.15",
     "@types/react": "18.3.12",
