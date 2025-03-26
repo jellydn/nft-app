@@ -1,8 +1,8 @@
-import React, { useState } from "react";
+import React from "react";
 
 function Image(props: React.ImgHTMLAttributes<HTMLImageElement>) {
-  const [isLoaded, setIsLoaded] = useState(false);
-  const [isError, setIsError] = useState(false);
+  const [isLoaded, setIsLoaded] = React.useState(false);
+  const [isError, setIsError] = React.useState(false);
   return (
     <>
       {isLoaded ? null : <div className="btn btn-ghost btn-sm btn-circle loading">Loading NFT Asset…</div>}
@@ -17,6 +17,7 @@ function Image(props: React.ImgHTMLAttributes<HTMLImageElement>) {
               stroke="#ff5722"
               className="mx-2 w-6 h-6"
             >
+              <title>Image Not Found</title>
               <path
                 strokeLinecap="round"
                 strokeLinejoin="round"
@@ -24,7 +25,7 @@ function Image(props: React.ImgHTMLAttributes<HTMLImageElement>) {
                 d="M18.364 18.364A9 9 0 005.636 5.636m12.728 12.728A9 9 0 015.636 5.636m12.728 12.728L5.636 5.636"
               />
             </svg>
-            <label>Image Not Found</label>
+            <label htmlFor="nft">Image Not Found</label>
           </div>
         </div>
       ) : null}
@@ -38,6 +39,7 @@ function Image(props: React.ImgHTMLAttributes<HTMLImageElement>) {
           setIsLoaded(true);
           setIsError(true);
         }}
+        alt="NFT Asset"
       />
     </>
   );

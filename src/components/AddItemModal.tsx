@@ -17,7 +17,6 @@ function AddItemModal({ isOpen, onAdd, onClose }: AddItemModalProps) {
   const {
     register,
     handleSubmit,
-    control,
     formState: { errors },
     reset,
   } = useForm<FormValues>();
@@ -55,10 +54,10 @@ function AddItemModal({ isOpen, onAdd, onClose }: AddItemModalProps) {
   useEffect(
     () => () => {
       // Make sure to revoke the data uris to avoid memory leaks
-      files.forEach((file: any) => {
+      for (const file of files) {
         // eslint-disable-next-line @typescript-eslint/no-unsafe-argument
         URL.revokeObjectURL(file.preview);
-      });
+      }
     },
     [files],
   );
@@ -74,7 +73,7 @@ function AddItemModal({ isOpen, onAdd, onClose }: AddItemModalProps) {
       <form onSubmit={onSubmit}>
         <div className="modal-box">
           <div className="p-10 card bg-base-200">
-            <section className="form-control">
+            <section className="fieldset">
               <div {...getRootProps({ className: "container" })}>
                 <input
                   {...getInputProps({
@@ -86,9 +85,9 @@ function AddItemModal({ isOpen, onAdd, onClose }: AddItemModalProps) {
               </div>
               <aside>{thumbs}</aside>
             </section>
-            <div className="form-control">
-              <label className="label">
-                <span className="label-text">Name</span>
+            <div className="fieldset">
+              <label className="label" htmlFor="name">
+                <span>Name</span>
               </label>
               <input
                 type="text"
@@ -99,14 +98,14 @@ function AddItemModal({ isOpen, onAdd, onClose }: AddItemModalProps) {
                 })}
               />
               {errors.name && (
-                <label className="label">
-                  <span className="label-text-alt">{errors.name.message ?? "Required"}</span>
+                <label className="label" htmlFor="name">
+                  <span>{errors.name.message ?? "Required"}</span>
                 </label>
               )}
             </div>
-            <div className="form-control">
-              <label className="label">
-                <span className="label-text">Description</span>
+            <div className="fieldset">
+              <label className="label" htmlFor="description">
+                <span>Description</span>
               </label>
               <textarea
                 {...register("description", {
@@ -114,14 +113,14 @@ function AddItemModal({ isOpen, onAdd, onClose }: AddItemModalProps) {
                 })}
                 className={
                   errors.description
-                    ? "h-24 textarea textarea-bordered textarea-error"
-                    : "h-24 textarea textarea-bordered"
+                    ? "h-24 textarea textarea-error"
+                    : "h-24 textarea"
                 }
                 placeholder="Description"
               />
               {errors.description && (
-                <label className="label">
-                  <span className="label-text-alt">{errors.description.message ?? "Required"}</span>
+                <label className="label" htmlFor="description">
+                  <span>{errors.description.message ?? "Required"}</span>
                 </label>
               )}
             </div>

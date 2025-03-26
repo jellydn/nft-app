@@ -1,12 +1,13 @@
 import { formatEther } from "@ethersproject/units";
 import { useWeb3React } from "@web3-react/core";
-import React from "react";
+import React, { useEffect } from "react";
 
 export function Balance() {
   const { account, library, chainId } = useWeb3React();
   const [balance, setBalance] = React.useState<number | undefined>();
 
-  React.useEffect((): any => {
+  // biome-ignore lint/correctness/useExhaustiveDependencies: Ensures refresh if referential identity of library doesn't change across chainIds
+  useEffect(() => {
     if (Boolean(account) && Boolean(library)) {
       let stale = false;
 
@@ -28,7 +29,7 @@ export function Balance() {
         setBalance(undefined);
       };
     }
-  }, [account, library, chainId]); // Ensures refresh if referential identity of library doesn't change across chainIds
+  }, [account, library, chainId]);
 
   return (
     <div className="btn btn-ghost btn-sm rounded-btn">
@@ -40,6 +41,7 @@ export function Balance() {
         viewBox="0 0 24 24"
         stroke="currentColor"
       >
+        <title>Balance</title>
         <path
           strokeLinecap="round"
           strokeLinejoin="round"

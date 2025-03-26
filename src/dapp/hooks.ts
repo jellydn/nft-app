@@ -9,6 +9,7 @@ export function useEagerConnect() {
 
   const [tried, setTried] = useState(false);
 
+  // biome-ignore lint/correctness/useExhaustiveDependencies: this hook should only run once
   useEffect(() => {
     injected
       .isAuthorized()
@@ -22,7 +23,7 @@ export function useEagerConnect() {
         }
       })
       .catch(logger.error);
-  }, []); // Intentionally only running on mount (make sure it's only mounted once :))
+  }, []);
 
   // if the connection worked, wait until we get confirmation of that to flip the flag
   useEffect(() => {
@@ -36,8 +37,7 @@ export function useEagerConnect() {
 
 export function useInactiveListener(suppress = false) {
   const { active, error, activate } = useWeb3React();
-
-  useEffect((): any => {
+  useEffect(() => {
     const { ethereum } = window as any;
     if (ethereum?.on && !active && !error && !suppress) {
       const handleConnect = () => {

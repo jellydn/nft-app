@@ -13,7 +13,7 @@ import { Nft } from "./components/Nft";
 import { Pagination } from "./components/Pagination";
 import logger from "./logger";
 import { networkName, CHAIN_ID } from "./networkName";
-import { type MyAwesomeLogo } from "./types";
+import type { MyAwesomeLogo } from "./types";
 
 export const CONTRACT_DEPLOYED_ADDRESS = import.meta.env.VITE_NFT_DEPLOYED_ADDRESS;
 
@@ -55,6 +55,7 @@ function NFTApp() {
       .catch(logger.error);
   };
 
+  // biome-ignore lint/correctness/useExhaustiveDependencies: Only fetch total when library is available
   useEffect(() => {
     try {
       fetchTotal();
@@ -82,7 +83,7 @@ function NFTApp() {
       const transaction = await contract.freeMint(account, tokenUrl);
       toast
         .promise(transaction.wait(), {
-          loading: `Transaction submitted. Wait for confirmation...`,
+          loading: "Transaction submitted. Wait for confirmation...",
           success: <b>Transaction confirmed!</b>,
           error: <b>Transaction failed!.</b>,
         })
@@ -108,7 +109,7 @@ function NFTApp() {
     if (file) formdata.append("file", file);
 
     setIsOpen(false);
-    const response = await fetch(API_URL ? API_URL + "/nft/upload" : "/api/nft/upload", {
+    const response = await fetch(API_URL ? `${API_URL}/nft/upload` : "/api/nft/upload", {
       method: "POST",
       body: formdata,
     });
@@ -138,6 +139,7 @@ function NFTApp() {
             viewBox="0 0 24 24"
             stroke="currentColor"
           >
+            <title>Add NFT</title>
             <path
               strokeLinecap="round"
               strokeLinejoin="round"
