@@ -17,22 +17,22 @@
     "test": "npm run build:ts && tsc -p test/tsconfig.test.json && cross-env TS_NODE_FILES=true tap --ts test/**/*.test.ts"
   },
   "dependencies": {
-    "@fastify/autoload": "6.2.0",
+    "@fastify/autoload": "6.3.0",
     "@fastify/cors": "11.0.1",
     "@fastify/multipart": "9.0.3",
     "@fastify/sensible": "6.0.3",
-    "@sinclair/typebox": "0.34.31",
+    "@sinclair/typebox": "0.34.33",
     "close-with-grace": "2.2.0",
     "fastify": "5.2.2",
     "fastify-cli": "7.4.0",
     "fastify-plugin": "5.0.1",
     "fastify-tsconfig": "3.0.0",
     "nft.storage": "7.2.0",
-    "typescript": "5.8.2"
+    "typescript": "5.8.3"
   },
   "devDependencies": {
     "@types/busboy": "1.5.4",
-    "@types/node": "22.13.14",
+    "@types/node": "22.14.0",
     "@types/tap": "18.0.0",
     "cross-env": "7.0.3",
     "fast-json-stringify": "6.0.1",
