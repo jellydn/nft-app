@@ -6276,10 +6276,10 @@ d@1, d@^1.0.1, d@^1.0.2:
     es5-ext "^0.10.64"
     type "^2.7.2"
 
-daisyui@5.0.21:
-  version "5.0.21"
-  resolved "https://registry.yarnpkg.com/daisyui/-/daisyui-5.0.21.tgz#65687fe414b435776d1f4a2b8adfffebdcdaf997"
-  integrity sha512-GsGDXfrArtcimUL6edglGVI4QepkwVVOT55F2wMyNnEflMNcDs8Bg5UQ2svneNweFPS+jDVcMq7MfRQSxbbBhw==
+daisyui@5.0.22:
+  version "5.0.22"
+  resolved "https://registry.yarnpkg.com/daisyui/-/daisyui-5.0.22.tgz#dee7c21fc88fc51b08c0062a29aa8338f409874b"
+  integrity sha512-tcqbCp0nzCmIzR4GfLtPcaNEhDCKO+yw4W3REF3Aw1rNwk0/8fa2fvbnVDq5tUqglnKTesAlmlc2Ze45ZIomMg==
 
 damerau-levenshtein@^1.0.8:
   version "1.0.8"
@@ -13216,7 +13216,7 @@ rlp@^2.0.0, rlp@^2.2.1, rlp@^2.2.2, rlp@^2.2.3, rlp@^2.2.4:
   dependencies:
     bn.js "^5.2.0"
 
-rollup@^4.30.1:
+rollup@^4.34.9:
   version "4.40.0"
   resolved "https://registry.yarnpkg.com/rollup/-/rollup-4.40.0.tgz#13742a615f423ccba457554f006873d5a4de1920"
   integrity sha512-Noe455xmA96nnqH5piFtLobsGbCij7Tu+tb3c1vYjNbTkfzGqXqQXG3wJaYXkRZuQ0vEYN4bhwg7QnIrqB5B+w==
@@ -15173,14 +15173,17 @@ viem@^2.27.0:
     ox "0.6.9"
     ws "8.18.1"
 
-vite@6.2.6:
-  version "6.2.6"
-  resolved "https://registry.yarnpkg.com/vite/-/vite-6.2.6.tgz#7f0ccf2fdc0c1eda079ce258508728e2473d3f61"
-  integrity sha512-9xpjNl3kR4rVDZgPNdTL0/c6ao4km69a/2ihNQbcANz8RuCOK3hQBmLSJf3bRKVQjVMda+YvizNE8AwvogcPbw==
+vite@6.3.0:
+  version "6.3.0"
+  resolved "https://registry.yarnpkg.com/vite/-/vite-6.3.0.tgz#17c86b3a0f4d20b210fe89f22f7b27d5926fcce5"
+  integrity sha512-9aC0n4pr6hIbvi1YOpFjwQ+QOTGssvbJKoeYkuHHGWwlXfdxQlI8L2qNMo9awEEcCPSiS+5mJZk5jH1PAqoDeQ==
   dependencies:
     esbuild "^0.25.0"
+    fdir "^6.4.3"
+    picomatch "^4.0.2"
     postcss "^8.5.3"
-    rollup "^4.30.1"
+    rollup "^4.34.9"
+    tinyglobby "^0.2.12"
   optionalDependencies:
     fsevents "~2.3.3"
 
