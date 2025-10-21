@@ -63,7 +63,7 @@
     "hardhat-gas-reporter": "2.2.3",
     "husky": "9.1.7",
     "lint-staged": "15.5.1",
-    "p-queue": "8.1.0",
+    "p-queue": "9.0.0",
     "postcss": "8.5.3",
     "prettier": "3.5.3",
     "prettier-plugin-solidity": "2.0.0",
