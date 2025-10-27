@@ -12398,15 +12398,7 @@ p-map@^4.0.0:
   dependencies:
     aggregate-error "^3.0.0"
 
-p-queue@8.1.0:
-  version "8.1.0"
-  resolved "https://registry.yarnpkg.com/p-queue/-/p-queue-8.1.0.tgz#d71929249868b10b16f885d8a82beeaf35d32279"
-  integrity sha512-mxLDbbGIBEXTJL0zEx8JIylaj3xQ7Z/7eEVjcF9fJX4DBiH9oqe+oahYnlKKxm0Ci9TlWTyhSHgygxMxjIB2jw==
-  dependencies:
-    eventemitter3 "^5.0.1"
-    p-timeout "^6.1.2"
-
-p-queue@^9.0.0:
+p-queue@9.0.0, p-queue@^9.0.0:
   version "9.0.0"
   resolved "https://registry.yarnpkg.com/p-queue/-/p-queue-9.0.0.tgz#c571d6fd46ae8e79a39c842935e92d352f7701ec"
   integrity sha512-KO1RyxstL9g1mK76530TExamZC/S2Glm080Nx8PE5sTd7nlduDQsAfEl4uXX+qZjLiwvDauvzXavufy3+rJ9zQ==
@@ -12421,11 +12413,6 @@ p-retry@^4.5.0, p-retry@^4.6.1:
   dependencies:
     "@types/retry" "0.12.0"
     retry "^0.13.1"
-
-p-timeout@^6.1.2:
-  version "6.1.4"
-  resolved "https://registry.yarnpkg.com/p-timeout/-/p-timeout-6.1.4.tgz#418e1f4dd833fa96a2e3f532547dd2abdb08dbc2"
-  integrity sha512-MyIV3ZA/PmyBN/ud8vV9XzwTrNtR4jFrObymZYnZqMmW0zA8Z17vnT0rBgFE/TlohB+YCHqXMgZzb3Csp49vqg==
 
 p-timeout@^7.0.0:
   version "7.0.1"
