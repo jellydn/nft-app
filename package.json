@@ -64,7 +64,7 @@
     "husky": "9.1.7",
     "lint-staged": "15.5.1",
     "p-queue": "8.1.0",
-    "postcss": "8.5.3",
+    "postcss": "8.5.23",
     "prettier": "3.5.3",
     "prettier-plugin-solidity": "2.0.0",
     "rustywind": "0.24.0",
