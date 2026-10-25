@@ -24,10 +24,17 @@ declare global {
   }
 }
 
-async function requestAccount() {
-  if (window.ethereum?.request) return window.ethereum.request({ method: "eth_requestAccounts" });
+async function requestAccount(): Promise<string | undefined> {
+  if (!window.ethereum?.request) {
+    throw new Error(
+      "Missing install Metamask. Please access https://metamask.io/ to install extension on your browser",
+    );
+  }
 
-  throw new Error("Missing install Metamask. Please access https://metamask.io/ to install extension on your browser");
+  const accounts: unknown = await window.ethereum.request({ method: "eth_requestAccounts" });
+  if (!Array.isArray(accounts)) return undefined;
+
+  return accounts.find((item): item is string => typeof item === "string" && item.length > 0);
 }
 
 const API_URL = import.meta.env.VITE_API_URL;
@@ -65,22 +72,20 @@ function NFTApp() {
   }, [library]);
 
   const onMintNftTokeN = async (tokenUrl: string) => {
-    const provider = library || new ethers.providers.Web3Provider(window.ethereum);
-    const signer = provider.getSigner();
-    const contract = new ethers.Contract(
-      CONTRACT_DEPLOYED_ADDRESS,
-      MyAwesomeLogoArtifacts.abi,
-      signer,
-    ) as MyAwesomeLogo;
-    // Get current account
     try {
-      if (!account) {
-        await requestAccount();
-        // TODO: support retry after account is selected
-        return;
-      }
+      // web3-react updates `account` on the next render, so a wallet prompt in this call must use the address it returns.
+      const selectedAccount = account || (await requestAccount());
+      if (!selectedAccount) return;
 
-      const transaction = await contract.freeMint(account, tokenUrl);
+      const provider = library || new ethers.providers.Web3Provider(window.ethereum);
+      const signer = provider.getSigner(selectedAccount);
+      const contract = new ethers.Contract(
+        CONTRACT_DEPLOYED_ADDRESS,
+        MyAwesomeLogoArtifacts.abi,
+        signer,
+      ) as MyAwesomeLogo;
+
+      const transaction = await contract.freeMint(selectedAccount, tokenUrl);
       toast
         .promise(transaction.wait(), {
           loading: "Transaction submitted. Wait for confirmation...",
